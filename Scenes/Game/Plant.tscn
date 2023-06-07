@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://lxasytb314g5"]
+
+[ext_resource type="Texture2D" uid="uid://baarj4ubwbo4x" path="res://Resources/Textures/Plant.png" id="1_q8n04"]
+[ext_resource type="Script" path="res://Scripts/PlantScript.gd" id="1_vecw3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gklrw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q8n04")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="plant" type="Node2D"]
+script = ExtResource("1_vecw3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gklrw")
+animation = &"idle"

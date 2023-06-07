@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dexde0ojd72ft"]
+
+[ext_resource type="Texture2D" uid="uid://dtnb0a3gr7frm" path="res://Resources/Textures/flowerpot1.png" id="1_0p8pd"]
+[ext_resource type="Script" path="res://Scripts/flowerpotScript.gd" id="1_dn33t"]
+[ext_resource type="Script" path="res://Scenes/Game/FlowerSprite2D.gd" id="3_kyp4d"]
+
+[node name="flowerpot" type="Node2D"]
+script = ExtResource("1_dn33t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0p8pd")
+script = ExtResource("3_kyp4d")
+
+[node name="spawnPoint" type="Marker2D" parent="."]
+position = Vector2(1, -121)

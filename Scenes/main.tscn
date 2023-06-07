@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8mcul0u7l0qc"]
+
+[ext_resource type="PackedScene" uid="uid://dyftiy871j8v8" path="res://Scenes/Game/Environment.tscn" id="1_tqhr0"]
+
+[node name="main" type="Node2D"]
+
+[node name="environment" parent="." instance=ExtResource("1_tqhr0")]
+position = Vector2(525, 873)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(525, 880)
+zoom = Vector2(1.2, 1.2)
+limit_smoothed = true
