@@ -1,15 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://dexde0ojd72ft"]
+[gd_scene load_steps=5 format=3 uid="uid://deskoebur1d4i"]
 
 [ext_resource type="Texture2D" uid="uid://dtnb0a3gr7frm" path="res://Resources/Textures/flowerpot1.png" id="1_0p8pd"]
 [ext_resource type="Script" path="res://Scripts/flowerpotScript.gd" id="1_dn33t"]
-[ext_resource type="Script" path="res://Scenes/Game/FlowerSprite2D.gd" id="3_kyp4d"]
+[ext_resource type="Script" path="res://Scripts/FlowerSprite2D.gd" id="3_xwt4o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmri4"]
+size = Vector2(118, 106)
 
 [node name="flowerpot" type="Node2D"]
 script = ExtResource("1_dn33t")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 texture = ExtResource("1_0p8pd")
-script = ExtResource("3_kyp4d")
+script = ExtResource("3_xwt4o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 6)
+shape = SubResource("RectangleShape2D_pmri4")
 
 [node name="spawnPoint" type="Marker2D" parent="."]
 position = Vector2(1, -121)
+
+[connection signal="clicked" from="." to="." method="_on_clicked"]
+[connection signal="plantDead" from="." to="." method="_on_plant_dead"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="input_event" from="Area2D" to="Area2D/Sprite2D" method="_on_area_2d_input_event"]

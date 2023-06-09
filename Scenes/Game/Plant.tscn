@@ -20,3 +20,8 @@ script = ExtResource("1_vecw3")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gklrw")
 animation = &"idle"
+
+[node name="TimerGrowth" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="TimerGrowth" to="." method="_on_timer_timeout"]

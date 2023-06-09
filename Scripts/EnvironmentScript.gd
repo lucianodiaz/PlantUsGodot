@@ -1,7 +1,7 @@
 extends Node
 
 var flowerPotReference: PackedScene;
-
+signal create_flowerpot
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,3 +22,4 @@ func _createFlowerpot():
 	flowerpotInstance.position = spawnPoint.position
 #	flowerpotInstance.position = Vector2(32,32)
 	add_child(flowerpotInstance)
+	emit_signal("create_flowerpot",flowerpotInstance);
