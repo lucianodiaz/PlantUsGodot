@@ -22,6 +22,7 @@ sprite_frames = SubResource("SpriteFrames_gklrw")
 animation = &"idle"
 
 [node name="TimerGrowth" type="Timer" parent="."]
+wait_time = 12.0
 autostart = true
 
 [connection signal="timeout" from="TimerGrowth" to="." method="_on_timer_timeout"]

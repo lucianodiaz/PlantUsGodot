@@ -152,6 +152,7 @@ drag_vertical_enabled = true
 position = Vector2(588, 918)
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
 autostart = true
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]

@@ -3,11 +3,11 @@ extends Node
 const OFFSET_Y = 125
 var plantReference: PackedScene;
 var _plantInstance;
-signal clicked
 signal plantDead
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_createPlant()
+	#_createPlant()
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -33,10 +33,11 @@ func getPlant():
 func cleanPot():
 	_plantInstance.Clear()
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		emit_signal("clicked",_plantInstance)
-
-
 func _on_plant_dead():
 	_plantInstance.visible = false
+
+
+func _on_area_2d_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if !_plantInstance:
+			_createPlant()

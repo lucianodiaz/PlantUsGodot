@@ -17,14 +17,15 @@ func _process(delta):
 
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		print("clicked")
-		if  !isPressed:
-			isPressed = true
-			index = index +1
-			if index > 3:
-				index = 1
-		var newTexture = load("res://Resources/Textures/"+flowerPotName+str(index)+".png")
-		changeTexture(newTexture)
-	elif isPressed:
-		isPressed = false
+	pass
+#	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+#		print("clicked")
+#		if  !isPressed:
+#			isPressed = true
+#			index = index +1
+#			if index > 3:
+#				index = 1
+#		var newTexture = load("res://Resources/Textures/"+flowerPotName+str(index)+".png")
+#		changeTexture(newTexture)
+#	elif isPressed:
+#		isPressed = false
