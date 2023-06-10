@@ -23,9 +23,15 @@ var _MAX_GROW = 10;
 var multiplier = 1;
 
 var isDiying = false
+
+@onready var _animated_sprite = $AnimatedSprite2D
+
+var indexIdle = 1
+var count = 4
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	emit_signal("plant_created",self)
+	_animated_sprite.play(str("idle"+str(indexIdle)))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -35,9 +41,10 @@ func _process(delta):
 		multiplier = 1
 	elif _SUNNY >= 4 and _HYDROUS >= 4 and _DIRTY < 5:
 		isDiying = false
-	
+
 	if(_LIFE<= 0):
 		get_parent().emit_signal("plantDead")
+#	pass
 
 func addMultiplier():
 	if(multiplier < 1.5):
@@ -45,21 +52,26 @@ func addMultiplier():
 
 func giveSun():
 	_SUNNY += 1
+	_animated_sprite.play("happy")
 	addMultiplier()
 
 func giveWater():
 	_HYDROUS += 1
+	_animated_sprite.play("happy")
 	addMultiplier()
 
 func giveMusic():
+	_animated_sprite.play("happy")
 	addMultiplier()
 
 func giveLove():
+	_animated_sprite.play("happy")
 	addMultiplier()
 
 func Clear():
 	_DIRTY -= 1
 	_HAPPINESS +=1
+	_animated_sprite.play("happy")
 
 func downgradeGrowth():
 	_GROW -= 1
@@ -67,6 +79,8 @@ func downgradeGrowth():
 func passTime():
 	_HAPPINESS = clamp(_HAPPINESS-1,0,10)
 	_HYDROUS = clamp(_HYDROUS-1,0,10)
+	if _HYDROUS < 7:
+		_animated_sprite.play("dry")
 	_SUNNY = clamp(_SUNNY-1,0,10)
 	_DIRTY = clamp(_DIRTY+1,0,10)
 	_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,10)
@@ -106,3 +120,18 @@ func _on_timer_timeout():
 #		_LIFE -=1 
 		_LIFE = clamp(_LIFE-1,0,10)
 		print("Life: ",_LIFE)
+
+
+func _on_animated_sprite_2d_animation_finished():
+	if !isDiying:
+		if(count <= 0):
+			indexIdle = 2
+			count = 4
+		count -= 1
+		_animated_sprite.play(str("idle"+str(indexIdle)))
+		if indexIdle == 2:
+				indexIdle=1
+	else:
+		_animated_sprite.play("scary")
+		
+

@@ -17,10 +17,14 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1080
-window/size/viewport_height=1920
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/resizable=false
 window/handheld/orientation=1
+window/vsync/vsync_mode=0
+window/stretch/mode="canvas_items"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=false

@@ -13,6 +13,7 @@ script = ExtResource("1_dn33t")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("1_0p8pd")
 script = ExtResource("3_xwt4o")
 
@@ -21,7 +22,7 @@ position = Vector2(-1, 6)
 shape = SubResource("RectangleShape2D_pmri4")
 
 [node name="spawnPoint" type="Marker2D" parent="."]
-position = Vector2(1, -121)
+position = Vector2(-8, -130)
 
 [connection signal="plantDead" from="." to="." method="_on_plant_dead"]
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
