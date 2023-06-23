@@ -2359,9 +2359,12 @@ animations = [{
 script = ExtResource("1_vecw3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.23, 0.23)
+position = Vector2(0, -9)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gklrw")
-animation = &"dry"
+animation = &"happy"
+frame = 53
+frame_progress = 1.0
 
 [node name="TimerGrowth" type="Timer" parent="."]
 wait_time = 12.0

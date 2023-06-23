@@ -4,18 +4,17 @@
 [ext_resource type="Script" path="res://Scripts/mainScript.gd" id="1_icywe"]
 [ext_resource type="PackedScene" uid="uid://dyftiy871j8v8" path="res://Scenes/Game/Environment.tscn" id="1_tqhr0"]
 [ext_resource type="Texture2D" uid="uid://vcqmdhbrfqqx" path="res://Resources/Textures/UI/Sun.png" id="2_hoyyt"]
+[ext_resource type="Texture2D" uid="uid://y4n5st1u3y7" path="res://Resources/Textures/game_background_2.png" id="2_jyg5o"]
 [ext_resource type="Texture2D" uid="uid://qf20vuckjkfx" path="res://Resources/Textures/UI/water.png" id="4_c1nje"]
 [ext_resource type="Texture2D" uid="uid://d2ltsbf5jyje0" path="res://Resources/Textures/UI/music.png" id="5_g00qu"]
 [ext_resource type="Texture2D" uid="uid://go4x38csb6ic" path="res://Resources/Textures/UI/clean.png" id="6_4imeb"]
 [ext_resource type="Texture2D" uid="uid://44x40mrmo66f" path="res://Resources/Textures/UI/love.png" id="7_lq0lq"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lqbfr"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hrupe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y4ubh"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_avh3k"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87lsw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ug4y"]
 
@@ -64,40 +63,45 @@
 [node name="main" type="Node2D"]
 script = ExtResource("1_icywe")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 672.0
-offset_top = 435.0
-offset_right = 877.0
-offset_bottom = 880.0
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-theme_override_styles/panel = SubResource("StyleBoxEmpty_lqbfr")
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640.555, 361.5)
+scale = Vector2(0.669329, 0.665741)
+texture = ExtResource("2_jyg5o")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 366)
+limit_smoothed = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="environment1" parent="." instance=ExtResource("1_tqhr0")]
+position = Vector2(571, 448)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+offset_left = 37.0
+offset_top = 71.0
+offset_right = 1243.0
+offset_bottom = 631.0
+alignment_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
 
-[node name="Button1" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Button1" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 clip_contents = true
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_hrupe")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_y4ubh")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_avh3k")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_87lsw")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_3ug4y")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_q28jl")
 icon = ExtResource("2_hoyyt")
 icon_alignment = 1
 script = ExtResource("1_43dw8")
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Button2" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2l5d4")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_msgpc")
@@ -108,7 +112,7 @@ icon = ExtResource("4_c1nje")
 icon_alignment = 1
 script = ExtResource("1_43dw8")
 
-[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Button3" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nmubh")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_g7v7p")
@@ -119,7 +123,7 @@ icon = ExtResource("5_g00qu")
 icon_alignment = 1
 script = ExtResource("1_43dw8")
 
-[node name="Button4" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Button4" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_27rhv")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ewe0b")
@@ -130,7 +134,7 @@ icon = ExtResource("6_4imeb")
 icon_alignment = 1
 script = ExtResource("1_43dw8")
 
-[node name="Button5" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Button5" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mhlad")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ryg2b")
@@ -141,23 +145,14 @@ icon = ExtResource("7_lq0lq")
 icon_alignment = 1
 script = ExtResource("1_43dw8")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(581, 830)
-limit_smoothed = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-
-[node name="environment1" parent="." instance=ExtResource("1_tqhr0")]
-position = Vector2(588, 918)
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
 
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="create_flowerpot" from="environment1" to="." method="_on_create_flowerpot"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
