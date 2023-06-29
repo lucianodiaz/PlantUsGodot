@@ -11,15 +11,23 @@ config_version=5
 [application]
 
 config/name="PlantUs"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://Scenes/global_scene.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PlayerInfoScript="res://Scripts/playerInfoScript.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [rendering]
 
