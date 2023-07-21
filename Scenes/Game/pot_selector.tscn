@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwx2814ubcxdd"]
+[gd_scene load_steps=16 format=3 uid="uid://cwx2814ubcxdd"]
 
 [ext_resource type="Texture2D" uid="uid://go4x38csb6ic" path="res://Resources/Textures/UI/clean.png" id="1_icppb"]
 [ext_resource type="Script" path="res://Scripts/UI/pot_selector.gd" id="1_w8mg7"]
@@ -16,14 +16,24 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70vhd"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ukk1q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdxxt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a2n15"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ashij"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nqyg"]
+
 [node name="PotSelector" type="Node2D"]
 script = ExtResource("1_w8mg7")
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
-offset_left = 231.0
-offset_top = 568.0
-offset_right = 1087.0
-offset_bottom = 654.0
+offset_left = 235.0
+offset_top = 502.0
+offset_right = 1091.0
+offset_bottom = 588.0
 stretch_mode = 3
 alignment_horizontal = 0
 
@@ -86,5 +96,23 @@ theme_override_font_sizes/font_size = 50
 text = "Select your pot!"
 horizontal_alignment = 3
 
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 590.0
+offset_top = 612.0
+offset_right = 726.0
+offset_bottom = 698.0
+alignment = 2
+
+[node name="ContinueBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ukk1q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tdxxt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a2n15")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ashij")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5nqyg")
+icon = ExtResource("2_rkmjr")
+icon_alignment = 1
+
 [connection signal="button_down" from="AspectRatioContainer/HBoxContainer/left" to="." method="_on_left_button_down"]
 [connection signal="button_down" from="AspectRatioContainer/HBoxContainer/right" to="." method="_on_right_button_down"]
+[connection signal="button_down" from="VBoxContainer/ContinueBtn" to="." method="_on_continue_btn_button_down"]

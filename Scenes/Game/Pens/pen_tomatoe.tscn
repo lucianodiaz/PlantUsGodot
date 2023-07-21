@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://csdc1p025138x"]
+
+[ext_resource type="PackedScene" uid="uid://bfox4vr8dy5mq" path="res://Scenes/Game/pen.tscn" id="1_ps2ye"]
+
+[node name="penTomatoe" instance=ExtResource("1_ps2ye")]
+_type_seeds = 0
+
+[node name="Pencil" parent="pencilBase" index="0"]
+modulate = Color(1, 0, 0, 1)

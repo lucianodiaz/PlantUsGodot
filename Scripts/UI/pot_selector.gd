@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var global = get_node("/root/PlayerInfoScript")
+@onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")
 
 var potSprite:Sprite2D
 var middlePosition:Vector2
@@ -48,7 +48,6 @@ func _on_left_button_down():
 	var leftM = get_node("Control/leftMarker")
 	tween.tween_property(potSprite,"position",leftM.position,0.2)
 	tween.tween_callback(moveRightToLeft)
-	pass # Replace with function body.
 
 
 func _on_right_button_down():
@@ -59,4 +58,8 @@ func _on_right_button_down():
 	var rightM = get_node("Control/rightMarker")
 	tween.tween_property(potSprite,"position",rightM.position,0.2)
 	tween.tween_callback(moveLeftToRight)
-	pass # Replace with function body.
+
+
+
+func _on_continue_btn_button_down():
+	global._changeLevel(global.Levels.MAIN)

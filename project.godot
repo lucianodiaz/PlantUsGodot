@@ -12,18 +12,24 @@ config_version=5
 
 config/name="PlantUs"
 run/main_scene="res://Scenes/global_scene.tscn"
-config/features=PackedStringArray("4.0", "Mobile")
+config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 PlayerInfoScript="res://Scripts/playerInfoScript.gd"
+SeedsType="*res://Scripts/seeds_type.gd"
+Events="*res://Scripts/global/Events.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[editor]
+
+naming/node_name_casing=1
 
 [filesystem]
 
@@ -32,4 +38,3 @@ import/blender/enabled=false
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
-textures/vram_compression/import_s3tc_bptc=false

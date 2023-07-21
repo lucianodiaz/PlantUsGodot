@@ -1,14 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyftiy871j8v8"]
+[gd_scene load_steps=4 format=3 uid="uid://dyftiy871j8v8"]
 
 [ext_resource type="Script" path="res://Scripts/EnvironmentScript.gd" id="1_kxfxt"]
 [ext_resource type="Texture2D" uid="uid://c2hderxnykpwh" path="res://Resources/Textures/nofinal2.png" id="2_w6eeg"]
+[ext_resource type="PackedScene" uid="uid://byol2x2dxte6y" path="res://Scenes/Game/spawn_area.tscn" id="3_lvibk"]
 
 [node name="environment" type="Node2D"]
 script = ExtResource("1_kxfxt")
 
-[node name="spawnPoint" type="Marker2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="base" type="Sprite2D" parent="."]
 position = Vector2(9, -48)
 scale = Vector2(0.550926, 0.550926)
 texture = ExtResource("2_w6eeg")
+
+[node name="base2" type="Sprite2D" parent="."]
+position = Vector2(298, -212)
+scale = Vector2(0.330857, 0.359213)
+texture = ExtResource("2_w6eeg")
+
+[node name="SpawnArea0" parent="." instance=ExtResource("3_lvibk")]
+
+[node name="SpawnArea1" parent="." instance=ExtResource("3_lvibk")]
+position = Vector2(2, 0)
+
+[node name="SpawnArea2" parent="." instance=ExtResource("3_lvibk")]
+position = Vector2(293, -207)
+
+[connection signal="on_click" from="SpawnArea0" to="." method="_on_spawn_area_0_on_click"]
+[connection signal="on_click" from="SpawnArea1" to="." method="_on_spawn_area_1_on_click"]
+[connection signal="on_click" from="SpawnArea2" to="." method="_on_spawn_area_2_on_click"]

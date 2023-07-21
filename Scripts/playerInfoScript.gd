@@ -1,9 +1,9 @@
+class_name playerInfoScript
+
 extends Node
 
 var _seeds = {
-"initial":1,
-"another":0,
-"tomato":1};
+};
 
 var _pots = {
 "pot1":"res://Resources/Textures/flowerpot1.png",
@@ -14,6 +14,8 @@ var _pots = {
 var main = load("res://Scenes/main.tscn")
 var pencil = load("res://Scenes/Game/init_pencil.tscn")
 var potSelector = load("res://Scenes/Game/pot_selector.tscn")
+
+enum Levels {PENCIL=0,POTSEL,MAIN}
 
 var allLevels:Array[PackedScene];
 
@@ -37,6 +39,16 @@ func _changeLevel(index):
 	remove_child(current_level)
 	current_level = allLevels[index].instantiate()
 	add_child(current_level)
+
+func _addSeeds(ammount,type_seed:seeds_type.seedType):
+	for _seed in _seeds:
+		if(_seed == type_seed):
+			_seeds[_seed] += ammount
+			print("ammount:",_seeds[_seed])
+			return
+	_seeds[type_seed] = ammount
+	print(_seeds)
+		
 
 func _getSeedsAmmount():
 	return _seeds.values()

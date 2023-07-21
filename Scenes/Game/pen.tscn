@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bfox4vr8dy5mq"]
+[gd_scene load_steps=11 format=3 uid="uid://bfox4vr8dy5mq"]
 
 [ext_resource type="Texture2D" uid="uid://cuppppj3ykxtx" path="res://Resources/Textures/pencil.png" id="1_a8wyl"]
 [ext_resource type="Script" path="res://Scripts/penScript.gd" id="1_mhujx"]
@@ -26,10 +26,94 @@ linear_accel_max = 86.6
 radial_accel_min = 2.06
 radial_accel_max = 2.06
 
-[node name="pen" type="Node2D" node_paths=PackedStringArray("particle")]
+[sub_resource type="Animation" id="Animation_gn7eh"]
+resource_name = "shake"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pencilBase:rotation")
+tracks/0/interp = 4
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(-2, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.296706, 0.0, 0.418879, 0.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_idleAnimation"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_1hic7"]
+resource_name = "rotate"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pencilBase:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 2.79253]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"startSeeds"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_mosei"]
+resource_name = "enter"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pencilBase:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -400), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ov24v"]
+_data = {
+"enter": SubResource("Animation_mosei"),
+"rotate": SubResource("Animation_1hic7"),
+"shake": SubResource("Animation_gn7eh")
+}
+
+[node name="pen" type="Node2D" node_paths=PackedStringArray("particle", "_animationPlayer")]
 script = ExtResource("1_mhujx")
 particle = NodePath("pencilBase/GPUParticles2D")
-_timesShake = 2
+_animationPlayer = NodePath("AnimationPlayer")
+_type_seeds = 1
 
 [node name="pencilBase" type="Area2D" parent="."]
 
@@ -60,6 +144,11 @@ visibility_rect = Rect2(-27, 0, 50, 50)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ov24v")
+}
 
 [connection signal="input_event" from="pencilBase" to="." method="_on_pencil_base_input_event"]
 [connection signal="input_event" from="pencilBase/coverPencil" to="." method="_on_cover_pencil_input_event"]

@@ -31,8 +31,10 @@ var count = 4
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	emit_signal("plant_created",self)
-	_animated_sprite.play("growth")
+#	_animated_sprite.play("growth")
 
+func _selected():
+	_animated_sprite.play("growth")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -123,19 +125,20 @@ func _on_timer_timeout():
 
 
 func _on_animated_sprite_2d_animation_finished():
-	var animationName
-	if !isDiying:
-		if(count <= 0):
-			indexIdle = 2
-			count = 4
-		count -= 1
-		animationName = str("idle"+str(indexIdle))
-		_animated_sprite.play(animationName)
-		print(animationName)
-		if indexIdle == 2:
-				indexIdle=1
-	else:
-		_animated_sprite.play("scary")
+	pass
+#	var animationName
+#	if !isDiying:
+#		if(count <= 0):
+#			indexIdle = 2
+#			count = 4
+#		count -= 1
+#		animationName = str("idle"+str(indexIdle))
+#		_animated_sprite.play(animationName)
+#		print(animationName)
+#		if indexIdle == 2:
+#				indexIdle=1
+#	else:
+#		_animated_sprite.play("scary")
 	
 	
 

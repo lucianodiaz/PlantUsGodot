@@ -2,14 +2,10 @@ extends Node
 
 var pots = []
 var currentIndex=-1
-var currentFlowerpot
+var currentFlowerpot:Flowerpot
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
 	pass
 
 
@@ -18,7 +14,11 @@ func _on_create_flowerpot(flowerpot):
 	print("created a flowerpot: ",flowerpot)
 	pots.push_back(flowerpot)
 	currentFlowerpot = pots[currentIndex]
+	currentFlowerpot.selectPot.connect(on_changeFlowerPot)
 
+
+func on_changeFlowerPot(newFlowerPot:Flowerpot):
+	currentFlowerpot = newFlowerPot
 
 func _on_button_1_pressed():
 	currentFlowerpot.getPlant().giveSun()
