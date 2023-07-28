@@ -23,18 +23,13 @@ func shakePencil():
 	_animationPlayer.play("shake")
 
 func _on_pencil_base_input_event(viewport, event, shape_idx):
-	print(viewport)
-	print(event)
-	print(shape_idx)
 	if(!_isCoverClicked):
 		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 			_isBaseClicked = true
-			print("make sound of seeds and shake pencil")
 			shakePencil()
 	elif _isCoverClicked:
 		if !_enterLastTween:
 			if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-				print("rotate pencil only when cover is get out")
 				_enterLastTween = true
 				if !_animationPlayer.is_playing():
 					_animationPlayer.play("rotate")
@@ -48,9 +43,6 @@ func startSeeds():
 	
 
 func _on_cover_pencil_input_event(viewport, event, shape_idx):
-	print(viewport)
-	print(event)
-	print(shape_idx)
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if (_isBaseClicked):
 			_isCoverClicked = true
@@ -58,7 +50,6 @@ func _on_cover_pencil_input_event(viewport, event, shape_idx):
 
 
 func _on_timer_timeout():
-	print("Change Level")
 	var global:playerInfoScript = get_node("/root/PlayerInfoScript")
 	global._addSeeds(_cant_seeds,_type_seeds)
 	

@@ -1,4 +1,5 @@
 extends Node
+class_name Plant
 
 const FPS = 60;
 
@@ -24,6 +25,10 @@ var multiplier = 1;
 
 var isDiying = false
 
+var growth = ["tiny","medium","big"]
+
+var currentGrowth:String = growth[0]
+
 @onready var _animated_sprite = $AnimatedSprite2D
 
 var indexIdle = 1
@@ -34,7 +39,13 @@ func _ready():
 #	_animated_sprite.play("growth")
 
 func _selected():
-	_animated_sprite.play("growth")
+	pass
+#	_animated_sprite.play(currentGrowth+"growth")
+
+
+func getCurrentGrowth() -> String:
+	return currentGrowth.to_lower()
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -59,21 +70,17 @@ func giveSun():
 
 func giveWater():
 	_HYDROUS += 1
-	_animated_sprite.play("happy")
 	addMultiplier()
 
 func giveMusic():
-	_animated_sprite.play("happy")
 	addMultiplier()
 
 func giveLove():
-	_animated_sprite.play("happy")
 	addMultiplier()
 
 func Clear():
 	_DIRTY -= 1
 	_HAPPINESS +=1
-	_animated_sprite.play("happy")
 
 func downgradeGrowth():
 	_GROW -= 1
@@ -81,14 +88,11 @@ func downgradeGrowth():
 func passTime():
 	_HAPPINESS = clamp(_HAPPINESS-1,0,10)
 	_HYDROUS = clamp(_HYDROUS-1,0,10)
-	if _HYDROUS < 7:
-		_animated_sprite.play("dry")
+#	if _HYDROUS < 7:
+#		_animated_sprite.play("dry")
 	_SUNNY = clamp(_SUNNY-1,0,10)
 	_DIRTY = clamp(_DIRTY+1,0,10)
 	_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,10)
-	print("SUN: ",_SUNNY)
-	print("HYDROUS: ",_HYDROUS)
-	print("DIRTY: ",_DIRTY)
 
 func getHappiness():
 	return _HAPPINESS
@@ -117,28 +121,10 @@ func getDirty():
 func _on_timer_timeout():
 	if(_GROW < _MAX_GROW and !isDiying):
 		_GROW += (1*multiplier)
-		print("GROWTH: ",_GROW)
+#		print("GROWTH: ",_GROW)
 	elif(isDiying):
 #		_LIFE -=1 
 		_LIFE = clamp(_LIFE-1,0,10)
-		print("Life: ",_LIFE)
+#		print("Life: ",_LIFE)
 
-
-func _on_animated_sprite_2d_animation_finished():
-	pass
-#	var animationName
-#	if !isDiying:
-#		if(count <= 0):
-#			indexIdle = 2
-#			count = 4
-#		count -= 1
-#		animationName = str("idle"+str(indexIdle))
-#		_animated_sprite.play(animationName)
-#		print(animationName)
-#		if indexIdle == 2:
-#				indexIdle=1
-#	else:
-#		_animated_sprite.play("scary")
-	
-	
 

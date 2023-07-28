@@ -13,6 +13,9 @@ config_version=5
 config/name="PlantUs"
 run/main_scene="res://Scenes/global_scene.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -26,6 +29,7 @@ Events="*res://Scripts/global/Events.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://Resources/Textures/UI/Cursor/White-Grey-Cat-Paw.png"
 
 [editor]
 
@@ -37,4 +41,5 @@ import/blender/enabled=false
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"

@@ -2,12 +2,14 @@ extends State
 class_name Idle
 
 @export var animation:AnimatedSprite2D
+@export var plant:Plant
+
 var indexIdle = 1
 var count = 4
 
 func _enter():
 	animation.animation_finished.connect(on_finish_animation)
-	animation.play(str("idle"+str(indexIdle)))
+	animation.play(str(plant.getCurrentGrowth()+"_"+"idle"+str(indexIdle)))
 
 
 func on_finish_animation():
@@ -16,8 +18,9 @@ func on_finish_animation():
 		indexIdle = 2
 		count = 4
 	count -= 1
-	animationName = str("idle"+str(indexIdle))
+	animationName = str(plant.getCurrentGrowth()+"_"+"idle"+str(indexIdle))
 	animation.play(animationName)
+#	animation.play(animationName)
 	print(animationName)
 	if indexIdle == 2:
 		indexIdle=1
