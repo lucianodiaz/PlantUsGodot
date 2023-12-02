@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bmwjrn3ilq7fg"]
+
+[ext_resource type="Texture2D" uid="uid://b53m3okwpvupq" path="res://Resources/Sprites/Plants/InitialPlant/tiny/idle/tiny_idle.png" id="1_7v2uj"]
+
+[resource]
+atlas = ExtResource("1_7v2uj")
+region = Rect2(4880, 1907, 375, 482)

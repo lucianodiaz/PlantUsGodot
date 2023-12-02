@@ -11,8 +11,8 @@ func _ready():
 	for child in get_children():
 		for state in child.get_children():
 			if state is State:
-				print(plant.getCurrentGrowth()+"/"+state.name)
-				states[plant.getCurrentGrowth()+"/"+state.name.to_lower()] = state
+				print("StateMachine/"+plant.getCurrentGrowth()+"/"+state.name)
+				states["StateMachine/"+plant.getCurrentGrowth()+"/"+state.name.to_lower()] = state
 				state.Transitioned.connect(on_state_transition)
 	if initial_state:
 		initial_state._enter()
@@ -27,7 +27,7 @@ func on_state_transition(state, new_state_name):
 	if state != current_state:
 		return
 	
-	var new_state = states.get(new_state_name.to_lower())
+	var new_state = states.get(new_state_name)
 	if !new_state:
 		return
 	

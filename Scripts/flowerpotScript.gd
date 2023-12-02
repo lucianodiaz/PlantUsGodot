@@ -2,7 +2,7 @@ class_name Flowerpot
 
 extends Node
 
-const OFFSET_Y = 125
+const OFFSET_Y = 50
 var plantReference: PackedScene;
 var _plantInstance;
 @onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="PlantUs"
 run/main_scene="res://Scenes/global_scene.tscn"
-config/features=PackedStringArray("4.1", "Mobile")
+config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
@@ -34,6 +34,10 @@ mouse_cursor/custom_image="res://Resources/Textures/UI/Cursor/White-Grey-Cat-Paw
 [editor]
 
 naming/node_name_casing=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg")
 
 [filesystem]
 
