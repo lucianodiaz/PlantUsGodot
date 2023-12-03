@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://cpcarr2a7xy14"
+path="res://.godot/imported/tiny_scary_enter.tpsheet-0f3e7bca01bfeb98fe2457087175586e.res"
+
+[deps]
+
+files=["res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0005.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0006.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0007.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0001.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0004.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0008.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0002.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0009.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0011.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0010.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0003.tres"]
+
+source_file="res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.tpsheet"
+dest_files=["res://.godot/imported/tiny_scary_enter.tpsheet-0f3e7bca01bfeb98fe2457087175586e.res", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0005.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0006.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0007.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0001.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0004.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0008.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0002.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0009.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0011.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0010.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_enter.sprites/asustada0003.tres"]
+
+[params]
+

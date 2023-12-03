@@ -1,0 +1,318 @@
+{
+	"textures": [
+		{
+			"image": "tiny_dry_end.png",
+			"size": {
+				"w": 7529,
+				"h": 479
+			},
+			"sprites": [
+				{
+					"filename": "seca0070.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 378,
+						"h": 454
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0071.png",
+					"region": {
+						"x": 378,
+						"y": 0,
+						"w": 378,
+						"h": 454
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0072.png",
+					"region": {
+						"x": 756,
+						"y": 0,
+						"w": 378,
+						"h": 455
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0073.png",
+					"region": {
+						"x": 1134,
+						"y": 0,
+						"w": 378,
+						"h": 455
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0074.png",
+					"region": {
+						"x": 1512,
+						"y": 0,
+						"w": 378,
+						"h": 456
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0075.png",
+					"region": {
+						"x": 1890,
+						"y": 0,
+						"w": 378,
+						"h": 457
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0076.png",
+					"region": {
+						"x": 2268,
+						"y": 0,
+						"w": 378,
+						"h": 458
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0077.png",
+					"region": {
+						"x": 2646,
+						"y": 0,
+						"w": 378,
+						"h": 459
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0078.png",
+					"region": {
+						"x": 3024,
+						"y": 0,
+						"w": 378,
+						"h": 460
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0079.png",
+					"region": {
+						"x": 3402,
+						"y": 0,
+						"w": 377,
+						"h": 462
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0080.png",
+					"region": {
+						"x": 3779,
+						"y": 0,
+						"w": 376,
+						"h": 464
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0081.png",
+					"region": {
+						"x": 4155,
+						"y": 0,
+						"w": 376,
+						"h": 467
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0082.png",
+					"region": {
+						"x": 4531,
+						"y": 0,
+						"w": 376,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0083.png",
+					"region": {
+						"x": 4907,
+						"y": 0,
+						"w": 376,
+						"h": 471
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0084.png",
+					"region": {
+						"x": 5283,
+						"y": 0,
+						"w": 376,
+						"h": 473
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0085.png",
+					"region": {
+						"x": 5659,
+						"y": 0,
+						"w": 375,
+						"h": 475
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0086.png",
+					"region": {
+						"x": 6034,
+						"y": 0,
+						"w": 374,
+						"h": 476
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0087.png",
+					"region": {
+						"x": 6408,
+						"y": 0,
+						"w": 374,
+						"h": 477
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0088.png",
+					"region": {
+						"x": 6782,
+						"y": 0,
+						"w": 374,
+						"h": 479
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seca0089.png",
+					"region": {
+						"x": 7156,
+						"y": 0,
+						"w": 373,
+						"h": 479
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

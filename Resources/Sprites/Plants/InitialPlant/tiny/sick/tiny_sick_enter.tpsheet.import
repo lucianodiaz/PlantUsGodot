@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://cvhs0u43aldke"
+path="res://.godot/imported/tiny_sick_enter.tpsheet-7e7ef62a7639d05906a5406413b53e02.res"
+
+[deps]
+
+files=["res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0014.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0013.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0012.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0011.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0010.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0009.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0008.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0007.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0006.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0005.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0004.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0003.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0002.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0001.tres"]
+
+source_file="res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.tpsheet"
+dest_files=["res://.godot/imported/tiny_sick_enter.tpsheet-7e7ef62a7639d05906a5406413b53e02.res", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0014.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0013.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0012.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0011.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0010.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0009.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0008.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0007.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0006.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0005.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0004.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0003.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0002.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_enter.sprites/enferma0001.tres"]
+
+[params]
+

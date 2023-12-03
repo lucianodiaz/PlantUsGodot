@@ -13,4 +13,4 @@ func _exit():
 	pass
 
 func on_finished_animation():
-	Transitioned.emit(self,"StateMachine/"+plant.getCurrentGrowth()+"/"+"idle")
+	Transitioned.emit(self,"statemachine/"+"idle")

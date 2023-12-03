@@ -1,0 +1,78 @@
+{
+	"textures": [
+		{
+			"image": "tiny_scary_loop.png",
+			"size": {
+				"w": 446,
+				"h": 1602
+			},
+			"sprites": [
+				{
+					"filename": "asustada0012.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 446,
+						"h": 397
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0013.png",
+					"region": {
+						"x": 0,
+						"y": 397,
+						"w": 444,
+						"h": 401
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0015.png",
+					"region": {
+						"x": 0,
+						"y": 798,
+						"w": 444,
+						"h": 401
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0014.png",
+					"region": {
+						"x": 0,
+						"y": 1199,
+						"w": 441,
+						"h": 403
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

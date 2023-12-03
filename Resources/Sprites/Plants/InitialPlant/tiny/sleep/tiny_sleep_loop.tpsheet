@@ -1,0 +1,918 @@
+{
+	"textures": [
+		{
+			"image": "tiny_sleep_loop.png",
+			"size": {
+				"w": 3486,
+				"h": 3664
+			},
+			"sprites": [
+				{
+					"filename": "dormida_loop0087.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 382,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0088.png",
+					"region": {
+						"x": 382,
+						"y": 0,
+						"w": 380,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0089.png",
+					"region": {
+						"x": 0,
+						"y": 468,
+						"w": 380,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0090.png",
+					"region": {
+						"x": 380,
+						"y": 468,
+						"w": 380,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0091.png",
+					"region": {
+						"x": 760,
+						"y": 468,
+						"w": 380,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0092.png",
+					"region": {
+						"x": 762,
+						"y": 0,
+						"w": 380,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0093.png",
+					"region": {
+						"x": 0,
+						"y": 936,
+						"w": 382,
+						"h": 468
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0086.png",
+					"region": {
+						"x": 382,
+						"y": 936,
+						"w": 382,
+						"h": 467
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0094.png",
+					"region": {
+						"x": 1142,
+						"y": 0,
+						"w": 382,
+						"h": 467
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0084.png",
+					"region": {
+						"x": 1140,
+						"y": 468,
+						"w": 383,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0085.png",
+					"region": {
+						"x": 1140,
+						"y": 933,
+						"w": 382,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0095.png",
+					"region": {
+						"x": 0,
+						"y": 1404,
+						"w": 382,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0096.png",
+					"region": {
+						"x": 382,
+						"y": 1403,
+						"w": 383,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0083.png",
+					"region": {
+						"x": 765,
+						"y": 1398,
+						"w": 384,
+						"h": 464
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0097.png",
+					"region": {
+						"x": 1524,
+						"y": 0,
+						"w": 384,
+						"h": 464
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0082.png",
+					"region": {
+						"x": 1524,
+						"y": 464,
+						"w": 384,
+						"h": 463
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0098.png",
+					"region": {
+						"x": 1523,
+						"y": 927,
+						"w": 384,
+						"h": 463
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0081.png",
+					"region": {
+						"x": 1522,
+						"y": 1390,
+						"w": 386,
+						"h": 461
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0099.png",
+					"region": {
+						"x": 0,
+						"y": 1869,
+						"w": 386,
+						"h": 461
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0080.png",
+					"region": {
+						"x": 386,
+						"y": 1868,
+						"w": 387,
+						"h": 460
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0100.png",
+					"region": {
+						"x": 773,
+						"y": 1862,
+						"w": 387,
+						"h": 460
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0079.png",
+					"region": {
+						"x": 1160,
+						"y": 1851,
+						"w": 388,
+						"h": 459
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0101.png",
+					"region": {
+						"x": 1908,
+						"y": 0,
+						"w": 388,
+						"h": 459
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0078.png",
+					"region": {
+						"x": 1907,
+						"y": 927,
+						"w": 389,
+						"h": 457
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0102.png",
+					"region": {
+						"x": 1548,
+						"y": 1851,
+						"w": 389,
+						"h": 457
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0077.png",
+					"region": {
+						"x": 2296,
+						"y": 0,
+						"w": 390,
+						"h": 456
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0103.png",
+					"region": {
+						"x": 2296,
+						"y": 456,
+						"w": 390,
+						"h": 456
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0076.png",
+					"region": {
+						"x": 1908,
+						"y": 1384,
+						"w": 392,
+						"h": 454
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0104.png",
+					"region": {
+						"x": 1937,
+						"y": 1838,
+						"w": 392,
+						"h": 454
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0075.png",
+					"region": {
+						"x": 0,
+						"y": 2330,
+						"w": 393,
+						"h": 452
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0105.png",
+					"region": {
+						"x": 393,
+						"y": 2328,
+						"w": 393,
+						"h": 452
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0074.png",
+					"region": {
+						"x": 786,
+						"y": 2322,
+						"w": 394,
+						"h": 451
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0106.png",
+					"region": {
+						"x": 1180,
+						"y": 2310,
+						"w": 394,
+						"h": 451
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0073.png",
+					"region": {
+						"x": 1574,
+						"y": 2308,
+						"w": 395,
+						"h": 450
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0107.png",
+					"region": {
+						"x": 1969,
+						"y": 2292,
+						"w": 395,
+						"h": 450
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0072.png",
+					"region": {
+						"x": 2686,
+						"y": 0,
+						"w": 397,
+						"h": 448
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0108.png",
+					"region": {
+						"x": 2686,
+						"y": 448,
+						"w": 397,
+						"h": 448
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0071.png",
+					"region": {
+						"x": 2296,
+						"y": 912,
+						"w": 398,
+						"h": 447
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0109.png",
+					"region": {
+						"x": 2300,
+						"y": 1359,
+						"w": 398,
+						"h": 447
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0070.png",
+					"region": {
+						"x": 2329,
+						"y": 1806,
+						"w": 399,
+						"h": 446
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0110.png",
+					"region": {
+						"x": 2364,
+						"y": 2252,
+						"w": 399,
+						"h": 446
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0069.png",
+					"region": {
+						"x": 0,
+						"y": 2782,
+						"w": 401,
+						"h": 444
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0111.png",
+					"region": {
+						"x": 401,
+						"y": 2780,
+						"w": 401,
+						"h": 444
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0068.png",
+					"region": {
+						"x": 802,
+						"y": 2773,
+						"w": 401,
+						"h": 443
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0112.png",
+					"region": {
+						"x": 1203,
+						"y": 2761,
+						"w": 401,
+						"h": 443
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0067.png",
+					"region": {
+						"x": 1604,
+						"y": 2758,
+						"w": 403,
+						"h": 442
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0113.png",
+					"region": {
+						"x": 2007,
+						"y": 2742,
+						"w": 403,
+						"h": 442
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0066.png",
+					"region": {
+						"x": 2410,
+						"y": 2698,
+						"w": 403,
+						"h": 441
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0114.png",
+					"region": {
+						"x": 3083,
+						"y": 0,
+						"w": 403,
+						"h": 441
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0064.png",
+					"region": {
+						"x": 2694,
+						"y": 896,
+						"w": 405,
+						"h": 439
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0065.png",
+					"region": {
+						"x": 2698,
+						"y": 1335,
+						"w": 405,
+						"h": 439
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0115.png",
+					"region": {
+						"x": 2728,
+						"y": 1774,
+						"w": 405,
+						"h": 439
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0116.png",
+					"region": {
+						"x": 2763,
+						"y": 2213,
+						"w": 405,
+						"h": 439
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0062.png",
+					"region": {
+						"x": 2813,
+						"y": 2652,
+						"w": 407,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0063.png",
+					"region": {
+						"x": 0,
+						"y": 3226,
+						"w": 405,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0117.png",
+					"region": {
+						"x": 405,
+						"y": 3224,
+						"w": 405,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0118.png",
+					"region": {
+						"x": 810,
+						"y": 3216,
+						"w": 407,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0060.png",
+					"region": {
+						"x": 1217,
+						"y": 3204,
+						"w": 407,
+						"h": 437
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0061.png",
+					"region": {
+						"x": 1624,
+						"y": 3200,
+						"w": 407,
+						"h": 437
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "dormida_loop0119.png",
+					"region": {
+						"x": 2031,
+						"y": 3184,
+						"w": 407,
+						"h": 437
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

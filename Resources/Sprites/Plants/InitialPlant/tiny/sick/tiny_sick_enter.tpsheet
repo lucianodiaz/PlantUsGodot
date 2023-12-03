@@ -1,0 +1,228 @@
+{
+	"textures": [
+		{
+			"image": "tiny_sick_enter.png",
+			"size": {
+				"w": 5555,
+				"h": 478
+			},
+			"sprites": [
+				{
+					"filename": "enferma0014.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 436,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0013.png",
+					"region": {
+						"x": 436,
+						"y": 0,
+						"w": 428,
+						"h": 420
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0012.png",
+					"region": {
+						"x": 864,
+						"y": 0,
+						"w": 420,
+						"h": 429
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0011.png",
+					"region": {
+						"x": 1284,
+						"y": 0,
+						"w": 413,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0010.png",
+					"region": {
+						"x": 1697,
+						"y": 0,
+						"w": 406,
+						"h": 447
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0009.png",
+					"region": {
+						"x": 2103,
+						"y": 0,
+						"w": 400,
+						"h": 454
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0008.png",
+					"region": {
+						"x": 2503,
+						"y": 0,
+						"w": 395,
+						"h": 460
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0007.png",
+					"region": {
+						"x": 2898,
+						"y": 0,
+						"w": 390,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0006.png",
+					"region": {
+						"x": 3288,
+						"y": 0,
+						"w": 385,
+						"h": 469
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0005.png",
+					"region": {
+						"x": 3673,
+						"y": 0,
+						"w": 382,
+						"h": 472
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0004.png",
+					"region": {
+						"x": 4055,
+						"y": 0,
+						"w": 378,
+						"h": 474
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0003.png",
+					"region": {
+						"x": 4433,
+						"y": 0,
+						"w": 375,
+						"h": 476
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0002.png",
+					"region": {
+						"x": 4808,
+						"y": 0,
+						"w": 374,
+						"h": 477
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "enferma0001.png",
+					"region": {
+						"x": 5182,
+						"y": 0,
+						"w": 373,
+						"h": 478
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

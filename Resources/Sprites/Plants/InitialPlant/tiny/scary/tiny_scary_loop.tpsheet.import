@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://c1vaa4323atll"
+path="res://.godot/imported/tiny_scary_loop.tpsheet-bc951c74c6e2151325a74f5955189ba8.res"
+
+[deps]
+
+files=["res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0012.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0013.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0015.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0014.tres"]
+
+source_file="res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.tpsheet"
+dest_files=["res://.godot/imported/tiny_scary_loop.tpsheet-bc951c74c6e2151325a74f5955189ba8.res", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0012.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0013.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0015.tres", "res://Resources/Sprites/Plants/InitialPlant/tiny/scary/tiny_scary_loop.sprites/asustada0014.tres"]
+
+[params]
+

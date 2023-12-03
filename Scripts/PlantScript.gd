@@ -65,7 +65,7 @@ func addMultiplier():
 
 func giveSun():
 	_SUNNY += 1
-	_animated_sprite.play("happy")
+	_animated_sprite.play(getCurrentGrowth()+"_"+"happy")
 	addMultiplier()
 
 func giveWater():

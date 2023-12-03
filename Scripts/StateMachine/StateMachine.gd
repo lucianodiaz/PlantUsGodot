@@ -8,12 +8,11 @@ var states: Dictionary = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for child in get_children():
-		for state in child.get_children():
-			if state is State:
-				print("StateMachine/"+plant.getCurrentGrowth()+"/"+state.name)
-				states["StateMachine/"+plant.getCurrentGrowth()+"/"+state.name.to_lower()] = state
-				state.Transitioned.connect(on_state_transition)
+	for state in get_children():
+		if state is State:
+			print("statemachine/"+state.name)
+			states["statemachine/"+state.name.to_lower()] = state
+			state.Transitioned.connect(on_state_transition)
 	if initial_state:
 		initial_state._enter()
 		current_state = initial_state

@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bufd4fr3oipg0"]
+
+[ext_resource type="Texture2D" uid="uid://b3wedh6oe6uff" path="res://Resources/Sprites/Plants/InitialPlant/tiny/sick/tiny_sick_loop.png" id="1_1kaga"]
+
+[resource]
+atlas = ExtResource("1_1kaga")
+region = Rect2(426, 1258, 443, 411)

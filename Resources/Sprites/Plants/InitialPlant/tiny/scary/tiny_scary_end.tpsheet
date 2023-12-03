@@ -1,0 +1,198 @@
+{
+	"textures": [
+		{
+			"image": "tiny_scary_end.png",
+			"size": {
+				"w": 5126,
+				"h": 476
+			},
+			"sprites": [
+				{
+					"filename": "asustada0047.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 464,
+						"h": 389
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0046.png",
+					"region": {
+						"x": 464,
+						"y": 0,
+						"w": 463,
+						"h": 390
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0048.png",
+					"region": {
+						"x": 927,
+						"y": 0,
+						"w": 465,
+						"h": 390
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0049.png",
+					"region": {
+						"x": 1392,
+						"y": 0,
+						"w": 461,
+						"h": 393
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0050.png",
+					"region": {
+						"x": 1853,
+						"y": 0,
+						"w": 453,
+						"h": 401
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0051.png",
+					"region": {
+						"x": 2306,
+						"y": 0,
+						"w": 440,
+						"h": 413
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0052.png",
+					"region": {
+						"x": 2746,
+						"y": 0,
+						"w": 426,
+						"h": 426
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0053.png",
+					"region": {
+						"x": 3172,
+						"y": 0,
+						"w": 412,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0054.png",
+					"region": {
+						"x": 3584,
+						"y": 0,
+						"w": 399,
+						"h": 451
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0055.png",
+					"region": {
+						"x": 3983,
+						"y": 0,
+						"w": 389,
+						"h": 461
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0056.png",
+					"region": {
+						"x": 4372,
+						"y": 0,
+						"w": 380,
+						"h": 470
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "asustada0057.png",
+					"region": {
+						"x": 4752,
+						"y": 0,
+						"w": 374,
+						"h": 476
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}
