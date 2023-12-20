@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dbwoo2lphg4it"]
+
+[ext_resource type="Texture2D" uid="uid://dn48btjo5grhr" path="res://Resources/Sprites/Plants/InitialPlant/med/transition/med_transition.png" id="1_xp080"]
+
+[resource]
+atlas = ExtResource("1_xp080")
+region = Rect2(7273, 951, 400, 699)

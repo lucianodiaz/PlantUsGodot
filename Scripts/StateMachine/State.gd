@@ -6,7 +6,7 @@ signal Transitioned
 func _ready():
 	pass
 
-func _update(delta):
+func _update(_delta):
 	pass
 
 func _enter():

@@ -1,8 +1,7 @@
 extends Node
+class_name StateMachine
 
 @export var initial_state : State
-@export var plant:Plant
-
 var current_state : State
 var states: Dictionary = {}
 

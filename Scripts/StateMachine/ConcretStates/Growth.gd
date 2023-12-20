@@ -1,12 +1,11 @@
 extends State
 class_name Growth
 
-@export var animation:AnimatedSprite2D
 @export var plant:Plant
 
 func _enter():
-	animation.animation_finished.connect(on_finished_animation)
-	animation.play(plant.getCurrentGrowth()+"_"+"growth")
+	plant._animated_sprite.animation_finished.connect(on_finished_animation)
+	plant._animated_sprite.play(plant.getCurrentGrowth()+"_"+"growth")
 	
 
 func _exit():

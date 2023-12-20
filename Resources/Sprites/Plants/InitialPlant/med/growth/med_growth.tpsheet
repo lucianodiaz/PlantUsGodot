@@ -1,0 +1,1503 @@
+{
+	"textures": [
+		{
+			"image": "med_growth.png",
+			"size": {
+				"w": 7972,
+				"h": 3905
+			},
+			"sprites": [
+				{
+					"filename": "estirando0064.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 480,
+						"h": 574
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0062.png",
+					"region": {
+						"x": 480,
+						"y": 0,
+						"w": 480,
+						"h": 575
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0063.png",
+					"region": {
+						"x": 960,
+						"y": 0,
+						"w": 480,
+						"h": 575
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0065.png",
+					"region": {
+						"x": 1440,
+						"y": 0,
+						"w": 475,
+						"h": 575
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0061.png",
+					"region": {
+						"x": 1915,
+						"y": 0,
+						"w": 481,
+						"h": 576
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0066.png",
+					"region": {
+						"x": 2396,
+						"y": 0,
+						"w": 472,
+						"h": 576
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0067.png",
+					"region": {
+						"x": 2868,
+						"y": 0,
+						"w": 472,
+						"h": 576
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0060.png",
+					"region": {
+						"x": 3340,
+						"y": 0,
+						"w": 483,
+						"h": 577
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0058.png",
+					"region": {
+						"x": 3823,
+						"y": 0,
+						"w": 489,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0059.png",
+					"region": {
+						"x": 4312,
+						"y": 0,
+						"w": 486,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0068.png",
+					"region": {
+						"x": 4798,
+						"y": 0,
+						"w": 470,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0069.png",
+					"region": {
+						"x": 5268,
+						"y": 0,
+						"w": 470,
+						"h": 579
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0057.png",
+					"region": {
+						"x": 5738,
+						"y": 0,
+						"w": 488,
+						"h": 580
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0070.png",
+					"region": {
+						"x": 6226,
+						"y": 0,
+						"w": 468,
+						"h": 580
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0056.png",
+					"region": {
+						"x": 6694,
+						"y": 0,
+						"w": 489,
+						"h": 581
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0055.png",
+					"region": {
+						"x": 7183,
+						"y": 0,
+						"w": 488,
+						"h": 582
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0071.png",
+					"region": {
+						"x": 0,
+						"y": 574,
+						"w": 466,
+						"h": 582
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0054.png",
+					"region": {
+						"x": 466,
+						"y": 575,
+						"w": 487,
+						"h": 583
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0072.png",
+					"region": {
+						"x": 953,
+						"y": 575,
+						"w": 464,
+						"h": 583
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0053.png",
+					"region": {
+						"x": 1417,
+						"y": 575,
+						"w": 486,
+						"h": 585
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0073.png",
+					"region": {
+						"x": 1903,
+						"y": 576,
+						"w": 462,
+						"h": 585
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0052.png",
+					"region": {
+						"x": 2365,
+						"y": 576,
+						"w": 485,
+						"h": 586
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0074.png",
+					"region": {
+						"x": 2850,
+						"y": 576,
+						"w": 460,
+						"h": 587
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0051.png",
+					"region": {
+						"x": 3310,
+						"y": 577,
+						"w": 482,
+						"h": 588
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0050.png",
+					"region": {
+						"x": 3792,
+						"y": 578,
+						"w": 480,
+						"h": 589
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0075.png",
+					"region": {
+						"x": 4272,
+						"y": 578,
+						"w": 456,
+						"h": 589
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0049.png",
+					"region": {
+						"x": 4728,
+						"y": 578,
+						"w": 478,
+						"h": 592
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0076.png",
+					"region": {
+						"x": 5206,
+						"y": 579,
+						"w": 452,
+						"h": 592
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0048.png",
+					"region": {
+						"x": 5658,
+						"y": 580,
+						"w": 474,
+						"h": 594
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0077.png",
+					"region": {
+						"x": 6132,
+						"y": 580,
+						"w": 448,
+						"h": 596
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0047.png",
+					"region": {
+						"x": 6580,
+						"y": 581,
+						"w": 472,
+						"h": 597
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0046.png",
+					"region": {
+						"x": 7052,
+						"y": 582,
+						"w": 468,
+						"h": 600
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0078.png",
+					"region": {
+						"x": 7520,
+						"y": 582,
+						"w": 442,
+						"h": 601
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0045.png",
+					"region": {
+						"x": 0,
+						"y": 1156,
+						"w": 464,
+						"h": 605
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0079.png",
+					"region": {
+						"x": 464,
+						"y": 1158,
+						"w": 434,
+						"h": 608
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0044.png",
+					"region": {
+						"x": 898,
+						"y": 1158,
+						"w": 460,
+						"h": 610
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0043.png",
+					"region": {
+						"x": 1358,
+						"y": 1160,
+						"w": 457,
+						"h": 616
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0080.png",
+					"region": {
+						"x": 1815,
+						"y": 1161,
+						"w": 426,
+						"h": 617
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0042.png",
+					"region": {
+						"x": 2241,
+						"y": 1162,
+						"w": 453,
+						"h": 622
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0081.png",
+					"region": {
+						"x": 2694,
+						"y": 1163,
+						"w": 416,
+						"h": 628
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0041.png",
+					"region": {
+						"x": 3110,
+						"y": 1165,
+						"w": 449,
+						"h": 630
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0082.png",
+					"region": {
+						"x": 3559,
+						"y": 1167,
+						"w": 407,
+						"h": 638
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0040.png",
+					"region": {
+						"x": 3966,
+						"y": 1167,
+						"w": 445,
+						"h": 641
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0083.png",
+					"region": {
+						"x": 4411,
+						"y": 1170,
+						"w": 401,
+						"h": 647
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0039.png",
+					"region": {
+						"x": 4812,
+						"y": 1171,
+						"w": 441,
+						"h": 651
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0084.png",
+					"region": {
+						"x": 5253,
+						"y": 1171,
+						"w": 397,
+						"h": 653
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0085.png",
+					"region": {
+						"x": 5650,
+						"y": 1174,
+						"w": 394,
+						"h": 659
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0038.png",
+					"region": {
+						"x": 6044,
+						"y": 1176,
+						"w": 438,
+						"h": 662
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0086.png",
+					"region": {
+						"x": 6482,
+						"y": 1178,
+						"w": 393,
+						"h": 662
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0087.png",
+					"region": {
+						"x": 6875,
+						"y": 1182,
+						"w": 392,
+						"h": 665
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0088.png",
+					"region": {
+						"x": 7267,
+						"y": 1183,
+						"w": 392,
+						"h": 668
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0089.png",
+					"region": {
+						"x": 0,
+						"y": 1761,
+						"w": 391,
+						"h": 671
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0037.png",
+					"region": {
+						"x": 391,
+						"y": 1766,
+						"w": 434,
+						"h": 672
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0090.png",
+					"region": {
+						"x": 825,
+						"y": 1768,
+						"w": 391,
+						"h": 672
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0091.png",
+					"region": {
+						"x": 1216,
+						"y": 1776,
+						"w": 390,
+						"h": 673
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0092.png",
+					"region": {
+						"x": 1606,
+						"y": 1778,
+						"w": 390,
+						"h": 674
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0093.png",
+					"region": {
+						"x": 1996,
+						"y": 1784,
+						"w": 390,
+						"h": 676
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0094.png",
+					"region": {
+						"x": 2386,
+						"y": 1791,
+						"w": 389,
+						"h": 677
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0095.png",
+					"region": {
+						"x": 2775,
+						"y": 1795,
+						"w": 388,
+						"h": 677
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0096.png",
+					"region": {
+						"x": 3163,
+						"y": 1795,
+						"w": 389,
+						"h": 678
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0097.png",
+					"region": {
+						"x": 3552,
+						"y": 1805,
+						"w": 390,
+						"h": 678
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0001.png",
+					"region": {
+						"x": 3942,
+						"y": 1808,
+						"w": 393,
+						"h": 679
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0098.png",
+					"region": {
+						"x": 4335,
+						"y": 1817,
+						"w": 392,
+						"h": 679
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0099.png",
+					"region": {
+						"x": 4727,
+						"y": 1822,
+						"w": 392,
+						"h": 679
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0036.png",
+					"region": {
+						"x": 5119,
+						"y": 1824,
+						"w": 431,
+						"h": 682
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0002.png",
+					"region": {
+						"x": 5550,
+						"y": 1833,
+						"w": 393,
+						"h": 685
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0003.png",
+					"region": {
+						"x": 5943,
+						"y": 1838,
+						"w": 393,
+						"h": 688
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0035.png",
+					"region": {
+						"x": 6336,
+						"y": 1840,
+						"w": 428,
+						"h": 690
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0004.png",
+					"region": {
+						"x": 6764,
+						"y": 1847,
+						"w": 392,
+						"h": 692
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0005.png",
+					"region": {
+						"x": 7156,
+						"y": 1851,
+						"w": 392,
+						"h": 695
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0034.png",
+					"region": {
+						"x": 7548,
+						"y": 1851,
+						"w": 424,
+						"h": 697
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0006.png",
+					"region": {
+						"x": 0,
+						"y": 2432,
+						"w": 391,
+						"h": 699
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0007.png",
+					"region": {
+						"x": 391,
+						"y": 2438,
+						"w": 390,
+						"h": 702
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0033.png",
+					"region": {
+						"x": 781,
+						"y": 2440,
+						"w": 421,
+						"h": 703
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0008.png",
+					"region": {
+						"x": 1202,
+						"y": 2449,
+						"w": 389,
+						"h": 704
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0009.png",
+					"region": {
+						"x": 1591,
+						"y": 2452,
+						"w": 388,
+						"h": 706
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0010.png",
+					"region": {
+						"x": 1979,
+						"y": 2460,
+						"w": 388,
+						"h": 708
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0011.png",
+					"region": {
+						"x": 2367,
+						"y": 2468,
+						"w": 387,
+						"h": 710
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0032.png",
+					"region": {
+						"x": 2754,
+						"y": 2473,
+						"w": 418,
+						"h": 707
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0012.png",
+					"region": {
+						"x": 3172,
+						"y": 2483,
+						"w": 387,
+						"h": 711
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0031.png",
+					"region": {
+						"x": 3559,
+						"y": 2487,
+						"w": 415,
+						"h": 712
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0013.png",
+					"region": {
+						"x": 3974,
+						"y": 2496,
+						"w": 387,
+						"h": 714
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0014.png",
+					"region": {
+						"x": 4361,
+						"y": 2501,
+						"w": 387,
+						"h": 715
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0030.png",
+					"region": {
+						"x": 4748,
+						"y": 2506,
+						"w": 411,
+						"h": 716
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0015.png",
+					"region": {
+						"x": 5159,
+						"y": 2506,
+						"w": 388,
+						"h": 717
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0016.png",
+					"region": {
+						"x": 5547,
+						"y": 2518,
+						"w": 389,
+						"h": 719
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0017.png",
+					"region": {
+						"x": 5936,
+						"y": 2526,
+						"w": 390,
+						"h": 722
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0029.png",
+					"region": {
+						"x": 6326,
+						"y": 2530,
+						"w": 408,
+						"h": 718
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0027.png",
+					"region": {
+						"x": 6734,
+						"y": 2539,
+						"w": 402,
+						"h": 721
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0028.png",
+					"region": {
+						"x": 7136,
+						"y": 2546,
+						"w": 405,
+						"h": 721
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0018.png",
+					"region": {
+						"x": 7541,
+						"y": 2548,
+						"w": 391,
+						"h": 723
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0026.png",
+					"region": {
+						"x": 0,
+						"y": 3140,
+						"w": 401,
+						"h": 723
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0019.png",
+					"region": {
+						"x": 401,
+						"y": 3143,
+						"w": 393,
+						"h": 724
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0025.png",
+					"region": {
+						"x": 794,
+						"y": 3143,
+						"w": 398,
+						"h": 724
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0020.png",
+					"region": {
+						"x": 1192,
+						"y": 3153,
+						"w": 393,
+						"h": 725
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0021.png",
+					"region": {
+						"x": 1585,
+						"y": 3158,
+						"w": 394,
+						"h": 725
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0022.png",
+					"region": {
+						"x": 1979,
+						"y": 3178,
+						"w": 394,
+						"h": 725
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0023.png",
+					"region": {
+						"x": 2373,
+						"y": 3180,
+						"w": 395,
+						"h": 725
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "estirando0024.png",
+					"region": {
+						"x": 2768,
+						"y": 3180,
+						"w": 396,
+						"h": 725
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

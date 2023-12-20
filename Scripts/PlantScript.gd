@@ -4,6 +4,7 @@ class_name Plant
 const FPS = 60;
 
 signal plant_created
+signal on_transition
 
 var _HAPPINESS = 10;
 
@@ -25,17 +26,24 @@ var multiplier = 1;
 
 var isDiying = false
 
-var growth = ["tiny","medium","big"]
+var statesPlant = 0 #max 3
 
-var currentGrowth:String = growth[0]
+var growth = ["tiny","med","big"]
 
-@onready var _animated_sprite = $AnimatedSprite2D
+var currentGrowth:String = growth[statesPlant]
+
+@export var stateMachine:StateMachine
+
+var currentState : State
+
+@export var _animated_sprite:AnimatedSprite2D
 
 var indexIdle = 1
 var count = 4
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	emit_signal("plant_created",self)
+	currentState = stateMachine.current_state
 #	_animated_sprite.play("growth")
 
 func _selected():
@@ -48,15 +56,13 @@ func getCurrentGrowth() -> String:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if _SUNNY <= 4 or _HYDROUS <= 4 or _DIRTY > 5:
 		isDiying = true
 		multiplier = 1
 	elif _SUNNY >= 4 and _HYDROUS >= 4 and _DIRTY < 5:
 		isDiying = false
 
-	if(_LIFE<= 0):
-		get_parent().emit_signal("plantDead")
 #	pass
 
 func addMultiplier():
@@ -67,6 +73,9 @@ func giveSun():
 	_SUNNY += 1
 	_animated_sprite.play(getCurrentGrowth()+"_"+"happy")
 	addMultiplier()
+	_GROW = _MAX_GROW +1
+	checkIsGrowPlant()
+	
 
 func giveWater():
 	_HYDROUS += 1
@@ -121,10 +130,24 @@ func getDirty():
 func _on_timer_timeout():
 	if(_GROW < _MAX_GROW and !isDiying):
 		_GROW += (1*multiplier)
-#		print("GROWTH: ",_GROW)
+		print("GROWTH: ",_GROW)
 	elif(isDiying):
 #		_LIFE -=1 
 		_LIFE = clamp(_LIFE-1,0,10)
-#		print("Life: ",_LIFE)
+		if(_LIFE<= 0):
+			get_parent().emit_signal("plantDead")
+			
+	checkIsGrowPlant();
 
+func checkIsGrowPlant():
+	if(_GROW > _MAX_GROW):
+		statesPlant = 1
+		currentGrowth = growth[statesPlant]
+		_GROW = 0
+		_animated_sprite.visible = false
+		_animated_sprite.stop()
+		var animation_path = getCurrentGrowth()+"_animations"
+		_animated_sprite = get_node(animation_path);
+		_animated_sprite.visible = true
+		emit_signal("on_transition")
 
