@@ -5519,7 +5519,7 @@ visible = false
 position = Vector2(1, -18)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_g3t4o")
-animation = &"med_growth"
+animation = &"med_happy"
 
 [node name="TimerGrowth" type="Timer" parent="."]
 wait_time = 12.0
