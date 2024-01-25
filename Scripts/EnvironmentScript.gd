@@ -1,7 +1,7 @@
 extends Node
 
 var flowerPotReference: PackedScene;
-var currentSpawnPoint
+var currentSpawnPoint:Area2D
 
 signal create_flowerpot
 
@@ -10,25 +10,17 @@ func _ready():
 	# _createFlowerpot();
 	pass
 
-func _createFlowerpot():
+func _createFlowerpot(pos):
 	#Load scene Ref
 	flowerPotReference = preload("res://Scenes/Game/Flowerpot.tscn")
-	
 	var flowerpotInstance = flowerPotReference.instantiate()
-	flowerpotInstance.position = currentSpawnPoint.position
+	
+	flowerpotInstance.position = pos
 #	flowerpotInstance.position = Vector2(32,32)
-	add_child(flowerpotInstance)
+	get_parent().add_child(flowerpotInstance)
 	emit_signal("create_flowerpot",flowerpotInstance);
 
 
-func _on_spawn_area_0_on_click(spawnArea):
+func _on_spawn_area_0_on_click(spawnArea,pos):
 	currentSpawnPoint = spawnArea
-	_createFlowerpot()
-
-func _on_spawn_area_1_on_click(spawnArea):
-	currentSpawnPoint = spawnArea
-	_createFlowerpot()
-
-func _on_spawn_area_2_on_click(spawnArea):
-	currentSpawnPoint = spawnArea
-	_createFlowerpot()
+	_createFlowerpot(pos)

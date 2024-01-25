@@ -16,44 +16,28 @@ particle_flag_rotate_y = true
 particle_flag_disable_z = true
 direction = Vector3(0, -1, 0)
 spread = 40.0
-gravity = Vector3(0, 98, 0)
 initial_velocity_min = 226.8
 initial_velocity_max = 463.66
-orbit_velocity_min = 0.0
-orbit_velocity_max = 0.0
+gravity = Vector3(0, 98, 0)
 linear_accel_min = 53.61
 linear_accel_max = 86.6
 radial_accel_min = 2.06
 radial_accel_max = 2.06
 
-[sub_resource type="Animation" id="Animation_gn7eh"]
-resource_name = "shake"
-length = 0.8
+[sub_resource type="Animation" id="Animation_mosei"]
+resource_name = "enter"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("pencilBase:rotation")
-tracks/0/interp = 4
-tracks/0/loop_wrap = true
+tracks/0/path = NodePath("pencilBase:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(-2, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, -0.296706, 0.0, 0.418879, 0.0]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.8),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"_idleAnimation"
-}]
+"values": [Vector2(0, -400), Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_1hic7"]
@@ -86,20 +70,34 @@ tracks/1/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_mosei"]
-resource_name = "enter"
-length = 2.0
+[sub_resource type="Animation" id="Animation_gn7eh"]
+resource_name = "shake"
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("pencilBase:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = false
+tracks/0/path = NodePath("pencilBase:rotation")
+tracks/0/interp = 4
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(-2, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -400), Vector2(0, 0)]
+"values": [0.0, -0.296706, 0.0, 0.418879, 0.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_idleAnimation"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ov24v"]

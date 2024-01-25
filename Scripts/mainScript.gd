@@ -8,7 +8,6 @@ var currentFlowerpot:Flowerpot
 func _ready():
 	pass
 
-
 func _on_create_flowerpot(flowerpot):
 	currentIndex+=1
 	print("created a flowerpot: ",flowerpot)

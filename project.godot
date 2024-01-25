@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PlantUs"
-run/main_scene="res://Scenes/global_scene.tscn"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/show_image=false
 boot_splash/fullsize=false
@@ -28,6 +28,7 @@ Events="*res://Scripts/global/Events.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/initial_position_type=0
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://Resources/Textures/UI/Cursor/White-Grey-Cat-Paw.png"
 

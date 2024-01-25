@@ -5,4 +5,7 @@
 [node name="InitPencil" type="Node2D"]
 
 [node name="pen" parent="." instance=ExtResource("1_duyqn")]
-position = Vector2(645, 327)
+position = Vector2(396, 327)
+
+[node name="camera2d" type="Camera2D" parent="."]
+position = Vector2(399, 324)

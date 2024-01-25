@@ -8,24 +8,13 @@
 script = ExtResource("1_kxfxt")
 
 [node name="base" type="Sprite2D" parent="."]
-position = Vector2(18.889, 123.5)
+position = Vector2(2, 221)
 scale = Vector2(0.550926, 0.550926)
 texture = ExtResource("2_w6eeg")
 
-[node name="base2" type="Sprite2D" parent="."]
-position = Vector2(298, -212)
-scale = Vector2(0.330857, 0.359213)
-texture = ExtResource("2_w6eeg")
+[node name="SpawnArea0" parent="base" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
+position = Vector2(0, -2.52)
+scale = Vector2(25.31, 0.75)
+baseSprite = NodePath("..")
 
-[node name="SpawnArea0" parent="." instance=ExtResource("3_lvibk")]
-position = Vector2(-301.111, 171.5)
-
-[node name="SpawnArea1" parent="." instance=ExtResource("3_lvibk")]
-position = Vector2(11.889, 171.5)
-
-[node name="SpawnArea2" parent="." instance=ExtResource("3_lvibk")]
-position = Vector2(293, -207)
-
-[connection signal="on_click" from="SpawnArea0" to="." method="_on_spawn_area_0_on_click"]
-[connection signal="on_click" from="SpawnArea1" to="." method="_on_spawn_area_1_on_click"]
-[connection signal="on_click" from="SpawnArea2" to="." method="_on_spawn_area_2_on_click"]
+[connection signal="on_click" from="base/SpawnArea0" to="." method="_on_spawn_area_0_on_click"]

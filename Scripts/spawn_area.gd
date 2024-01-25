@@ -1,18 +1,26 @@
-extends Node
+extends Area2D
 
 signal on_click
+var mouseInside = false
+@export var baseSprite:Sprite2D
 
 func _on_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT and mouseInside:
 		self.visible = false
-		emit_signal("on_click",self)
+		mouseInside = false
+		
+		var pos = get_global_mouse_position()
+		var newY = baseSprite.texture.get_size().y * baseSprite.scale.y
+		emit_signal("on_click",self,Vector2(pos.x,(pos.y - newY)))
 
 
 func _on_mouse_entered():
 	var label = get_node("Label")
 	label.visible = true
+	mouseInside = true;
 
 
 func _on_mouse_exited():
 	var label = get_node("Label")
 	label.visible = false
+	mouseInside = false
