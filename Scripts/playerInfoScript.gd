@@ -2,6 +2,7 @@ class_name playerInfoScript
 
 extends Node
 
+
 var _seeds = {
 };
 
@@ -12,10 +13,13 @@ var _pots = {
 }
 
 var main = load("res://Scenes/main.tscn")
-var pencil = load("res://Scenes/Game/init_pencil.tscn")
+var intro = load("res://Scenes/Intro.tscn")
 var potSelector = load("res://Scenes/Game/pot_selector.tscn")
 
-enum Levels {PENCIL=0,POTSEL,MAIN}
+enum Levels {
+	INTRO=0,
+	POTSEL,
+	MAIN}
 
 var allLevels:Array[PackedScene];
 
@@ -26,7 +30,7 @@ var indexPot = 0
 # Called when the node enters the scene tree for the first time.
 
 func addLevelsManually():
-	allLevels.push_back(pencil) #0
+	allLevels.push_back(intro) #0
 	allLevels.push_back(potSelector) #1
 	allLevels.push_back(main) #2
 

@@ -1,0 +1,125 @@
+[gd_scene load_steps=7 format=3 uid="uid://4weasxhwab7"]
+
+[ext_resource type="Script" path="res://Scenes/Intro.gd" id="1_kpn26"]
+[ext_resource type="Texture2D" uid="uid://mj7wemirx0xe" path="res://Resources/titlepng.png" id="1_xpo3l"]
+
+[sub_resource type="Animation" id="Animation_rg1ct"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("titlepng:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("richTextLabel:theme_override_colors/default_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.215686)]
+}
+
+[sub_resource type="Animation" id="Animation_hbvh1"]
+resource_name = "enter"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("titlepng:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("richTextLabel:theme_override_colors/default_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.9, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yvit7"]
+resource_name = "idle"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("richTextLabel:theme_override_colors/default_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("titlepng:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e13f5"]
+_data = {
+"RESET": SubResource("Animation_rg1ct"),
+"enter": SubResource("Animation_hbvh1"),
+"idle": SubResource("Animation_yvit7")
+}
+
+[node name="intro" type="Node2D"]
+script = ExtResource("1_kpn26")
+
+[node name="titlepng" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(647, 355)
+texture = ExtResource("1_xpo3l")
+
+[node name="animationPlayer" type="AnimationPlayer" parent="titlepng"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_e13f5")
+}
+
+[node name="richTextLabel" type="RichTextLabel" parent="."]
+offset_left = 149.0
+offset_top = 502.0
+offset_right = 1151.0
+offset_bottom = 611.0
+pivot_offset = Vector2(754, 38)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0, 0, 0, 0.215686)
+theme_override_font_sizes/normal_font_size = 66
+bbcode_enabled = true
+text = "[center] TAP TO CONTINUE [/center]
+"
+autowrap_mode = 0
+
+[connection signal="animation_finished" from="titlepng/animationPlayer" to="." method="_on_animation_player_animation_finished"]

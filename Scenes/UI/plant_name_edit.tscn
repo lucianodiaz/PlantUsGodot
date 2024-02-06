@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcrwh2ap1xt3a"]
+
+[ext_resource type="Script" path="res://Scripts/UI/plant_name_edit.gd" id="1_u7or7"]
+
+[node name="PlantNameEdit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u7or7")
+
+[node name="colorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.254902)
+
+[node name="richTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00078125
+anchor_top = 0.265326
+anchor_right = 0.999781
+anchor_bottom = 0.341993
+offset_top = -0.0350037
+offset_right = 0.279907
+offset_bottom = 161.592
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 0
+bbcode_enabled = true
+text = "[font_size=40][center][i][color=black]Name your plant[/color][/i][/center]"
+fit_content = true
+
+[node name="lineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.345
+anchor_top = 0.403
+anchor_right = 0.675
+anchor_bottom = 0.54
+offset_left = -55.6
+offset_top = -19.16
+offset_right = 35.85
+offset_bottom = 31.812
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.611765, 0.611765, 0.611765, 1)
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Planti"
+alignment = 1
+max_length = 10
+flat = true
+
+[connection signal="text_submitted" from="lineEdit" to="." method="_on_line_edit_text_submitted"]

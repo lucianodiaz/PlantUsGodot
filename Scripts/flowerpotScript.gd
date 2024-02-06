@@ -4,10 +4,11 @@ extends Node
 
 const OFFSET_Y = 50
 var plantReference: PackedScene;
-var _plantInstance;
+var _plantInstance:Plant;
 @onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")
 signal plantDead
 signal selectPot
+signal createdPlant
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#_createPlant()
@@ -29,7 +30,7 @@ func _createPlant():
 	plantInstance.position = spawnPointNode.position #Vector2(0,plantInstance.position.y-OFFSET_Y)
 	add_child(plantInstance,false,Node.INTERNAL_MODE_FRONT)
 	_plantInstance = plantInstance
-	
+	emit_signal("createdPlant",self)
 	#add_child(plantInstance)
 
 func getPlant():

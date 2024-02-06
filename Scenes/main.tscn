@@ -1,14 +1,15 @@
-[gd_scene load_steps=35 format=3 uid="uid://b8mcul0u7l0qc"]
+[gd_scene load_steps=39 format=3 uid="uid://b8mcul0u7l0qc"]
 
 [ext_resource type="Script" path="res://Scripts/UI/GenericButtonsScripts.gd" id="1_43dw8"]
 [ext_resource type="Script" path="res://Scripts/mainScript.gd" id="1_icywe"]
 [ext_resource type="PackedScene" uid="uid://dyftiy871j8v8" path="res://Scenes/Game/Environment.tscn" id="1_tqhr0"]
+[ext_resource type="PackedScene" uid="uid://dcrwh2ap1xt3a" path="res://Scenes/UI/plant_name_edit.tscn" id="2_dewtq"]
 [ext_resource type="Texture2D" uid="uid://vcqmdhbrfqqx" path="res://Resources/Textures/UI/Sun.png" id="2_hoyyt"]
-[ext_resource type="Texture2D" uid="uid://y4n5st1u3y7" path="res://Resources/Textures/game_background_2.png" id="2_jyg5o"]
 [ext_resource type="Texture2D" uid="uid://qf20vuckjkfx" path="res://Resources/Textures/UI/water.png" id="4_c1nje"]
 [ext_resource type="Texture2D" uid="uid://d2ltsbf5jyje0" path="res://Resources/Textures/UI/music.png" id="5_g00qu"]
 [ext_resource type="Texture2D" uid="uid://go4x38csb6ic" path="res://Resources/Textures/UI/clean.png" id="6_4imeb"]
 [ext_resource type="Texture2D" uid="uid://44x40mrmo66f" path="res://Resources/Textures/UI/love.png" id="7_lq0lq"]
+[ext_resource type="PackedScene" uid="uid://dtixe5uub3kjc" path="res://Scenes/UI/info.tscn" id="10_a1s0h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hrupe"]
 
@@ -60,13 +61,47 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x1qbw"]
 
-[node name="main" type="Node2D"]
-script = ExtResource("1_icywe")
+[sub_resource type="Animation" id="Animation_va0rj"]
+resource_name = "IN"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(640.555, 361.5)
-scale = Vector2(0.669329, 0.665741)
-texture = ExtResource("2_jyg5o")
+[sub_resource type="Animation" id="Animation_rhohl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rkd8e"]
+_data = {
+"IN": SubResource("Animation_va0rj"),
+"RESET": SubResource("Animation_rhohl")
+}
+
+[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer")]
+script = ExtResource("1_icywe")
+animationPlayer = NodePath("Info/animationPlayer")
+nameEditorScene = ExtResource("2_dewtq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(640, 366)
@@ -75,7 +110,8 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="environment1" parent="." instance=ExtResource("1_tqhr0")]
-position = Vector2(571, 448)
+position = Vector2(411, 574)
+scale = Vector2(0.425, 0.425)
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
 offset_left = 37.0
@@ -83,6 +119,7 @@ offset_top = 71.0
 offset_right = 1243.0
 offset_bottom = 631.0
 alignment_horizontal = 2
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
 layout_mode = 2
@@ -148,6 +185,35 @@ script = ExtResource("1_43dw8")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
+
+[node name="Info" parent="." instance=ExtResource("10_a1s0h")]
+visible = false
+offset_left = 107.0
+offset_top = 617.0
+offset_right = 107.0
+offset_bottom = 617.0
+scale = Vector2(0.635, 0.635)
+size_flags_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="animationPlayer" type="AnimationPlayer" parent="Info"]
+libraries = {
+"": SubResource("AnimationLibrary_rkd8e")
+}
+
+[node name="PlantNameEdit" parent="." instance=ExtResource("2_dewtq")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 712.0
+offset_top = 388.0
+offset_right = 712.0
+offset_bottom = 388.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
 
 [connection signal="create_flowerpot" from="environment1" to="." method="_on_create_flowerpot"]
 [connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]

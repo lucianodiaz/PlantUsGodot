@@ -1,0 +1,100 @@
+[gd_scene load_steps=12 format=3 uid="uid://b8x2qxa51htyv"]
+
+[ext_resource type="Script" path="res://Scenes/UI/AbstractStats.gd" id="1_6gln7"]
+[ext_resource type="Texture2D" uid="uid://s14ox7eng052" path="res://Resources/UI/sun/image_8.png" id="1_dlb3f"]
+[ext_resource type="Texture2D" uid="uid://dwvdaf8iqn8y1" path="res://Resources/UI/sun/image_7.png" id="2_aju2h"]
+[ext_resource type="Texture2D" uid="uid://dofg1peovk42y" path="res://Resources/UI/sun/image_6.png" id="3_67k46"]
+[ext_resource type="Texture2D" uid="uid://cfpk4s3y4j076" path="res://Resources/UI/sun/image_5.png" id="4_m8m33"]
+[ext_resource type="Texture2D" uid="uid://clo1bir3cekm2" path="res://Resources/UI/sun/image_4.png" id="5_j55jd"]
+[ext_resource type="Texture2D" uid="uid://cckudbjdr3dkt" path="res://Resources/UI/sun/image_3.png" id="6_1344u"]
+[ext_resource type="Texture2D" uid="uid://cha8qgolv16ad" path="res://Resources/UI/sun/image_2.png" id="7_v7vwn"]
+[ext_resource type="Texture2D" uid="uid://dy6p3jx0njdm4" path="res://Resources/UI/sun/image_1.png" id="8_5gmax"]
+[ext_resource type="Texture2D" uid="uid://e30cxq6sq1ga" path="res://Resources/UI/sun/image_0.png" id="9_r07l0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqn28"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dlb3f")
+}],
+"loop": true,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aju2h")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_67k46")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_m8m33")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_j55jd")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1344u")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_v7vwn")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_5gmax")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_r07l0")
+}],
+"loop": true,
+"name": &"8",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6gln7")
+
+[node name="stat" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kqn28")
+animation = &"8"

@@ -1,20 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyftiy871j8v8"]
+[gd_scene load_steps=9 format=3 uid="uid://dyftiy871j8v8"]
 
 [ext_resource type="Script" path="res://Scripts/EnvironmentScript.gd" id="1_kxfxt"]
-[ext_resource type="Texture2D" uid="uid://c2hderxnykpwh" path="res://Resources/Textures/nofinal2.png" id="2_w6eeg"]
+[ext_resource type="Texture2D" uid="uid://cr2fak5rmdfws" path="res://Resources/Textures/ventana.png" id="2_t5qm8"]
 [ext_resource type="PackedScene" uid="uid://byol2x2dxte6y" path="res://Scenes/Game/spawn_area.tscn" id="3_lvibk"]
+[ext_resource type="Texture2D" uid="uid://b1wcq8pw31yjw" path="res://Resources/Textures/mesa.png" id="3_rjfeh"]
+[ext_resource type="Texture2D" uid="uid://b3dcyuyh8xmqy" path="res://Resources/Textures/cajita.png" id="5_7xdox"]
+[ext_resource type="Texture2D" uid="uid://cs1666k08jj2q" path="res://Resources/Textures/taza.png" id="6_cq05u"]
+[ext_resource type="Texture2D" uid="uid://bg8d1kfrpjbto" path="res://Resources/Textures/cortina.png" id="7_1j2eg"]
+[ext_resource type="Texture2D" uid="uid://bkyw6qn4crr2w" path="res://Resources/Textures/repisas completas.png" id="8_ueu50"]
 
 [node name="environment" type="Node2D"]
 script = ExtResource("1_kxfxt")
 
+[node name="ventana" type="Sprite2D" parent="."]
+position = Vector2(70, -822)
+texture = ExtResource("2_t5qm8")
+
 [node name="base" type="Sprite2D" parent="."]
-position = Vector2(2, 221)
-scale = Vector2(0.550926, 0.550926)
-texture = ExtResource("2_w6eeg")
+position = Vector2(703.797, 242.282)
+scale = Vector2(2.049, 1)
+texture = ExtResource("3_rjfeh")
 
 [node name="SpawnArea0" parent="base" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(0, -2.52)
-scale = Vector2(25.31, 0.75)
+position = Vector2(1, 1)
+scale = Vector2(18.75, 6.636)
+baseSprite = NodePath("..")
+
+[node name="cajita" type="Sprite2D" parent="."]
+position = Vector2(-166, -15)
+texture = ExtResource("5_7xdox")
+
+[node name="taza" type="Sprite2D" parent="."]
+position = Vector2(1838, 90)
+texture = ExtResource("6_cq05u")
+
+[node name="cortina" type="Sprite2D" parent="."]
+position = Vector2(-658, -566)
+texture = ExtResource("7_1j2eg")
+
+[node name="repisasCompletas" type="Sprite2D" parent="."]
+position = Vector2(1392, -859)
+texture = ExtResource("8_ueu50")
+
+[node name="SpawnArea1" parent="repisasCompletas" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
+position = Vector2(-3.05176e-05, 150)
+rotation = 3.14159
+scale = Vector2(22.31, 0.1)
 baseSprite = NodePath("..")
 
 [connection signal="on_click" from="base/SpawnArea0" to="." method="_on_spawn_area_0_on_click"]
+[connection signal="on_click" from="repisasCompletas/SpawnArea1" to="." method="_on_spawn_area_0_on_click"]

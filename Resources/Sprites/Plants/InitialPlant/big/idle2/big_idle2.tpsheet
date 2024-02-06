@@ -1,0 +1,2418 @@
+{
+	"textures": [
+		{
+			"image": "big_idle2.png",
+			"size": {
+				"w": 8755,
+				"h": 7842
+			},
+			"sprites": [
+				{
+					"filename": "idle_alt0100.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 410,
+						"h": 933
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0099.png",
+					"region": {
+						"x": 410,
+						"y": 0,
+						"w": 418,
+						"h": 937
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0101.png",
+					"region": {
+						"x": 828,
+						"y": 0,
+						"w": 407,
+						"h": 943
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0065.png",
+					"region": {
+						"x": 1235,
+						"y": 0,
+						"w": 431,
+						"h": 944
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0064.png",
+					"region": {
+						"x": 1666,
+						"y": 0,
+						"w": 422,
+						"h": 948
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0098.png",
+					"region": {
+						"x": 2088,
+						"y": 0,
+						"w": 427,
+						"h": 955
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0142.png",
+					"region": {
+						"x": 2515,
+						"y": 0,
+						"w": 405,
+						"h": 955
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0143.png",
+					"region": {
+						"x": 2920,
+						"y": 0,
+						"w": 406,
+						"h": 955
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0066.png",
+					"region": {
+						"x": 3326,
+						"y": 0,
+						"w": 438,
+						"h": 956
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0144.png",
+					"region": {
+						"x": 3764,
+						"y": 0,
+						"w": 403,
+						"h": 956
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0141.png",
+					"region": {
+						"x": 4167,
+						"y": 0,
+						"w": 405,
+						"h": 957
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0140.png",
+					"region": {
+						"x": 4572,
+						"y": 0,
+						"w": 403,
+						"h": 959
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0145.png",
+					"region": {
+						"x": 4975,
+						"y": 0,
+						"w": 401,
+						"h": 959
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0102.png",
+					"region": {
+						"x": 5376,
+						"y": 0,
+						"w": 422,
+						"h": 960
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0063.png",
+					"region": {
+						"x": 5798,
+						"y": 0,
+						"w": 407,
+						"h": 961
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0146.png",
+					"region": {
+						"x": 6205,
+						"y": 0,
+						"w": 400,
+						"h": 962
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0139.png",
+					"region": {
+						"x": 6605,
+						"y": 0,
+						"w": 406,
+						"h": 963
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0147.png",
+					"region": {
+						"x": 7011,
+						"y": 0,
+						"w": 401,
+						"h": 965
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0138.png",
+					"region": {
+						"x": 7412,
+						"y": 0,
+						"w": 409,
+						"h": 967
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0067.png",
+					"region": {
+						"x": 7821,
+						"y": 0,
+						"w": 443,
+						"h": 968
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0148.png",
+					"region": {
+						"x": 8264,
+						"y": 0,
+						"w": 400,
+						"h": 968
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0030.png",
+					"region": {
+						"x": 0,
+						"y": 933,
+						"w": 395,
+						"h": 969
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0031.png",
+					"region": {
+						"x": 395,
+						"y": 937,
+						"w": 393,
+						"h": 969
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0029.png",
+					"region": {
+						"x": 788,
+						"y": 943,
+						"w": 396,
+						"h": 970
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0032.png",
+					"region": {
+						"x": 1184,
+						"y": 944,
+						"w": 392,
+						"h": 970
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0028.png",
+					"region": {
+						"x": 1576,
+						"y": 948,
+						"w": 397,
+						"h": 971
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0033.png",
+					"region": {
+						"x": 1973,
+						"y": 955,
+						"w": 391,
+						"h": 971
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0097.png",
+					"region": {
+						"x": 2364,
+						"y": 955,
+						"w": 434,
+						"h": 971
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0103.png",
+					"region": {
+						"x": 2798,
+						"y": 955,
+						"w": 431,
+						"h": 971
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0027.png",
+					"region": {
+						"x": 3229,
+						"y": 956,
+						"w": 397,
+						"h": 972
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0062.png",
+					"region": {
+						"x": 3626,
+						"y": 956,
+						"w": 396,
+						"h": 972
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0137.png",
+					"region": {
+						"x": 4022,
+						"y": 957,
+						"w": 412,
+						"h": 972
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0149.png",
+					"region": {
+						"x": 4434,
+						"y": 959,
+						"w": 399,
+						"h": 972
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0026.png",
+					"region": {
+						"x": 4833,
+						"y": 959,
+						"w": 399,
+						"h": 973
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0034.png",
+					"region": {
+						"x": 5232,
+						"y": 960,
+						"w": 390,
+						"h": 973
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0025.png",
+					"region": {
+						"x": 5622,
+						"y": 961,
+						"w": 399,
+						"h": 975
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0035.png",
+					"region": {
+						"x": 6021,
+						"y": 962,
+						"w": 388,
+						"h": 975
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0068.png",
+					"region": {
+						"x": 6409,
+						"y": 963,
+						"w": 446,
+						"h": 975
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0024.png",
+					"region": {
+						"x": 6855,
+						"y": 965,
+						"w": 399,
+						"h": 976
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0150.png",
+					"region": {
+						"x": 7254,
+						"y": 967,
+						"w": 397,
+						"h": 976
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0023.png",
+					"region": {
+						"x": 7651,
+						"y": 968,
+						"w": 399,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0036.png",
+					"region": {
+						"x": 8050,
+						"y": 968,
+						"w": 386,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0037.png",
+					"region": {
+						"x": 0,
+						"y": 1902,
+						"w": 385,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0061.png",
+					"region": {
+						"x": 385,
+						"y": 1906,
+						"w": 394,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0074.png",
+					"region": {
+						"x": 779,
+						"y": 1914,
+						"w": 447,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0075.png",
+					"region": {
+						"x": 1226,
+						"y": 1919,
+						"w": 445,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0076.png",
+					"region": {
+						"x": 1671,
+						"y": 1926,
+						"w": 442,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0077.png",
+					"region": {
+						"x": 2113,
+						"y": 1926,
+						"w": 440,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0078.png",
+					"region": {
+						"x": 2553,
+						"y": 1926,
+						"w": 441,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0079.png",
+					"region": {
+						"x": 2994,
+						"y": 1928,
+						"w": 441,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0080.png",
+					"region": {
+						"x": 3435,
+						"y": 1928,
+						"w": 442,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0081.png",
+					"region": {
+						"x": 3877,
+						"y": 1929,
+						"w": 442,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0082.png",
+					"region": {
+						"x": 4319,
+						"y": 1931,
+						"w": 443,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0083.png",
+					"region": {
+						"x": 4762,
+						"y": 1932,
+						"w": 444,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0136.png",
+					"region": {
+						"x": 5206,
+						"y": 1933,
+						"w": 416,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0084.png",
+					"region": {
+						"x": 5622,
+						"y": 1937,
+						"w": 444,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0085.png",
+					"region": {
+						"x": 6066,
+						"y": 1938,
+						"w": 444,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0086.png",
+					"region": {
+						"x": 6510,
+						"y": 1941,
+						"w": 444,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0087.png",
+					"region": {
+						"x": 6954,
+						"y": 1943,
+						"w": 443,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0088.png",
+					"region": {
+						"x": 7397,
+						"y": 1945,
+						"w": 443,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0089.png",
+					"region": {
+						"x": 7840,
+						"y": 1945,
+						"w": 442,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0090.png",
+					"region": {
+						"x": 8282,
+						"y": 1945,
+						"w": 441,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0038.png",
+					"region": {
+						"x": 0,
+						"y": 2880,
+						"w": 385,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0001.png",
+					"region": {
+						"x": 385,
+						"y": 2884,
+						"w": 393,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0091.png",
+					"region": {
+						"x": 778,
+						"y": 2891,
+						"w": 439,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0092.png",
+					"region": {
+						"x": 1217,
+						"y": 2896,
+						"w": 438,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0093.png",
+					"region": {
+						"x": 1655,
+						"y": 2903,
+						"w": 437,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0094.png",
+					"region": {
+						"x": 2092,
+						"y": 2903,
+						"w": 437,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0095.png",
+					"region": {
+						"x": 2529,
+						"y": 2903,
+						"w": 436,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0073.png",
+					"region": {
+						"x": 2965,
+						"y": 2905,
+						"w": 450,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0096.png",
+					"region": {
+						"x": 3415,
+						"y": 2905,
+						"w": 437,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0104.png",
+					"region": {
+						"x": 3852,
+						"y": 2906,
+						"w": 439,
+						"h": 978
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0022.png",
+					"region": {
+						"x": 4291,
+						"y": 2908,
+						"w": 399,
+						"h": 979
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0069.png",
+					"region": {
+						"x": 4690,
+						"y": 2909,
+						"w": 449,
+						"h": 979
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0072.png",
+					"region": {
+						"x": 5139,
+						"y": 2911,
+						"w": 451,
+						"h": 979
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0151.png",
+					"region": {
+						"x": 5590,
+						"y": 2914,
+						"w": 396,
+						"h": 979
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0002.png",
+					"region": {
+						"x": 5986,
+						"y": 2915,
+						"w": 395,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0021.png",
+					"region": {
+						"x": 6381,
+						"y": 2918,
+						"w": 399,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0059.png",
+					"region": {
+						"x": 6780,
+						"y": 2920,
+						"w": 393,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0060.png",
+					"region": {
+						"x": 7173,
+						"y": 2922,
+						"w": 393,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0160.png",
+					"region": {
+						"x": 7566,
+						"y": 2922,
+						"w": 394,
+						"h": 980
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0003.png",
+					"region": {
+						"x": 7960,
+						"y": 2922,
+						"w": 396,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0020.png",
+					"region": {
+						"x": 8356,
+						"y": 2922,
+						"w": 399,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0039.png",
+					"region": {
+						"x": 0,
+						"y": 3860,
+						"w": 384,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0057.png",
+					"region": {
+						"x": 384,
+						"y": 3864,
+						"w": 394,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0058.png",
+					"region": {
+						"x": 778,
+						"y": 3868,
+						"w": 393,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0070.png",
+					"region": {
+						"x": 1171,
+						"y": 3873,
+						"w": 450,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0071.png",
+					"region": {
+						"x": 1621,
+						"y": 3880,
+						"w": 452,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0152.png",
+					"region": {
+						"x": 2073,
+						"y": 3880,
+						"w": 396,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0158.png",
+					"region": {
+						"x": 2469,
+						"y": 3880,
+						"w": 395,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0159.png",
+					"region": {
+						"x": 2864,
+						"y": 3883,
+						"w": 394,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0004.png",
+					"region": {
+						"x": 3258,
+						"y": 3883,
+						"w": 397,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0019.png",
+					"region": {
+						"x": 3655,
+						"y": 3884,
+						"w": 399,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0056.png",
+					"region": {
+						"x": 4054,
+						"y": 3887,
+						"w": 393,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0153.png",
+					"region": {
+						"x": 4447,
+						"y": 3888,
+						"w": 396,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0157.png",
+					"region": {
+						"x": 4843,
+						"y": 3890,
+						"w": 396,
+						"h": 982
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0005.png",
+					"region": {
+						"x": 5239,
+						"y": 3893,
+						"w": 398,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0006.png",
+					"region": {
+						"x": 5637,
+						"y": 3895,
+						"w": 398,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0018.png",
+					"region": {
+						"x": 6035,
+						"y": 3898,
+						"w": 398,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0105.png",
+					"region": {
+						"x": 6433,
+						"y": 3900,
+						"w": 444,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0135.png",
+					"region": {
+						"x": 6877,
+						"y": 3902,
+						"w": 420,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0154.png",
+					"region": {
+						"x": 7297,
+						"y": 3902,
+						"w": 397,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0156.png",
+					"region": {
+						"x": 7694,
+						"y": 3903,
+						"w": 396,
+						"h": 983
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0007.png",
+					"region": {
+						"x": 8090,
+						"y": 3903,
+						"w": 399,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0040.png",
+					"region": {
+						"x": 0,
+						"y": 4842,
+						"w": 384,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0055.png",
+					"region": {
+						"x": 384,
+						"y": 4845,
+						"w": 393,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0054.png",
+					"region": {
+						"x": 777,
+						"y": 4849,
+						"w": 393,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0009.png",
+					"region": {
+						"x": 1170,
+						"y": 4854,
+						"w": 399,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0016.png",
+					"region": {
+						"x": 1569,
+						"y": 4861,
+						"w": 398,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0017.png",
+					"region": {
+						"x": 1967,
+						"y": 4861,
+						"w": 398,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0113.png",
+					"region": {
+						"x": 2365,
+						"y": 4861,
+						"w": 457,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0155.png",
+					"region": {
+						"x": 2822,
+						"y": 4864,
+						"w": 397,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0008.png",
+					"region": {
+						"x": 3219,
+						"y": 4865,
+						"w": 399,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0010.png",
+					"region": {
+						"x": 3618,
+						"y": 4866,
+						"w": 399,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0011.png",
+					"region": {
+						"x": 4017,
+						"y": 4869,
+						"w": 399,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0012.png",
+					"region": {
+						"x": 4416,
+						"y": 4870,
+						"w": 398,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0013.png",
+					"region": {
+						"x": 4814,
+						"y": 4872,
+						"w": 398,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0014.png",
+					"region": {
+						"x": 5212,
+						"y": 4876,
+						"w": 398,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0015.png",
+					"region": {
+						"x": 5610,
+						"y": 4878,
+						"w": 398,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0041.png",
+					"region": {
+						"x": 6008,
+						"y": 4881,
+						"w": 383,
+						"h": 986
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0114.png",
+					"region": {
+						"x": 6391,
+						"y": 4883,
+						"w": 457,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0115.png",
+					"region": {
+						"x": 6848,
+						"y": 4885,
+						"w": 457,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0116.png",
+					"region": {
+						"x": 7305,
+						"y": 4886,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0117.png",
+					"region": {
+						"x": 7761,
+						"y": 4887,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0118.png",
+					"region": {
+						"x": 8217,
+						"y": 4887,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0042.png",
+					"region": {
+						"x": 0,
+						"y": 5826,
+						"w": 383,
+						"h": 987
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0053.png",
+					"region": {
+						"x": 383,
+						"y": 5829,
+						"w": 392,
+						"h": 986
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0052.png",
+					"region": {
+						"x": 775,
+						"y": 5834,
+						"w": 392,
+						"h": 987
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0043.png",
+					"region": {
+						"x": 1167,
+						"y": 5838,
+						"w": 383,
+						"h": 988
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0119.png",
+					"region": {
+						"x": 1550,
+						"y": 5845,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0120.png",
+					"region": {
+						"x": 2006,
+						"y": 5845,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0121.png",
+					"region": {
+						"x": 2462,
+						"y": 5848,
+						"w": 456,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0122.png",
+					"region": {
+						"x": 2918,
+						"y": 5850,
+						"w": 455,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0123.png",
+					"region": {
+						"x": 3373,
+						"y": 5851,
+						"w": 455,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0124.png",
+					"region": {
+						"x": 3828,
+						"y": 5854,
+						"w": 455,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0125.png",
+					"region": {
+						"x": 4283,
+						"y": 5855,
+						"w": 454,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0126.png",
+					"region": {
+						"x": 4737,
+						"y": 5857,
+						"w": 454,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0127.png",
+					"region": {
+						"x": 5191,
+						"y": 5863,
+						"w": 453,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0128.png",
+					"region": {
+						"x": 5644,
+						"y": 5867,
+						"w": 453,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0129.png",
+					"region": {
+						"x": 6097,
+						"y": 5867,
+						"w": 453,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0130.png",
+					"region": {
+						"x": 6550,
+						"y": 5869,
+						"w": 453,
+						"h": 984
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0112.png",
+					"region": {
+						"x": 7003,
+						"y": 5870,
+						"w": 456,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0111.png",
+					"region": {
+						"x": 7459,
+						"y": 5871,
+						"w": 455,
+						"h": 986
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0106.png",
+					"region": {
+						"x": 7914,
+						"y": 5871,
+						"w": 448,
+						"h": 987
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0051.png",
+					"region": {
+						"x": 8362,
+						"y": 5871,
+						"w": 390,
+						"h": 988
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0044.png",
+					"region": {
+						"x": 0,
+						"y": 6813,
+						"w": 383,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0047.png",
+					"region": {
+						"x": 383,
+						"y": 6815,
+						"w": 386,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0048.png",
+					"region": {
+						"x": 769,
+						"y": 6821,
+						"w": 387,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0049.png",
+					"region": {
+						"x": 1156,
+						"y": 6826,
+						"w": 389,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0110.png",
+					"region": {
+						"x": 1545,
+						"y": 6829,
+						"w": 454,
+						"h": 987
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0107.png",
+					"region": {
+						"x": 1999,
+						"y": 6829,
+						"w": 451,
+						"h": 988
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0109.png",
+					"region": {
+						"x": 2450,
+						"y": 6832,
+						"w": 454,
+						"h": 988
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0134.png",
+					"region": {
+						"x": 2904,
+						"y": 6834,
+						"w": 424,
+						"h": 988
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0050.png",
+					"region": {
+						"x": 3328,
+						"y": 6835,
+						"w": 389,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0108.png",
+					"region": {
+						"x": 3717,
+						"y": 6838,
+						"w": 453,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0131.png",
+					"region": {
+						"x": 4170,
+						"y": 6839,
+						"w": 444,
+						"h": 989
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0045.png",
+					"region": {
+						"x": 4614,
+						"y": 6841,
+						"w": 385,
+						"h": 990
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0046.png",
+					"region": {
+						"x": 4999,
+						"y": 6847,
+						"w": 385,
+						"h": 990
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0133.png",
+					"region": {
+						"x": 5384,
+						"y": 6851,
+						"w": 430,
+						"h": 990
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "idle_alt0132.png",
+					"region": {
+						"x": 5814,
+						"y": 6851,
+						"w": 436,
+						"h": 991
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

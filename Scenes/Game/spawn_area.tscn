@@ -14,20 +14,6 @@ shape = SubResource("RectangleShape2D_g1vop")
 
 [node name="spawnPoint" type="Marker2D" parent="."]
 
-[node name="Label" type="Label" parent="."]
-visible = false
-offset_left = -92.0
-offset_top = -59.0
-offset_right = 102.0
-offset_bottom = -26.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 21
-text = "Place here your pot"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

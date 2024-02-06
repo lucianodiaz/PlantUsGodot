@@ -1,0 +1,1053 @@
+{
+	"textures": [
+		{
+			"image": "big_transition.png",
+			"size": {
+				"w": 5657,
+				"h": 4598
+			},
+			"sprites": [
+				{
+					"filename": "transicion_M_G0062.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 399,
+						"h": 1031
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0061.png",
+					"region": {
+						"x": 399,
+						"y": 0,
+						"w": 397,
+						"h": 1035
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0063.png",
+					"region": {
+						"x": 796,
+						"y": 0,
+						"w": 399,
+						"h": 1024
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0060.png",
+					"region": {
+						"x": 0,
+						"y": 1031,
+						"w": 394,
+						"h": 1036
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0059.png",
+					"region": {
+						"x": 796,
+						"y": 1024,
+						"w": 393,
+						"h": 1035
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0064.png",
+					"region": {
+						"x": 394,
+						"y": 1035,
+						"w": 399,
+						"h": 1017
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0058.png",
+					"region": {
+						"x": 1189,
+						"y": 1024,
+						"w": 391,
+						"h": 1034
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0065.png",
+					"region": {
+						"x": 1195,
+						"y": 0,
+						"w": 400,
+						"h": 1009
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0057.png",
+					"region": {
+						"x": 1580,
+						"y": 1009,
+						"w": 389,
+						"h": 1031
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0066.png",
+					"region": {
+						"x": 1595,
+						"y": 0,
+						"w": 399,
+						"h": 1000
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0056.png",
+					"region": {
+						"x": 1969,
+						"y": 1000,
+						"w": 388,
+						"h": 1027
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0067.png",
+					"region": {
+						"x": 394,
+						"y": 2052,
+						"w": 398,
+						"h": 992
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0055.png",
+					"region": {
+						"x": 1969,
+						"y": 2027,
+						"w": 386,
+						"h": 1022
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0068.png",
+					"region": {
+						"x": 1189,
+						"y": 2058,
+						"w": 397,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0054.png",
+					"region": {
+						"x": 2355,
+						"y": 2027,
+						"w": 385,
+						"h": 1015
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0069.png",
+					"region": {
+						"x": 792,
+						"y": 2059,
+						"w": 395,
+						"h": 981
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0053.png",
+					"region": {
+						"x": 1586,
+						"y": 2040,
+						"w": 383,
+						"h": 1009
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0043.png",
+					"region": {
+						"x": 1994,
+						"y": 0,
+						"w": 421,
+						"h": 912
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0042.png",
+					"region": {
+						"x": 2357,
+						"y": 912,
+						"w": 428,
+						"h": 896
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0044.png",
+					"region": {
+						"x": 2740,
+						"y": 1808,
+						"w": 413,
+						"h": 927
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0041.png",
+					"region": {
+						"x": 2415,
+						"y": 0,
+						"w": 436,
+						"h": 876
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0045.png",
+					"region": {
+						"x": 2740,
+						"y": 2735,
+						"w": 407,
+						"h": 938
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0052.png",
+					"region": {
+						"x": 0,
+						"y": 2067,
+						"w": 381,
+						"h": 1002
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0046.png",
+					"region": {
+						"x": 792,
+						"y": 3043,
+						"w": 400,
+						"h": 948
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0040.png",
+					"region": {
+						"x": 0,
+						"y": 3069,
+						"w": 442,
+						"h": 856
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0051.png",
+					"region": {
+						"x": 3147,
+						"y": 2735,
+						"w": 380,
+						"h": 994
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0047.png",
+					"region": {
+						"x": 1192,
+						"y": 3043,
+						"w": 394,
+						"h": 958
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0048.png",
+					"region": {
+						"x": 3153,
+						"y": 0,
+						"w": 388,
+						"h": 967
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0039.png",
+					"region": {
+						"x": 2785,
+						"y": 967,
+						"w": 450,
+						"h": 833
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0049.png",
+					"region": {
+						"x": 3235,
+						"y": 967,
+						"w": 382,
+						"h": 977
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0050.png",
+					"region": {
+						"x": 3527,
+						"y": 1944,
+						"w": 378,
+						"h": 985
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0038.png",
+					"region": {
+						"x": 1586,
+						"y": 3049,
+						"w": 457,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0037.png",
+					"region": {
+						"x": 2043,
+						"y": 3049,
+						"w": 465,
+						"h": 780
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0036.png",
+					"region": {
+						"x": 3541,
+						"y": 0,
+						"w": 471,
+						"h": 751
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0035.png",
+					"region": {
+						"x": 3527,
+						"y": 2929,
+						"w": 478,
+						"h": 723
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0034.png",
+					"region": {
+						"x": 3617,
+						"y": 751,
+						"w": 482,
+						"h": 696
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0033.png",
+					"region": {
+						"x": 3905,
+						"y": 1447,
+						"w": 488,
+						"h": 670
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0032.png",
+					"region": {
+						"x": 3905,
+						"y": 2117,
+						"w": 490,
+						"h": 646
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0031.png",
+					"region": {
+						"x": 0,
+						"y": 3925,
+						"w": 492,
+						"h": 626
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0030.png",
+					"region": {
+						"x": 492,
+						"y": 3991,
+						"w": 494,
+						"h": 607
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0029.png",
+					"region": {
+						"x": 2508,
+						"y": 3673,
+						"w": 492,
+						"h": 591
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0028.png",
+					"region": {
+						"x": 1586,
+						"y": 3857,
+						"w": 488,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0014.png",
+					"region": {
+						"x": 4012,
+						"y": 0,
+						"w": 398,
+						"h": 708
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0013.png",
+					"region": {
+						"x": 2074,
+						"y": 3829,
+						"w": 395,
+						"h": 712
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0012.png",
+					"region": {
+						"x": 4005,
+						"y": 2763,
+						"w": 392,
+						"h": 717
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0015.png",
+					"region": {
+						"x": 4005,
+						"y": 3480,
+						"w": 399,
+						"h": 700
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0011.png",
+					"region": {
+						"x": 3527,
+						"y": 3652,
+						"w": 387,
+						"h": 717
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0016.png",
+					"region": {
+						"x": 3000,
+						"y": 3729,
+						"w": 399,
+						"h": 692
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0010.png",
+					"region": {
+						"x": 4099,
+						"y": 708,
+						"w": 382,
+						"h": 718
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0027.png",
+					"region": {
+						"x": 986,
+						"y": 4001,
+						"w": 482,
+						"h": 568
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0017.png",
+					"region": {
+						"x": 4410,
+						"y": 0,
+						"w": 398,
+						"h": 682
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0009.png",
+					"region": {
+						"x": 4395,
+						"y": 1426,
+						"w": 378,
+						"h": 715
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0025.png",
+					"region": {
+						"x": 4395,
+						"y": 2141,
+						"w": 465,
+						"h": 575
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0002.png",
+					"region": {
+						"x": 4481,
+						"y": 682,
+						"w": 392,
+						"h": 681
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0001.png",
+					"region": {
+						"x": 4808,
+						"y": 0,
+						"w": 393,
+						"h": 679
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0026.png",
+					"region": {
+						"x": 4773,
+						"y": 1363,
+						"w": 473,
+						"h": 564
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0024.png",
+					"region": {
+						"x": 4397,
+						"y": 2716,
+						"w": 454,
+						"h": 587
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0008.png",
+					"region": {
+						"x": 4851,
+						"y": 2716,
+						"w": 375,
+						"h": 710
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0023.png",
+					"region": {
+						"x": 4404,
+						"y": 3303,
+						"w": 444,
+						"h": 599
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0018.png",
+					"region": {
+						"x": 4873,
+						"y": 679,
+						"w": 397,
+						"h": 669
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0022.png",
+					"region": {
+						"x": 4404,
+						"y": 3902,
+						"w": 433,
+						"h": 613
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0021.png",
+					"region": {
+						"x": 4837,
+						"y": 3902,
+						"w": 423,
+						"h": 627
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0020.png",
+					"region": {
+						"x": 4860,
+						"y": 1927,
+						"w": 413,
+						"h": 642
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0019.png",
+					"region": {
+						"x": 5201,
+						"y": 0,
+						"w": 404,
+						"h": 656
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0003.png",
+					"region": {
+						"x": 5270,
+						"y": 656,
+						"w": 387,
+						"h": 684
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0007.png",
+					"region": {
+						"x": 3153,
+						"y": 1944,
+						"w": 374,
+						"h": 704
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0004.png",
+					"region": {
+						"x": 5226,
+						"y": 2569,
+						"w": 382,
+						"h": 688
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0006.png",
+					"region": {
+						"x": 5273,
+						"y": 1340,
+						"w": 374,
+						"h": 699
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "transicion_M_G0005.png",
+					"region": {
+						"x": 5260,
+						"y": 3257,
+						"w": 377,
+						"h": 693
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

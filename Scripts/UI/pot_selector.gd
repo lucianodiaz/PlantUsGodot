@@ -62,4 +62,4 @@ func _on_right_button_down():
 
 
 func _on_continue_btn_button_down():
-	global._changeLevel(global.Levels.MAIN)
+	SceneTransition.change_scene(global.Levels.MAIN)

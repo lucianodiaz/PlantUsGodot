@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 PlayerInfoScript="res://Scripts/playerInfoScript.gd"
 SeedsType="*res://Scripts/seeds_type.gd"
 Events="*res://Scripts/global/Events.gd"
+SceneTransition="*res://Scenes/scene_transition.tscn"
 
 [display]
 
@@ -44,7 +45,16 @@ enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg")
 
 import/blender/enabled=false
 
+[input]
+
+tap={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.742822, 0.949829, 1, 1)

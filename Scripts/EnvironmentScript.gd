@@ -17,7 +17,7 @@ func _createFlowerpot(pos):
 	
 	flowerpotInstance.position = pos
 #	flowerpotInstance.position = Vector2(32,32)
-	get_parent().add_child(flowerpotInstance)
+	get_parent().get_parent().add_child(flowerpotInstance)
 	emit_signal("create_flowerpot",flowerpotInstance);
 
 

@@ -3,9 +3,12 @@ extends Node
 var pots = []
 var currentIndex=-1
 var currentFlowerpot:Flowerpot
+@export var animationPlayer:AnimationPlayer
+@export var nameEditorScene:PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Info.visible = false
 	pass
 
 func _on_create_flowerpot(flowerpot):
@@ -14,10 +17,21 @@ func _on_create_flowerpot(flowerpot):
 	pots.push_back(flowerpot)
 	currentFlowerpot = pots[currentIndex]
 	currentFlowerpot.selectPot.connect(on_changeFlowerPot)
+	currentFlowerpot.createdPlant.connect(onCreatedPlant)
 
 
+
+func onCreatedPlant(pot:Flowerpot):
+	var plant:Plant = pot.getPlant()
+	plant.on_end_cicle.connect(updateInfoStat)
+	var namePlantEditInstance = nameEditorScene.instantiate()
+	add_child(namePlantEditInstance)
+	namePlantEditInstance.setPlantReference(plant)
+	
 func on_changeFlowerPot(newFlowerPot:Flowerpot):
 	currentFlowerpot = newFlowerPot
+	animationPlayer.play("IN")
+	$Info.onPotSelected(currentFlowerpot)
 
 func _on_button_1_pressed():
 	currentFlowerpot.getPlant().giveSun()
@@ -37,7 +51,9 @@ func _on_button_4_pressed():
 func _on_button_5_pressed():
 	currentFlowerpot.getPlant().giveLove()
 
-
+func updateInfoStat():
+	if(is_instance_valid(currentFlowerpot)):
+		$Info.onPotUpdate(currentFlowerpot)
 
 
 func _on_timer_timeout():

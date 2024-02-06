@@ -5,22 +5,22 @@ const FPS = 60;
 
 signal plant_created
 signal on_transition
+signal on_end_cicle
+var _HAPPINESS = 8;
 
-var _HAPPINESS = 10;
+var _ENTERTAINMENT = 8;
 
-var _ENTERTAINMENT = 10;
+var _HYDROUS = 8;
 
-var _HYDROUS = 10;
+var _LIFE = 8;
 
-var _LIFE = 10;
-
-var _SUNNY = 10;
+var _SUNNY = 8;
 
 var _DIRTY = 0;
 
 var _GROW = 0;
 
-var _MAX_GROW = 10;
+var _MAX_GROW = 8;
 
 var multiplier = 1;
 
@@ -32,6 +32,7 @@ var growth = ["tiny","med","big"]
 
 var currentGrowth:String = growth[statesPlant]
 
+var Name = "Planti"
 @export var stateMachine:StateMachine
 
 var currentState : State
@@ -73,35 +74,41 @@ func giveSun():
 	_SUNNY += 1
 	_animated_sprite.play(getCurrentGrowth()+"_"+"happy")
 	addMultiplier()
-	_GROW = _MAX_GROW +1
-	checkIsGrowPlant()
+	emit_signal("on_end_cicle")
+	#_GROW = _MAX_GROW +1
+	#checkIsGrowPlant()
 	
 
 func giveWater():
 	_HYDROUS += 1
 	addMultiplier()
+	emit_signal("on_end_cicle")
 
 func giveMusic():
 	addMultiplier()
+	emit_signal("on_end_cicle")
 
 func giveLove():
 	addMultiplier()
+	emit_signal("on_end_cicle")
 
 func Clear():
 	_DIRTY -= 1
 	_HAPPINESS +=1
+	emit_signal("on_end_cicle")
 
 func downgradeGrowth():
 	_GROW -= 1
 
 func passTime():
-	_HAPPINESS = clamp(_HAPPINESS-1,0,10)
-	_HYDROUS = clamp(_HYDROUS-1,0,10)
+	_HAPPINESS = clamp(_HAPPINESS-1,0,8)
+	_HYDROUS = clamp(_HYDROUS-1,0,8)
 #	if _HYDROUS < 7:
 #		_animated_sprite.play("dry")
-	_SUNNY = clamp(_SUNNY-1,0,10)
-	_DIRTY = clamp(_DIRTY+1,0,10)
-	_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,10)
+	_SUNNY = clamp(_SUNNY-1,0,8)
+	_DIRTY = clamp(_DIRTY+1,0,8)
+	_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,8)
+	emit_signal("on_end_cicle")
 
 func getHappiness():
 	return _HAPPINESS
@@ -126,22 +133,26 @@ func getSunny():
 func getDirty():
 	return _DIRTY
 
+func getName():
+	return Name
 
+func setNamePlant(n:String):
+	Name = n
 func _on_timer_timeout():
 	if(_GROW < _MAX_GROW and !isDiying):
-		_GROW += (1*multiplier)
+		_GROW = clamp(_GROW + (1*multiplier),0,_MAX_GROW)
 		print("GROWTH: ",_GROW)
 	elif(isDiying):
 #		_LIFE -=1 
-		_LIFE = clamp(_LIFE-1,0,10)
+		_LIFE = clamp(_LIFE-1,0,8)
 		if(_LIFE<= 0):
 			get_parent().emit_signal("plantDead")
 			
 	checkIsGrowPlant();
 
 func checkIsGrowPlant():
-	if(_GROW > _MAX_GROW):
-		statesPlant = 1
+	if(_GROW >= _MAX_GROW):
+		statesPlant = clamp((statesPlant+1),0,growth.size())
 		currentGrowth = growth[statesPlant]
 		_GROW = 0
 		_animated_sprite.visible = false
