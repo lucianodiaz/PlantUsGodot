@@ -1,27 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcrwh2ap1xt3a"]
+[gd_scene load_steps=3 format=3 uid="uid://dcrwh2ap1xt3a"]
 
 [ext_resource type="Script" path="res://Scripts/UI/plant_name_edit.gd" id="1_u7or7"]
+[ext_resource type="Texture2D" uid="uid://0ulbc3k38b6v" path="res://Resources/Textures/UI/frame_name.png" id="2_s60gt"]
 
-[node name="PlantNameEdit" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="canvasLayer" type="CanvasLayer"]
 script = ExtResource("1_u7or7")
 
 [node name="colorRect" type="ColorRect" parent="."]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.254902)
+color = Color(0, 0, 0, 0.537255)
 
 [node name="richTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.00078125
 anchor_top = 0.265326
@@ -34,11 +27,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 0
 bbcode_enabled = true
-text = "[font_size=40][center][i][color=black]Name your plant[/color][/i][/center]"
+text = "[font_size=40][center][i][color=white]Name your plant[/color][/i][/center]"
 fit_content = true
 
+[node name="sprite2d" type="Sprite2D" parent="."]
+position = Vector2(645.5, 349.5)
+scale = Vector2(2.34815, 2.29545)
+texture = ExtResource("2_s60gt")
+
 [node name="lineEdit" type="LineEdit" parent="."]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.345
 anchor_top = 0.403

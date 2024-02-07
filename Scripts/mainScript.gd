@@ -5,6 +5,7 @@ var currentIndex=-1
 var currentFlowerpot:Flowerpot
 @export var animationPlayer:AnimationPlayer
 @export var nameEditorScene:PackedScene
+@export var plantNameEdit:PlantNameEdit
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,9 +25,7 @@ func _on_create_flowerpot(flowerpot):
 func onCreatedPlant(pot:Flowerpot):
 	var plant:Plant = pot.getPlant()
 	plant.on_end_cicle.connect(updateInfoStat)
-	var namePlantEditInstance = nameEditorScene.instantiate()
-	add_child(namePlantEditInstance)
-	namePlantEditInstance.setPlantReference(plant)
+	plantNameEdit.setPlantReference(plant)
 	
 func on_changeFlowerPot(newFlowerPot:Flowerpot):
 	currentFlowerpot = newFlowerPot
@@ -59,7 +58,8 @@ func updateInfoStat():
 func _on_timer_timeout():
 	for i in range(pots.size()-1,-1,-1):
 		if(is_instance_valid(pots[i].getPlant())):
-			pots[i].getPlant().passTime()
+			if pots[i].getPlant().getName() != "":
+				pots[i].getPlant().passTime()
 #	for p in pots:
 #		if is_instance_valid(p):
 #			p.getPlant().passTime()

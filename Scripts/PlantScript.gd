@@ -32,7 +32,7 @@ var growth = ["tiny","med","big"]
 
 var currentGrowth:String = growth[statesPlant]
 
-var Name = "Planti"
+var Name = ""
 @export var stateMachine:StateMachine
 
 var currentState : State
@@ -138,6 +138,7 @@ func getName():
 
 func setNamePlant(n:String):
 	Name = n
+
 func _on_timer_timeout():
 	if(_GROW < _MAX_GROW and !isDiying):
 		_GROW = clamp(_GROW + (1*multiplier),0,_MAX_GROW)

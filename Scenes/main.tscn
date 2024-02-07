@@ -98,10 +98,11 @@ _data = {
 "RESET": SubResource("Animation_rhohl")
 }
 
-[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer")]
+[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer", "plantNameEdit")]
 script = ExtResource("1_icywe")
 animationPlayer = NodePath("Info/animationPlayer")
 nameEditorScene = ExtResource("2_dewtq")
+plantNameEdit = NodePath("PlantNameEdit")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(640, 366)
@@ -202,18 +203,7 @@ libraries = {
 }
 
 [node name="PlantNameEdit" parent="." instance=ExtResource("2_dewtq")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 712.0
-offset_top = 388.0
-offset_right = 712.0
-offset_bottom = 388.0
-grow_horizontal = 1
-grow_vertical = 1
-size_flags_horizontal = 4
-size_flags_vertical = 4
-metadata/_edit_use_anchors_ = true
+visible = false
 
 [connection signal="create_flowerpot" from="environment1" to="." method="_on_create_flowerpot"]
 [connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
