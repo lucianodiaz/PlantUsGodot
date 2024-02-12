@@ -54,5 +54,25 @@ placeholder_text = "Planti"
 alignment = 1
 max_length = 10
 flat = true
+select_all_on_focus = true
+
+[node name="button" type="Button" parent="."]
+offset_left = 572.0
+offset_top = 404.0
+offset_right = 715.0
+offset_bottom = 456.0
+icon = ExtResource("2_s60gt")
+flat = true
+
+[node name="richTextLabel" type="RichTextLabel" parent="button"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 12.0
+offset_right = 131.0
+offset_bottom = 39.0
+mouse_filter = 2
+bbcode_enabled = true
+text = "[center][color=black]Confirm[/color][/center]"
 
 [connection signal="text_submitted" from="lineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="button" to="." method="_on_button_pressed"]

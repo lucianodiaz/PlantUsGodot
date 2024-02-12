@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c4c7rx8v2fngf"]
+
+[ext_resource type="Texture2D" uid="uid://cv54nv7gsirf1" path="res://Resources/Sprites/Plants/InitialPlant/tiny/tiny_sprout/tiny_sprout.png" id="1_15cyk"]
+
+[resource]
+atlas = ExtResource("1_15cyk")
+region = Rect2(1530, 3429, 439, 730)

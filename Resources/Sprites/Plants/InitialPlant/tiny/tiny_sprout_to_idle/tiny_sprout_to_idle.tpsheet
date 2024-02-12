@@ -1,0 +1,918 @@
+{
+	"textures": [
+		{
+			"image": "tiny_sprout_to_idle.png",
+			"size": {
+				"w": 7965,
+				"h": 1361
+			},
+			"sprites": [
+				{
+					"filename": "brote_a_idle0005.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 379,
+						"h": 278
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0006.png",
+					"region": {
+						"x": 379,
+						"y": 0,
+						"w": 381,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0003.png",
+					"region": {
+						"x": 760,
+						"y": 0,
+						"w": 374,
+						"h": 280
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0004.png",
+					"region": {
+						"x": 1134,
+						"y": 0,
+						"w": 376,
+						"h": 280
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0007.png",
+					"region": {
+						"x": 1510,
+						"y": 0,
+						"w": 382,
+						"h": 280
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0001.png",
+					"region": {
+						"x": 1892,
+						"y": 0,
+						"w": 373,
+						"h": 281
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0002.png",
+					"region": {
+						"x": 2265,
+						"y": 0,
+						"w": 374,
+						"h": 281
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0008.png",
+					"region": {
+						"x": 2639,
+						"y": 0,
+						"w": 383,
+						"h": 281
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0009.png",
+					"region": {
+						"x": 3022,
+						"y": 0,
+						"w": 385,
+						"h": 283
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0010.png",
+					"region": {
+						"x": 3407,
+						"y": 0,
+						"w": 386,
+						"h": 286
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0011.png",
+					"region": {
+						"x": 3793,
+						"y": 0,
+						"w": 387,
+						"h": 291
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0012.png",
+					"region": {
+						"x": 4180,
+						"y": 0,
+						"w": 388,
+						"h": 300
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0013.png",
+					"region": {
+						"x": 4568,
+						"y": 0,
+						"w": 389,
+						"h": 308
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0014.png",
+					"region": {
+						"x": 4957,
+						"y": 0,
+						"w": 391,
+						"h": 317
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0015.png",
+					"region": {
+						"x": 5348,
+						"y": 0,
+						"w": 393,
+						"h": 326
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0016.png",
+					"region": {
+						"x": 5741,
+						"y": 0,
+						"w": 393,
+						"h": 329
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0017.png",
+					"region": {
+						"x": 6134,
+						"y": 0,
+						"w": 395,
+						"h": 332
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0018.png",
+					"region": {
+						"x": 6529,
+						"y": 0,
+						"w": 396,
+						"h": 335
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0019.png",
+					"region": {
+						"x": 6925,
+						"y": 0,
+						"w": 395,
+						"h": 339
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0020.png",
+					"region": {
+						"x": 7320,
+						"y": 0,
+						"w": 395,
+						"h": 342
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0021.png",
+					"region": {
+						"x": 0,
+						"y": 279,
+						"w": 394,
+						"h": 349
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0022.png",
+					"region": {
+						"x": 394,
+						"y": 280,
+						"w": 393,
+						"h": 358
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0023.png",
+					"region": {
+						"x": 787,
+						"y": 280,
+						"w": 391,
+						"h": 366
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0024.png",
+					"region": {
+						"x": 1178,
+						"y": 280,
+						"w": 392,
+						"h": 374
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0025.png",
+					"region": {
+						"x": 1570,
+						"y": 281,
+						"w": 392,
+						"h": 381
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0026.png",
+					"region": {
+						"x": 1962,
+						"y": 281,
+						"w": 393,
+						"h": 389
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0027.png",
+					"region": {
+						"x": 2355,
+						"y": 281,
+						"w": 393,
+						"h": 397
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0028.png",
+					"region": {
+						"x": 2748,
+						"y": 283,
+						"w": 392,
+						"h": 404
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0029.png",
+					"region": {
+						"x": 3140,
+						"y": 286,
+						"w": 391,
+						"h": 413
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0030.png",
+					"region": {
+						"x": 3531,
+						"y": 291,
+						"w": 384,
+						"h": 426
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0031.png",
+					"region": {
+						"x": 3915,
+						"y": 300,
+						"w": 380,
+						"h": 435
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0032.png",
+					"region": {
+						"x": 4295,
+						"y": 308,
+						"w": 375,
+						"h": 444
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0033.png",
+					"region": {
+						"x": 4670,
+						"y": 317,
+						"w": 369,
+						"h": 453
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0034.png",
+					"region": {
+						"x": 5039,
+						"y": 326,
+						"w": 363,
+						"h": 463
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0035.png",
+					"region": {
+						"x": 5402,
+						"y": 329,
+						"w": 357,
+						"h": 475
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0060.png",
+					"region": {
+						"x": 5759,
+						"y": 329,
+						"w": 373,
+						"h": 478
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0059.png",
+					"region": {
+						"x": 6132,
+						"y": 332,
+						"w": 372,
+						"h": 479
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0058.png",
+					"region": {
+						"x": 6504,
+						"y": 335,
+						"w": 372,
+						"h": 481
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0036.png",
+					"region": {
+						"x": 6876,
+						"y": 339,
+						"w": 353,
+						"h": 485
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0057.png",
+					"region": {
+						"x": 7229,
+						"y": 342,
+						"w": 369,
+						"h": 485
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0056.png",
+					"region": {
+						"x": 7598,
+						"y": 342,
+						"w": 367,
+						"h": 489
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0037.png",
+					"region": {
+						"x": 0,
+						"y": 628,
+						"w": 349,
+						"h": 493
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0055.png",
+					"region": {
+						"x": 349,
+						"y": 638,
+						"w": 364,
+						"h": 495
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0038.png",
+					"region": {
+						"x": 713,
+						"y": 646,
+						"w": 345,
+						"h": 501
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0054.png",
+					"region": {
+						"x": 1058,
+						"y": 654,
+						"w": 360,
+						"h": 502
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0039.png",
+					"region": {
+						"x": 1418,
+						"y": 662,
+						"w": 342,
+						"h": 508
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0053.png",
+					"region": {
+						"x": 1760,
+						"y": 670,
+						"w": 357,
+						"h": 509
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0040.png",
+					"region": {
+						"x": 2117,
+						"y": 678,
+						"w": 339,
+						"h": 514
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0052.png",
+					"region": {
+						"x": 2456,
+						"y": 687,
+						"w": 354,
+						"h": 516
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0041.png",
+					"region": {
+						"x": 2810,
+						"y": 699,
+						"w": 337,
+						"h": 521
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0051.png",
+					"region": {
+						"x": 3147,
+						"y": 699,
+						"w": 350,
+						"h": 523
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0042.png",
+					"region": {
+						"x": 3497,
+						"y": 717,
+						"w": 335,
+						"h": 528
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0050.png",
+					"region": {
+						"x": 3832,
+						"y": 735,
+						"w": 348,
+						"h": 530
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0043.png",
+					"region": {
+						"x": 4180,
+						"y": 752,
+						"w": 335,
+						"h": 534
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0049.png",
+					"region": {
+						"x": 4515,
+						"y": 770,
+						"w": 345,
+						"h": 537
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0044.png",
+					"region": {
+						"x": 4860,
+						"y": 789,
+						"w": 335,
+						"h": 538
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0048.png",
+					"region": {
+						"x": 5195,
+						"y": 804,
+						"w": 342,
+						"h": 541
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0045.png",
+					"region": {
+						"x": 5537,
+						"y": 807,
+						"w": 336,
+						"h": 544
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0047.png",
+					"region": {
+						"x": 5873,
+						"y": 811,
+						"w": 339,
+						"h": 544
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "brote_a_idle0046.png",
+					"region": {
+						"x": 6212,
+						"y": 816,
+						"w": 337,
+						"h": 545
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

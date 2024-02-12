@@ -13,19 +13,20 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	@warning_ignore("unused_parameter")
 	pass
 
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
-	pass
-#	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-#		print("clicked")
-#		if  !isPressed:
-#			isPressed = true
-#			index = index +1
-#			if index > 3:
-#				index = 1
-#		var newTexture = load("res://Resources/Textures/"+flowerPotName+str(index)+".png")
-#		changeTexture(newTexture)
-#	elif isPressed:
-#		isPressed = false
+#func _on_area_2d_input_event(viewport, event, shape_idx):
+	#pass
+##	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+##		print("clicked")
+##		if  !isPressed:
+##			isPressed = true
+##			index = index +1
+##			if index > 3:
+##				index = 1
+##		var newTexture = load("res://Resources/Textures/"+flowerPotName+str(index)+".png")
+##		changeTexture(newTexture)
+##	elif isPressed:
+##		isPressed = false

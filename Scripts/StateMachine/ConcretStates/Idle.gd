@@ -12,7 +12,8 @@ func _enter():
 	plant.on_transition.connect(_onTransition)
 
 func _exit():
-	plant._animated_sprite.animation_finished.disconnect(on_finish_animation)
+	if is_instance_valid(plant) and plant._animated_sprite.is_connected("animation_finished",on_finish_animation):
+		plant._animated_sprite.animation_finished.disconnect(on_finish_animation)
 	plant.on_transition.disconnect(_onTransition)
 	
 func _onTransition():

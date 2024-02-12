@@ -6,15 +6,10 @@ extends Control
 @export var animationPlayer:AnimationPlayer
 
 func onPotDeselected():
-	animationPlayer.play_backwards("IN")
-	var tween:Tween = get_tree().create_tween()
-	# Agregar interpolaciones para cada nodo
-	tween.tween_property($stats/love, "position", Vector2(0,0), 0.1).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
-	tween.tween_property($stats/water, "position", Vector2(0,0), 0.1).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
-	tween.tween_property($stats/sun, "position", Vector2(0,0), 0.1).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
-	
-	# Iniciar el tween
-	tween.play()
+	$stats/love.position = Vector2(0,0)
+	$stats/water.position = Vector2(0,0)
+	$stats/sun.position = Vector2(0,0)
+	visible = false
 	
 func onPotSelected(pot:Flowerpot):
 	
@@ -28,9 +23,9 @@ func onPotSelected(pot:Flowerpot):
 	#animationPlayer.play("IN")
 	var tween:Tween = get_tree().create_tween()
 	# Agregar interpolaciones para cada nodo
-	tween.tween_property($stats/love, "position", Vector2(0,0), 0)
-	tween.tween_property($stats/water, "position", Vector2(0,0), 0)
-	tween.tween_property($stats/sun, "position", Vector2(0,0), 0)
+	$stats/love.position = Vector2(0,0)
+	$stats/water.position = Vector2(0,0)
+	$stats/sun.position = Vector2(0,0)
 	
 	tween.tween_property($stats/love, "position", Vector2(59,-215), 0.3).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
 	tween.tween_property($stats/water, "position", Vector2(167,-138), 0.3).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
@@ -45,17 +40,17 @@ func onPotUpdate(pot:Flowerpot):
 	setWaterLevel(plant.getHydrous())
 	setSunLevel(plant.getSunny())
 
-func setName(name:String):
-	$miniatura/name.text = "[center]%s[/center]"%name
+func setName(_name:String):
+	$miniatura/name.text = "[center]%s[/center]"%_name
 	
 
-func setWaterLevel(level:int):
+func setWaterLevel(level:float):
 	water.playLevel(level)
 	
 
-func setLoveLevel(level:int):
+func setLoveLevel(level:float):
 	love.playLevel(level)
 	
 
-func setSunLevel(level:int):
+func setSunLevel(level:float):
 	sun.playLevel(level)

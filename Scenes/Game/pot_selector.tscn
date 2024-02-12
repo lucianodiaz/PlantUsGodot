@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://cwx2814ubcxdd"]
+[gd_scene load_steps=17 format=3 uid="uid://cwx2814ubcxdd"]
 
-[ext_resource type="Texture2D" uid="uid://go4x38csb6ic" path="res://Resources/Textures/UI/clean.png" id="1_icppb"]
 [ext_resource type="Script" path="res://Scripts/UI/pot_selector.gd" id="1_w8mg7"]
-[ext_resource type="Texture2D" uid="uid://44x40mrmo66f" path="res://Resources/Textures/UI/love.png" id="2_rkmjr"]
+[ext_resource type="Texture2D" uid="uid://dgioro2sthtwo" path="res://Resources/Textures/UI/NewAssets/flecha iz.png" id="2_5bcij"]
+[ext_resource type="Texture2D" uid="uid://ctpcdn6lf1rpv" path="res://Resources/Textures/UI/NewAssets/flecha dr.png" id="3_876f2"]
 [ext_resource type="Texture2D" uid="uid://dtnb0a3gr7frm" path="res://Resources/Textures/flowerpot1.png" id="3_dc7qo"]
 [ext_resource type="Script" path="res://Scripts/FlowerSprite2D.gd" id="5_owgnk"]
+[ext_resource type="Texture2D" uid="uid://dpp8mt04f56x5" path="res://Resources/Textures/UI/NewAssets/base iconos.png" id="6_hn664"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqjq0"]
 
@@ -38,28 +39,33 @@ stretch_mode = 3
 alignment_horizontal = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer"]
-layout_direction = 1
+layout_direction = 2
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 alignment = 1
 
 [node name="left" type="Button" parent="AspectRatioContainer/HBoxContainer"]
+layout_direction = 2
 layout_mode = 2
+size_flags_horizontal = 0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
-icon = ExtResource("1_icppb")
+icon = ExtResource("2_5bcij")
 alignment = 0
 
 [node name="right" type="Button" parent="AspectRatioContainer/HBoxContainer"]
+layout_direction = 2
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
-icon = ExtResource("2_rkmjr")
+icon = ExtResource("3_876f2")
 alignment = 0
 
 [node name="Control" type="Control" parent="."]
@@ -94,25 +100,29 @@ offset_bottom = 76.0
 
 [node name="Label" type="Label" parent="AspectRatioContainer2"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "Select your pot!"
-horizontal_alignment = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 594.0
-offset_top = 564.0
-offset_right = 730.0
-offset_bottom = 650.0
+clip_contents = true
+offset_left = 450.0
+offset_top = 562.0
+offset_right = 879.0
+offset_bottom = 679.0
 alignment = 2
 
 [node name="ContinueBtn" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ukk1q")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_tdxxt")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_a2n15")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_ashij")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5nqyg")
-icon = ExtResource("2_rkmjr")
+text = "CONFIRM"
+icon = ExtResource("6_hn664")
 icon_alignment = 1
 
 [node name="camera2d" type="Camera2D" parent="."]

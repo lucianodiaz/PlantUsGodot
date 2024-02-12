@@ -1,8 +1,9 @@
 extends Node
 
-var pots = []
+var pots:Array[Flowerpot] = []
 var currentIndex=-1
 var currentFlowerpot:Flowerpot
+var selection:bool = false
 @export var animationPlayer:AnimationPlayer
 @export var nameEditorScene:PackedScene
 @export var plantNameEdit:PlantNameEdit
@@ -12,14 +13,20 @@ func _ready():
 	$Info.visible = false
 	pass
 
-func _on_create_flowerpot(flowerpot):
+func _process(delta):
+	if Input.is_action_just_pressed("tap"):
+		if selection:
+			hideInfoStat()
+			currentFlowerpot = null
+	
+func _on_create_flowerpot(flowerpot:Flowerpot):
 	currentIndex+=1
 	print("created a flowerpot: ",flowerpot)
 	pots.push_back(flowerpot)
 	currentFlowerpot = pots[currentIndex]
 	currentFlowerpot.selectPot.connect(on_changeFlowerPot)
 	currentFlowerpot.createdPlant.connect(onCreatedPlant)
-
+	currentFlowerpot.plantDead.connect(hideInfoStat)
 
 
 func onCreatedPlant(pot:Flowerpot):
@@ -31,6 +38,7 @@ func on_changeFlowerPot(newFlowerPot:Flowerpot):
 	currentFlowerpot = newFlowerPot
 	animationPlayer.play("IN")
 	$Info.onPotSelected(currentFlowerpot)
+	selection = true
 
 func _on_button_1_pressed():
 	currentFlowerpot.getPlant().giveSun()
@@ -54,6 +62,9 @@ func updateInfoStat():
 	if(is_instance_valid(currentFlowerpot)):
 		$Info.onPotUpdate(currentFlowerpot)
 
+func hideInfoStat():
+	$Info.onPotDeselected()
+	selection = false
 
 func _on_timer_timeout():
 	for i in range(pots.size()-1,-1,-1):

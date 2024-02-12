@@ -3,29 +3,30 @@ class_name Plant
 
 const FPS = 60;
 
+signal plant_selected
 signal plant_created
 signal on_transition
 signal on_end_cicle
-var _HAPPINESS = 8;
+var _HAPPINESS = 8.0;
 
-var _ENTERTAINMENT = 8;
+var _ENTERTAINMENT = 8.0;
 
-var _HYDROUS = 8;
+var _HYDROUS = 8.0;
 
-var _LIFE = 8;
+var _LIFE = 8.0;
 
-var _SUNNY = 8;
+var _SUNNY = 8.0
 
-var _DIRTY = 0;
+var _DIRTY = 0.0;
 
-var _GROW = 0;
+var _GROW = 0.0;
 
-var _MAX_GROW = 8;
+var _MAX_GROW = 8.0;
 
-var multiplier = 1;
+var multiplier = 1.0;
 
 var isDiying = false
-
+var isDead = false
 var statesPlant = 0 #max 3
 
 var growth = ["tiny","med","big"]
@@ -43,11 +44,18 @@ var indexIdle = 1
 var count = 4
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	emit_signal("plant_created",self)
-	currentState = stateMachine.current_state
+	pass
 #	_animated_sprite.play("growth")
 
+func _on_created_plant():
+	emit_signal("plant_created",self)
+	currentState = stateMachine.current_state
+	$Timers.get_child_count()
+	for i in $Timers.get_child_count():
+		$Timers.get_child(i).start()
+
 func _selected():
+	emit_signal("plant_selected")
 	pass
 #	_animated_sprite.play(currentGrowth+"growth")
 
@@ -72,7 +80,6 @@ func addMultiplier():
 
 func giveSun():
 	_SUNNY += 1
-	_animated_sprite.play(getCurrentGrowth()+"_"+"happy")
 	addMultiplier()
 	emit_signal("on_end_cicle")
 	#_GROW = _MAX_GROW +1
@@ -101,14 +108,19 @@ func downgradeGrowth():
 	_GROW -= 1
 
 func passTime():
-	_HAPPINESS = clamp(_HAPPINESS-1,0,8)
-	_HYDROUS = clamp(_HYDROUS-1,0,8)
-#	if _HYDROUS < 7:
-#		_animated_sprite.play("dry")
-	_SUNNY = clamp(_SUNNY-1,0,8)
-	_DIRTY = clamp(_DIRTY+1,0,8)
-	_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,8)
-	emit_signal("on_end_cicle")
+	if Name == "": return
+	if(_GROW < _MAX_GROW and !isDiying):
+		_GROW = clamp(_GROW + (1*multiplier),0,_MAX_GROW)
+		print("GROWTH: ",_GROW)
+	elif(isDiying):
+#		_LIFE -=1 
+		_LIFE = clamp(_LIFE-1,0,8)
+		if(_LIFE<= 0 and !isDead):
+			isDead = true
+			get_parent().emit_signal("plantDead")
+			return
+	checkIsGrowPlant();
+	
 
 func getHappiness():
 	return _HAPPINESS
@@ -139,17 +151,25 @@ func getName():
 func setNamePlant(n:String):
 	Name = n
 
-func _on_timer_timeout():
-	if(_GROW < _MAX_GROW and !isDiying):
-		_GROW = clamp(_GROW + (1*multiplier),0,_MAX_GROW)
-		print("GROWTH: ",_GROW)
-	elif(isDiying):
-#		_LIFE -=1 
-		_LIFE = clamp(_LIFE-1,0,8)
-		if(_LIFE<= 0):
-			get_parent().emit_signal("plantDead")
-			
-	checkIsGrowPlant();
+func _on_timer_sun_timeout():
+	print("sun lvl: ",clamp(_SUNNY-0.15,0,8))
+	_SUNNY = clamp(_SUNNY-0.15,0,8)
+	#_DIRTY = clamp(_DIRTY+1,0,8)
+	#_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,8)
+	emit_signal("on_end_cicle")
+
+func _on_timer_water_timeout():
+	print("Water lvl: ",clamp(_HYDROUS-0.2,0,8))
+	_HYDROUS = clamp(_HYDROUS-0.2,0,8)
+	emit_signal("on_end_cicle")
+	#if _HYDROUS < 7:
+		#_animated_sprite.play("dry")
+
+
+func _on_timer_happy_timeout():
+	_HAPPINESS = clamp(_HAPPINESS-0.1,0,8)
+	emit_signal("on_end_cicle")
+
 
 func checkIsGrowPlant():
 	if(_GROW >= _MAX_GROW):
@@ -163,3 +183,10 @@ func checkIsGrowPlant():
 		_animated_sprite.visible = true
 		emit_signal("on_transition")
 
+
+
+func _on_input_area_input_event(viewport, event, shape_idx):
+	@warning_ignore("unused_parameter")
+	if is_instance_valid(self):
+		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			_selected()

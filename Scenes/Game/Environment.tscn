@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dyftiy871j8v8"]
+[gd_scene load_steps=10 format=3 uid="uid://dyftiy871j8v8"]
 
 [ext_resource type="Script" path="res://Scripts/EnvironmentScript.gd" id="1_kxfxt"]
 [ext_resource type="Texture2D" uid="uid://cr2fak5rmdfws" path="res://Resources/Textures/ventana.png" id="2_t5qm8"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://cs1666k08jj2q" path="res://Resources/Textures/taza.png" id="6_cq05u"]
 [ext_resource type="Texture2D" uid="uid://bg8d1kfrpjbto" path="res://Resources/Textures/cortina.png" id="7_1j2eg"]
 [ext_resource type="Texture2D" uid="uid://bkyw6qn4crr2w" path="res://Resources/Textures/repisas completas.png" id="8_ueu50"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8132"]
+size = Vector2(186, 215)
 
 [node name="environment" type="Node2D"]
 script = ExtResource("1_kxfxt")
@@ -22,17 +25,24 @@ scale = Vector2(2.049, 1)
 texture = ExtResource("3_rjfeh")
 
 [node name="SpawnArea0" parent="base" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(1, 1)
-scale = Vector2(18.75, 6.636)
+position = Vector2(4.9795, -176.282)
+scale = Vector2(13.0719, 6.636)
 baseSprite = NodePath("..")
+
+[node name="taza" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1558, 18)
+texture = ExtResource("6_cq05u")
+
+[node name="staticBody2d" type="StaticBody2D" parent="taza"]
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="taza/staticBody2d"]
+position = Vector2(-33, 63.5)
+shape = SubResource("RectangleShape2D_t8132")
 
 [node name="cajita" type="Sprite2D" parent="."]
 position = Vector2(-166, -15)
 texture = ExtResource("5_7xdox")
-
-[node name="taza" type="Sprite2D" parent="."]
-position = Vector2(1838, 90)
-texture = ExtResource("6_cq05u")
 
 [node name="cortina" type="Sprite2D" parent="."]
 position = Vector2(-658, -566)
@@ -43,10 +53,17 @@ position = Vector2(1392, -859)
 texture = ExtResource("8_ueu50")
 
 [node name="SpawnArea1" parent="repisasCompletas" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(-3.05176e-05, 150)
+position = Vector2(7.99997, 108)
 rotation = 3.14159
-scale = Vector2(22.31, 0.1)
+scale = Vector2(22.31, 1.02)
+baseSprite = NodePath("..")
+
+[node name="SpawnArea2" parent="repisasCompletas" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
+position = Vector2(-3.05176e-05, 626)
+rotation = 3.14159
+scale = Vector2(22.31, 0.739999)
 baseSprite = NodePath("..")
 
 [connection signal="on_click" from="base/SpawnArea0" to="." method="_on_spawn_area_0_on_click"]
 [connection signal="on_click" from="repisasCompletas/SpawnArea1" to="." method="_on_spawn_area_0_on_click"]
+[connection signal="on_click" from="repisasCompletas/SpawnArea2" to="." method="_on_spawn_area_0_on_click"]
