@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://baqelymvy78pw"]
+
+[ext_resource type="Texture2D" uid="uid://b7y52ruqbgh13" path="res://Resources/Textures/UI/NewAssets/watercan_button_default.png" id="1_ag6b2"]
+[ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_dmm1y"]
+[ext_resource type="Texture2D" uid="uid://bmbqe62snxunu" path="res://Resources/Textures/UI/NewAssets/watercan_menu_default.png" id="2_grstw"]
+
+[node name="water" type="Button" node_paths=PackedStringArray("barSprite")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -175.0
+offset_top = -223.11
+offset_right = -45.0
+offset_bottom = -93.11
+grow_horizontal = 0
+grow_vertical = 0
+icon = ExtResource("1_ag6b2")
+flat = true
+icon_alignment = 1
+script = ExtResource("2_dmm1y")
+barSprite = NodePath("watercanMenuDefault")
+
+[node name="watercanMenuDefault" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(124, 62.11)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_grstw")
+centered = false
+offset = Vector2(-408.75, -55.635)

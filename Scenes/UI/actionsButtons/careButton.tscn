@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbjf554p5axf0"]
+
+[ext_resource type="Texture2D" uid="uid://cer23u6s3uudn" path="res://Resources/Textures/UI/NewAssets/love_button_default.png" id="1_yspwr"]
+[ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_6jy1n"]
+[ext_resource type="Texture2D" uid="uid://beojd0ev1eajo" path="res://Resources/Textures/UI/NewAssets/love_menu_default.png" id="2_vcsbo"]
+
+[node name="care" type="Button" node_paths=PackedStringArray("barSprite")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -175.0
+offset_top = 100.0
+offset_right = -45.0
+offset_bottom = 230.0
+grow_horizontal = 0
+icon = ExtResource("1_yspwr")
+flat = true
+icon_alignment = 1
+script = ExtResource("2_6jy1n")
+barSprite = NodePath("loveMenuDefault")
+
+[node name="loveMenuDefault" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(123.523, 64)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_vcsbo")
+centered = false
+offset = Vector2(-484.32, -57.735)

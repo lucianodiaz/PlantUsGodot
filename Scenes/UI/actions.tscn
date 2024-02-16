@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw2xtm1lyc5ag"]
+
+[ext_resource type="Script" path="res://Scenes/UI/actionsButtons/actions.gd" id="1_7k08x"]
+[ext_resource type="PackedScene" uid="uid://dbjf554p5axf0" path="res://Scenes/UI/actionsButtons/careButton.tscn" id="1_eu26h"]
+[ext_resource type="PackedScene" uid="uid://k3ni77abugjp" path="res://Scenes/UI/actionsButtons/rakeButton.tscn" id="2_7bmgd"]
+[ext_resource type="PackedScene" uid="uid://baqelymvy78pw" path="res://Scenes/UI/actionsButtons/waterButton.tscn" id="3_3okxf"]
+
+[node name="actions" type="CanvasLayer"]
+script = ExtResource("1_7k08x")
+
+[node name="care" parent="." instance=ExtResource("1_eu26h")]
+offset_left = -182.0
+offset_top = 214.0
+offset_right = -52.0
+offset_bottom = 344.0
+scale = Vector2(0.5, 0.5)
+
+[node name="rake" parent="." instance=ExtResource("2_7bmgd")]
+offset_left = -182.0
+offset_right = -52.0
+scale = Vector2(0.5, 0.5)
+
+[node name="water" parent="." instance=ExtResource("3_3okxf")]
+offset_left = -182.0
+offset_top = -346.0
+offset_right = -52.0
+offset_bottom = -216.0
+scale = Vector2(0.5, 0.5)

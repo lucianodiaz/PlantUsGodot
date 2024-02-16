@@ -1,4 +1,6 @@
-extends Control
+extends CanvasLayer
+
+class_name InfoPlant
 
 @export var water:Stats
 @export var love:Stats
@@ -27,15 +29,16 @@ func onPotSelected(pot:Flowerpot):
 	$stats/water.position = Vector2(0,0)
 	$stats/sun.position = Vector2(0,0)
 	
-	tween.tween_property($stats/love, "position", Vector2(59,-215), 0.3).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
-	tween.tween_property($stats/water, "position", Vector2(167,-138), 0.3).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
-	tween.tween_property($stats/sun, "position", Vector2(206,-11), 0.3).set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
+	tween.tween_property($stats/love, "position", Vector2(59,-215), 0.3).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tween.tween_property($stats/water, "position", Vector2(167,-138), 0.3).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tween.tween_property($stats/sun, "position", Vector2(206,-11), 0.3).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	
 	# Iniciar el tween
 	tween.play()
 
 func onPotUpdate(pot:Flowerpot):
 	var plant:Plant = pot.getPlant()
+	if !plant:return
 	setLoveLevel(plant.getHappiness())
 	setWaterLevel(plant.getHydrous())
 	setSunLevel(plant.getSunny())

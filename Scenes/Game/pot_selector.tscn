@@ -7,16 +7,6 @@
 [ext_resource type="Script" path="res://Scripts/FlowerSprite2D.gd" id="5_owgnk"]
 [ext_resource type="Texture2D" uid="uid://dpp8mt04f56x5" path="res://Resources/Textures/UI/NewAssets/base iconos.png" id="6_hn664"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqjq0"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcsb8"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2jhyb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7d1dl"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70vhd"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ukk1q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdxxt"]
@@ -27,46 +17,18 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nqyg"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqjq0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcsb8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2jhyb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7d1dl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70vhd"]
+
 [node name="PotSelector" type="Node2D"]
 script = ExtResource("1_w8mg7")
-
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
-offset_left = 239.0
-offset_top = 454.0
-offset_right = 1095.0
-offset_bottom = 540.0
-stretch_mode = 3
-alignment_horizontal = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer"]
-layout_direction = 2
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-alignment = 1
-
-[node name="left" type="Button" parent="AspectRatioContainer/HBoxContainer"]
-layout_direction = 2
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
-icon = ExtResource("2_5bcij")
-alignment = 0
-
-[node name="right" type="Button" parent="AspectRatioContainer/HBoxContainer"]
-layout_direction = 2
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
-icon = ExtResource("3_876f2")
-alignment = 0
 
 [node name="Control" type="Control" parent="."]
 clip_contents = true
@@ -74,15 +36,15 @@ layout_mode = 3
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 541.0
-offset_top = 178.0
-offset_right = 793.0
-offset_bottom = 446.0
+offset_left = 595.0
+offset_top = 166.0
+offset_right = 744.0
+offset_bottom = 434.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="flowerpot" type="Sprite2D" parent="Control"]
-position = Vector2(127, 150.5)
+position = Vector2(76, 150.5)
 texture = ExtResource("3_dc7qo")
 script = ExtResource("5_owgnk")
 
@@ -107,9 +69,9 @@ text = "Select your pot!"
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 clip_contents = true
 offset_left = 450.0
-offset_top = 562.0
+offset_top = 460.0
 offset_right = 879.0
-offset_bottom = 679.0
+offset_bottom = 577.0
 alignment = 2
 
 [node name="ContinueBtn" type="Button" parent="VBoxContainer"]
@@ -129,6 +91,35 @@ icon_alignment = 1
 position = Vector2(656, 342)
 zoom = Vector2(0.905, 0.905)
 
-[connection signal="button_down" from="AspectRatioContainer/HBoxContainer/left" to="." method="_on_left_button_down"]
-[connection signal="button_down" from="AspectRatioContainer/HBoxContainer/right" to="." method="_on_right_button_down"]
+[node name="left" type="Button" parent="."]
+layout_direction = 2
+offset_left = 540.0
+offset_top = 178.0
+offset_right = 585.0
+offset_bottom = 446.0
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
+icon = ExtResource("2_5bcij")
+alignment = 0
+
+[node name="right" type="Button" parent="."]
+layout_direction = 2
+offset_left = 748.0
+offset_top = 178.0
+offset_right = 792.0
+offset_bottom = 446.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_eqjq0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lcsb8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2jhyb")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7d1dl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_70vhd")
+icon = ExtResource("3_876f2")
+alignment = 0
+
 [connection signal="button_down" from="VBoxContainer/ContinueBtn" to="." method="_on_continue_btn_button_down"]
+[connection signal="button_down" from="left" to="." method="_on_left_button_down"]
+[connection signal="button_down" from="right" to="." method="_on_right_button_down"]

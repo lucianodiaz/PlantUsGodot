@@ -30,8 +30,7 @@ scale = Vector2(13.0719, 6.636)
 baseSprite = NodePath("..")
 
 [node name="taza" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1558, 18)
+position = Vector2(1568, 18)
 texture = ExtResource("6_cq05u")
 
 [node name="staticBody2d" type="StaticBody2D" parent="taza"]

@@ -1,65 +1,10 @@
-[gd_scene load_steps=39 format=3 uid="uid://b8mcul0u7l0qc"]
+[gd_scene load_steps=9 format=3 uid="uid://b8mcul0u7l0qc"]
 
-[ext_resource type="Script" path="res://Scripts/UI/GenericButtonsScripts.gd" id="1_43dw8"]
 [ext_resource type="Script" path="res://Scripts/mainScript.gd" id="1_icywe"]
 [ext_resource type="PackedScene" uid="uid://dyftiy871j8v8" path="res://Scenes/Game/Environment.tscn" id="1_tqhr0"]
 [ext_resource type="PackedScene" uid="uid://dcrwh2ap1xt3a" path="res://Scenes/UI/plant_name_edit.tscn" id="2_dewtq"]
-[ext_resource type="Texture2D" uid="uid://vcqmdhbrfqqx" path="res://Resources/Textures/UI/Sun.png" id="2_hoyyt"]
-[ext_resource type="Texture2D" uid="uid://qf20vuckjkfx" path="res://Resources/Textures/UI/water.png" id="4_c1nje"]
-[ext_resource type="Texture2D" uid="uid://d2ltsbf5jyje0" path="res://Resources/Textures/UI/music.png" id="5_g00qu"]
-[ext_resource type="Texture2D" uid="uid://go4x38csb6ic" path="res://Resources/Textures/UI/clean.png" id="6_4imeb"]
-[ext_resource type="Texture2D" uid="uid://44x40mrmo66f" path="res://Resources/Textures/UI/love.png" id="7_lq0lq"]
+[ext_resource type="PackedScene" uid="uid://bw2xtm1lyc5ag" path="res://Scenes/UI/actions.tscn" id="5_nwt38"]
 [ext_resource type="PackedScene" uid="uid://dtixe5uub3kjc" path="res://Scenes/UI/info.tscn" id="10_a1s0h"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hrupe"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y4ubh"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87lsw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ug4y"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q28jl"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2l5d4"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_msgpc"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4lnlw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2ej2"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uk1i1"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nmubh"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7v7p"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2t35q"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sg6v4"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ku2iq"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27rhv"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ewe0b"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wt3aj"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xhc3p"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4jtpw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mhlad"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ryg2b"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mwqqt"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2tmjs"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x1qbw"]
 
 [sub_resource type="Animation" id="Animation_va0rj"]
 resource_name = "IN"
@@ -98,117 +43,48 @@ _data = {
 "RESET": SubResource("Animation_rhohl")
 }
 
-[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer", "plantNameEdit")]
+[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer", "plantNameEdit", "actions", "info", "camera")]
 position = Vector2(0, -3)
 script = ExtResource("1_icywe")
-animationPlayer = NodePath("Info/animationPlayer")
+animationPlayer = NodePath("Camera2D/Info/animationPlayer")
 nameEditorScene = ExtResource("2_dewtq")
-plantNameEdit = NodePath("PlantNameEdit")
+plantNameEdit = NodePath("Camera2D/PlantNameEdit")
+actions = NodePath("Camera2D/actions")
+info = NodePath("Camera2D/Info")
+camera = NodePath("Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(640, 366)
+position = Vector2(640.71, 366)
 limit_smoothed = true
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="actions" parent="Camera2D" node_paths=PackedStringArray("mainClass") instance=ExtResource("5_nwt38")]
+visible = false
+mainClass = NodePath("../..")
+
+[node name="PlantNameEdit" parent="Camera2D" instance=ExtResource("2_dewtq")]
+visible = false
+
+[node name="Info" parent="Camera2D" instance=ExtResource("10_a1s0h")]
+visible = false
+offset = Vector2(300, 550)
+scale = Vector2(0.6, 0.6)
+transform = Transform2D(0.6, 0, 0, 0.6, 300, 550)
+metadata/_edit_use_anchors_ = true
+
+[node name="animationPlayer" type="AnimationPlayer" parent="Camera2D/Info"]
+libraries = {
+"": SubResource("AnimationLibrary_rkd8e")
+}
 
 [node name="environment1" parent="." instance=ExtResource("1_tqhr0")]
 position = Vector2(411, 574)
 scale = Vector2(0.425, 0.425)
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
-offset_left = -106.0
-offset_top = 61.0
-offset_right = 1100.0
-offset_bottom = 621.0
-alignment_horizontal = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-
-[node name="Button1" type="Button" parent="AspectRatioContainer/VBoxContainer"]
-clip_contents = true
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_hrupe")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_y4ubh")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_87lsw")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_3ug4y")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q28jl")
-icon = ExtResource("2_hoyyt")
-icon_alignment = 1
-script = ExtResource("1_43dw8")
-
-[node name="Button2" type="Button" parent="AspectRatioContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_2l5d4")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_msgpc")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_4lnlw")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_e2ej2")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_uk1i1")
-icon = ExtResource("4_c1nje")
-icon_alignment = 1
-script = ExtResource("1_43dw8")
-
-[node name="Button3" type="Button" parent="AspectRatioContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_nmubh")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_g7v7p")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_2t35q")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_sg6v4")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ku2iq")
-icon = ExtResource("5_g00qu")
-icon_alignment = 1
-script = ExtResource("1_43dw8")
-
-[node name="Button4" type="Button" parent="AspectRatioContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_27rhv")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_ewe0b")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_wt3aj")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_xhc3p")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4jtpw")
-icon = ExtResource("6_4imeb")
-icon_alignment = 1
-script = ExtResource("1_43dw8")
-
-[node name="Button5" type="Button" parent="AspectRatioContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_mhlad")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_ryg2b")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_mwqqt")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_2tmjs")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_x1qbw")
-icon = ExtResource("7_lq0lq")
-icon_alignment = 1
-script = ExtResource("1_43dw8")
-
 [node name="Cicles" type="Timer" parent="."]
 wait_time = 60.0
 autostart = true
 
-[node name="Info" parent="." instance=ExtResource("10_a1s0h")]
-visible = false
-offset_left = 217.0
-offset_top = 565.0
-offset_right = 217.0
-offset_bottom = 565.0
-scale = Vector2(0.635, 0.635)
-size_flags_horizontal = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="animationPlayer" type="AnimationPlayer" parent="Info"]
-libraries = {
-"": SubResource("AnimationLibrary_rkd8e")
-}
-
-[node name="PlantNameEdit" parent="." instance=ExtResource("2_dewtq")]
-visible = false
-
 [connection signal="create_flowerpot" from="environment1" to="." method="_on_create_flowerpot"]
-[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="timeout" from="Cicles" to="." method="_on_timer_timeout"]

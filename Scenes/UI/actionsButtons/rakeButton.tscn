@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://k3ni77abugjp"]
+
+[ext_resource type="Texture2D" uid="uid://d3nk6y4dtdjqo" path="res://Resources/Textures/UI/NewAssets/rake_button_default_.png" id="1_6i35l"]
+[ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_pw7dg"]
+[ext_resource type="Texture2D" uid="uid://c81jecc2w5wf0" path="res://Resources/Textures/UI/NewAssets/rake_menu_default.png" id="2_y3c61"]
+
+[node name="rake" type="Button" node_paths=PackedStringArray("barSprite")]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -65.0
+offset_right = -45.0
+offset_bottom = 65.0
+grow_horizontal = 0
+grow_vertical = 2
+icon = ExtResource("1_6i35l")
+flat = true
+icon_alignment = 1
+script = ExtResource("2_pw7dg")
+barSprite = NodePath("rakeMenuDefault")
+
+[node name="rakeMenuDefault" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(124, 64)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_y3c61")
+centered = false
+offset = Vector2(-484.36, -58.385)
