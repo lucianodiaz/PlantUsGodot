@@ -6,7 +6,6 @@ var mouseInside = false
 
 func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT and mouseInside:
-		self.visible = false
 		mouseInside = false
 		
 		var pos = get_global_mouse_position()

@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dbjf554p5axf0"]
+[gd_scene load_steps=5 format=3 uid="uid://dbjf554p5axf0"]
 
 [ext_resource type="Texture2D" uid="uid://cer23u6s3uudn" path="res://Resources/Textures/UI/NewAssets/love_button_default.png" id="1_yspwr"]
 [ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_6jy1n"]
 [ext_resource type="Texture2D" uid="uid://beojd0ev1eajo" path="res://Resources/Textures/UI/NewAssets/love_menu_default.png" id="2_vcsbo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3yf4q"]
+radius = 57.85
 
 [node name="care" type="Button" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 1
@@ -26,3 +29,28 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_vcsbo")
 centered = false
 offset = Vector2(-484.32, -57.735)
+
+[node name="area2d" type="Area2D" parent="loveMenuDefault"]
+position = Vector2(-403.523, 0)
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="loveMenuDefault/area2d"]
+position = Vector2(-4, 0)
+shape = SubResource("CircleShape2D_3yf4q")
+
+[node name="colorRect" type="ColorRect" parent="loveMenuDefault"]
+offset_left = -343.523
+offset_top = -56.0
+offset_right = -227.523
+offset_bottom = 60.0
+color = Color(0.556863, 0.556863, 0.556863, 0.372549)
+
+[node name="colorRect2" type="ColorRect" parent="loveMenuDefault"]
+offset_left = -219.523
+offset_top = -56.0
+offset_right = -120.523
+offset_bottom = 60.0
+color = Color(0.556863, 0.556863, 0.556863, 0.372549)
+
+[connection signal="input_event" from="loveMenuDefault/area2d" to="." method="_on_love_input"]
+[connection signal="mouse_entered" from="loveMenuDefault/area2d" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="loveMenuDefault/area2d" to="." method="_on_mouse_exited"]

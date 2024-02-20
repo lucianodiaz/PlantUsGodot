@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://b34efjk4aa63q"]
+
+[ext_resource type="Texture2D" uid="uid://cr2fak5rmdfws" path="res://Resources/Textures/ventana.png" id="1_2cxwo"]
+[ext_resource type="Script" path="res://Scripts/enviroments/window.gd" id="1_i6pgk"]
+[ext_resource type="Texture2D" uid="uid://bg8d1kfrpjbto" path="res://Resources/Textures/cortina.png" id="2_353i8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j536p"]
+size = Vector2(383, 872)
+
+[sub_resource type="Animation" id="Animation_feu5a"]
+resource_name = "close"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cortina:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(3.655, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tbubo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cortina:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nb72p"]
+_data = {
+"RESET": SubResource("Animation_tbubo"),
+"close": SubResource("Animation_feu5a")
+}
+
+[node name="window" type="Node2D" node_paths=PackedStringArray("animationPlayer")]
+script = ExtResource("1_i6pgk")
+animationPlayer = NodePath("animationPlayer")
+
+[node name="ventana" type="Sprite2D" parent="."]
+position = Vector2(579, 690)
+texture = ExtResource("1_2cxwo")
+
+[node name="cortina" type="Sprite2D" parent="."]
+position = Vector2(-267, 957)
+texture = ExtResource("2_353i8")
+centered = false
+offset = Vector2(0, -975)
+
+[node name="area2d" type="Area2D" parent="cortina"]
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="cortina/area2d"]
+position = Vector2(181.5, -85)
+shape = SubResource("RectangleShape2D_j536p")
+
+[node name="animationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nb72p")
+}
+
+[connection signal="input_event" from="cortina/area2d" to="." method="_on_touch"]

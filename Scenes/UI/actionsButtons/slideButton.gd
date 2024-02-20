@@ -37,3 +37,19 @@ func _on_pressed():
 		hideBar()
 	else:
 		expandBar()
+
+
+func _on_water_input(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		hideBar()
+		actionFather.giveWater()
+
+func _on_rake_input(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		hideBar()
+		actionFather.rakeAction()
+
+func _on_love_input(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		hideBar()
+		actionFather.giveLove()

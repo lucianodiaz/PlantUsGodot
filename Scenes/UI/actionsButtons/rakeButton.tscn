@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://k3ni77abugjp"]
+[gd_scene load_steps=5 format=3 uid="uid://k3ni77abugjp"]
 
 [ext_resource type="Texture2D" uid="uid://d3nk6y4dtdjqo" path="res://Resources/Textures/UI/NewAssets/rake_button_default_.png" id="1_6i35l"]
 [ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_pw7dg"]
 [ext_resource type="Texture2D" uid="uid://c81jecc2w5wf0" path="res://Resources/Textures/UI/NewAssets/rake_menu_default.png" id="2_y3c61"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o0yia"]
+radius = 53.07
 
 [node name="rake" type="Button" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 6
@@ -24,8 +27,32 @@ barSprite = NodePath("rakeMenuDefault")
 
 [node name="rakeMenuDefault" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(124, 64)
+position = Vector2(124, 63)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_y3c61")
 centered = false
 offset = Vector2(-484.36, -58.385)
+
+[node name="area2d" type="Area2D" parent="rakeMenuDefault"]
+position = Vector2(-281, 0)
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="rakeMenuDefault/area2d"]
+shape = SubResource("CircleShape2D_o0yia")
+
+[node name="colorRect" type="ColorRect" parent="rakeMenuDefault"]
+offset_left = -456.0
+offset_top = -52.0
+offset_right = -358.0
+offset_bottom = 51.0
+color = Color(0.556863, 0.556863, 0.556863, 0.372549)
+
+[node name="colorRect2" type="ColorRect" parent="rakeMenuDefault"]
+offset_left = -220.0
+offset_top = -57.0
+offset_right = -121.0
+offset_bottom = 59.0
+color = Color(0.556863, 0.556863, 0.556863, 0.372549)
+
+[connection signal="input_event" from="rakeMenuDefault/area2d" to="." method="_on_rake_input"]
+[connection signal="mouse_entered" from="rakeMenuDefault/area2d" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="rakeMenuDefault/area2d" to="." method="_on_mouse_exited"]

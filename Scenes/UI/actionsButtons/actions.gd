@@ -16,3 +16,15 @@ func _on_exit_mouse():
 func _on_hideUIInfo():
 	for c in get_children():
 		c.hideBar()
+
+
+func giveLove():
+	mainClass.loveAction()
+	
+
+func giveWater():
+	mainClass.waterAction()
+	
+
+func rakeAction():
+	mainClass.rakeAction()

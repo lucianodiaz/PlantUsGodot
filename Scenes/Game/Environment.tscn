@@ -1,23 +1,22 @@
-[gd_scene load_steps=10 format=3 uid="uid://dyftiy871j8v8"]
+[gd_scene load_steps=9 format=3 uid="uid://dyftiy871j8v8"]
 
 [ext_resource type="Script" path="res://Scripts/EnvironmentScript.gd" id="1_kxfxt"]
-[ext_resource type="Texture2D" uid="uid://cr2fak5rmdfws" path="res://Resources/Textures/ventana.png" id="2_t5qm8"]
+[ext_resource type="PackedScene" uid="uid://b34efjk4aa63q" path="res://Scenes/Game/enviroment/window.tscn" id="2_3milr"]
 [ext_resource type="PackedScene" uid="uid://byol2x2dxte6y" path="res://Scenes/Game/spawn_area.tscn" id="3_lvibk"]
 [ext_resource type="Texture2D" uid="uid://b1wcq8pw31yjw" path="res://Resources/Textures/mesa.png" id="3_rjfeh"]
 [ext_resource type="Texture2D" uid="uid://b3dcyuyh8xmqy" path="res://Resources/Textures/cajita.png" id="5_7xdox"]
 [ext_resource type="Texture2D" uid="uid://cs1666k08jj2q" path="res://Resources/Textures/taza.png" id="6_cq05u"]
-[ext_resource type="Texture2D" uid="uid://bg8d1kfrpjbto" path="res://Resources/Textures/cortina.png" id="7_1j2eg"]
 [ext_resource type="Texture2D" uid="uid://bkyw6qn4crr2w" path="res://Resources/Textures/repisas completas.png" id="8_ueu50"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8132"]
 size = Vector2(186, 215)
 
-[node name="environment" type="Node2D"]
+[node name="environment" type="Node2D" node_paths=PackedStringArray("windowEnv")]
 script = ExtResource("1_kxfxt")
+windowEnv = NodePath("window")
 
-[node name="ventana" type="Sprite2D" parent="."]
-position = Vector2(70, -822)
-texture = ExtResource("2_t5qm8")
+[node name="window" parent="." instance=ExtResource("2_3milr")]
+position = Vector2(-527, -1556)
 
 [node name="base" type="Sprite2D" parent="."]
 position = Vector2(703.797, 242.282)
@@ -42,10 +41,6 @@ shape = SubResource("RectangleShape2D_t8132")
 [node name="cajita" type="Sprite2D" parent="."]
 position = Vector2(-166, -15)
 texture = ExtResource("5_7xdox")
-
-[node name="cortina" type="Sprite2D" parent="."]
-position = Vector2(-658, -566)
-texture = ExtResource("7_1j2eg")
 
 [node name="repisasCompletas" type="Sprite2D" parent="."]
 position = Vector2(1392, -859)

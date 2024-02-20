@@ -6,7 +6,10 @@ const FPS = 60;
 signal plant_selected
 signal plant_created
 signal on_transition
+signal on_happy
 signal on_end_cicle
+signal change_pot_request
+
 var _HAPPINESS = 8.0;
 
 var _ENTERTAINMENT = 8.0;
@@ -21,7 +24,7 @@ var _DIRTY = 0.0;
 
 var _GROW = 0.0;
 
-var _MAX_GROW = 8.0;
+@export var _MAX_GROW = 8.0;
 
 var multiplier = 1.0;
 
@@ -38,15 +41,17 @@ var Name = ""
 
 var currentState : State
 
+var currentPotOwner:Flowerpot = null
 @export var _animated_sprite:AnimatedSprite2D
 
-var indexIdle = 1
-var count = 4
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 #	_animated_sprite.play("growth")
 
+func set_pot_owner(pot:Flowerpot)->void:
+	if !pot: return
+	currentPotOwner = pot
 func _on_created_plant():
 	emit_signal("plant_created",self)
 	currentState = stateMachine.current_state
@@ -62,6 +67,9 @@ func _selected():
 
 func getCurrentGrowth() -> String:
 	return currentGrowth.to_lower()
+
+func getStateSizePlant() -> int:
+	return statesPlant
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -82,21 +90,22 @@ func giveSun():
 	_SUNNY += 1
 	addMultiplier()
 	emit_signal("on_end_cicle")
-	#_GROW = _MAX_GROW +1
-	#checkIsGrowPlant()
 	
 
 func giveWater():
-	_HYDROUS += 1
+	_HYDROUS += 0.5
 	addMultiplier()
+	emit_signal("on_happy")
 	emit_signal("on_end_cicle")
 
 func giveMusic():
 	addMultiplier()
+	emit_signal("on_happy")
 	emit_signal("on_end_cicle")
 
 func giveLove():
 	addMultiplier()
+	emit_signal("on_happy")
 	emit_signal("on_end_cicle")
 
 func Clear():
@@ -153,7 +162,7 @@ func setNamePlant(n:String):
 
 func _on_timer_sun_timeout():
 	print("sun lvl: ",clamp(_SUNNY-0.15,0,8))
-	_SUNNY = clamp(_SUNNY-0.15,0,8)
+	#_SUNNY = clamp(_SUNNY-0.15,0,8)
 	#_DIRTY = clamp(_DIRTY+1,0,8)
 	#_ENTERTAINMENT =clamp(_ENTERTAINMENT+1,0,8)
 	emit_signal("on_end_cicle")
@@ -170,20 +179,25 @@ func _on_timer_happy_timeout():
 	_HAPPINESS = clamp(_HAPPINESS-0.1,0,8)
 	emit_signal("on_end_cicle")
 
-
 func checkIsGrowPlant():
 	if(_GROW >= _MAX_GROW):
-		statesPlant = clamp((statesPlant+1),0,growth.size())
-		currentGrowth = growth[statesPlant]
-		_GROW = 0
+		if clamp((statesPlant+1),0,growth.size()) < currentPotOwner.maxAllowedPlantSize:
+			statesPlant = clamp((statesPlant+1),0,growth.size())
+			currentGrowth = growth[statesPlant]
+			_GROW = 0
+			change_visual_plant()
+			emit_signal("on_transition")
+		else:
+			#I need a bigger pot to growth
+			print("I need a bigger pot to growth")
+			emit_signal("change_pot_request")
+
+func change_visual_plant():
 		_animated_sprite.visible = false
 		_animated_sprite.stop()
 		var animation_path = getCurrentGrowth()+"_animations"
 		_animated_sprite = get_node(animation_path);
 		_animated_sprite.visible = true
-		emit_signal("on_transition")
-
-
 
 func _on_input_area_input_event(viewport, event, shape_idx):
 	@warning_ignore("unused_parameter")

@@ -1,5 +1,3 @@
-class_name playerInfoScript
-
 extends Node
 
 
@@ -16,6 +14,14 @@ var main = load("res://Scenes/main.tscn")
 var intro = load("res://Scenes/Intro.tscn")
 var potSelector = load("res://Scenes/Game/pot_selector.tscn")
 
+
+var items = [
+	{ "Name": "Green","scn": "res://Scenes/Game/Pots/med/pot_green.tscn", "img":"res://Resources/Textures/flowerpot1.png", "maxSize":SizesEnum.Sizes.MEDIUM},
+	{"Name": "Pink","scn": "res://Scenes/Game/Pots/med/pot_pink.tscn", "img":"res://Resources/Textures/flowerpot2.png", "maxSize":SizesEnum.Sizes.MEDIUM},
+	{"Name": "Lightblue","scn": "res://Scenes/Game/Pots/med/pot_lightblue.tscn", "img":"res://Resources/Textures/flowerpot3.png", "maxSize":SizesEnum.Sizes.MEDIUM},
+	{"Name": "Big Blue","scn": "res://Scenes/Game/Pots/big/bigPot1.tscn", "img":"res://Resources/Textures/icons/icon-pot2.png", "maxSize":SizesEnum.Sizes.BIG},
+	{"Name": "Premiun Pot","scn": "res://Scenes/Game/Pots/big/bigPot2.tscn", "img":"res://Resources/Textures/icons/icon-pot3.png", "maxSize":SizesEnum.Sizes.BIG},
+	]
 enum Levels {
 	INTRO=0,
 	POTSEL,
@@ -27,6 +33,9 @@ var current_level
 
 var indexPot = 0
 
+var firstTime = true
+
+var cantSeeds= 1
 # Called when the node enters the scene tree for the first time.
 
 func addLevelsManually():

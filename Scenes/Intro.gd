@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")
+@onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 
 func _ready():
 	$titlepng/animationPlayer.play("enter")

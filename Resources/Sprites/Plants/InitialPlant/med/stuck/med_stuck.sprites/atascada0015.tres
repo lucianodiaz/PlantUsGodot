@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bhni8kt4mqsg0"]
+
+[ext_resource type="Texture2D" uid="uid://dveuatki5af2l" path="res://Resources/Sprites/Plants/InitialPlant/med/stuck/med_stuck.png" id="1_s186j"]
+
+[resource]
+atlas = ExtResource("1_s186j")
+region = Rect2(0, 3886, 399, 693)

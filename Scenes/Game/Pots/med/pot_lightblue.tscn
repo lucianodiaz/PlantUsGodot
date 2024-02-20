@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://do8aipyq77qmg"]
+
+[ext_resource type="PackedScene" uid="uid://deskoebur1d4i" path="res://Scenes/Game/Flowerpot.tscn" id="1_7kh2b"]
+[ext_resource type="Texture2D" uid="uid://22cemq1g1ikx" path="res://Resources/Textures/flowerpot3.png" id="2_os5u6"]
+
+[node name="flowerpot" instance=ExtResource("1_7kh2b")]
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+texture = ExtResource("2_os5u6")

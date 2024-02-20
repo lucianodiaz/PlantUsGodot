@@ -50,7 +50,7 @@ func _on_cover_pencil_input_event(viewport, event, shape_idx):
 
 
 func _on_timer_timeout():
-	var global:playerInfoScript = get_node("/root/PlayerInfoScript")
+	var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 	global._addSeeds(_cant_seeds,_type_seeds)
 	
 	global._changeLevel(global.Levels.POTSEL)

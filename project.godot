@@ -19,10 +19,10 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-PlayerInfoScript="res://Scripts/playerInfoScript.gd"
+PlayerInfoScript="*res://Scripts/playerInfoScript.gd"
 SeedsType="*res://Scripts/seeds_type.gd"
-Events="*res://Scripts/global/Events.gd"
 SceneTransition="*res://Scenes/scene_transition.tscn"
+SizesEnum="*res://Scripts/global/sizes_enum.gd"
 
 [display]
 

@@ -1,0 +1,1218 @@
+{
+	"textures": [
+		{
+			"image": "tiny_stuck.png",
+			"size": {
+				"w": 7996,
+				"h": 2101
+			},
+			"sprites": [
+				{
+					"filename": "atascada0006.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 464,
+						"h": 386
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0007.png",
+					"region": {
+						"x": 464,
+						"y": 0,
+						"w": 463,
+						"h": 386
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0008.png",
+					"region": {
+						"x": 927,
+						"y": 0,
+						"w": 458,
+						"h": 388
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0005.png",
+					"region": {
+						"x": 1385,
+						"y": 0,
+						"w": 452,
+						"h": 392
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0009.png",
+					"region": {
+						"x": 1837,
+						"y": 0,
+						"w": 447,
+						"h": 397
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0004.png",
+					"region": {
+						"x": 2284,
+						"y": 0,
+						"w": 425,
+						"h": 412
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0010.png",
+					"region": {
+						"x": 2709,
+						"y": 0,
+						"w": 430,
+						"h": 418
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0032.png",
+					"region": {
+						"x": 3139,
+						"y": 0,
+						"w": 412,
+						"h": 438
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0031.png",
+					"region": {
+						"x": 3551,
+						"y": 0,
+						"w": 413,
+						"h": 440
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0033.png",
+					"region": {
+						"x": 3964,
+						"y": 0,
+						"w": 407,
+						"h": 440
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0011.png",
+					"region": {
+						"x": 4371,
+						"y": 0,
+						"w": 412,
+						"h": 442
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0030.png",
+					"region": {
+						"x": 4783,
+						"y": 0,
+						"w": 413,
+						"h": 442
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0003.png",
+					"region": {
+						"x": 5196,
+						"y": 0,
+						"w": 399,
+						"h": 445
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0034.png",
+					"region": {
+						"x": 5595,
+						"y": 0,
+						"w": 398,
+						"h": 451
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0029.png",
+					"region": {
+						"x": 5993,
+						"y": 0,
+						"w": 409,
+						"h": 456
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0054.png",
+					"region": {
+						"x": 6402,
+						"y": 0,
+						"w": 382,
+						"h": 464
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0055.png",
+					"region": {
+						"x": 6784,
+						"y": 0,
+						"w": 378,
+						"h": 464
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0035.png",
+					"region": {
+						"x": 7162,
+						"y": 0,
+						"w": 387,
+						"h": 465
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0012.png",
+					"region": {
+						"x": 7549,
+						"y": 0,
+						"w": 393,
+						"h": 466
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0053.png",
+					"region": {
+						"x": 0,
+						"y": 386,
+						"w": 381,
+						"h": 467
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0056.png",
+					"region": {
+						"x": 381,
+						"y": 386,
+						"w": 374,
+						"h": 469
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0002.png",
+					"region": {
+						"x": 755,
+						"y": 388,
+						"w": 380,
+						"h": 471
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0001.png",
+					"region": {
+						"x": 1135,
+						"y": 392,
+						"w": 373,
+						"h": 478
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0080.png",
+					"region": {
+						"x": 1508,
+						"y": 397,
+						"w": 373,
+						"h": 478
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0036.png",
+					"region": {
+						"x": 1881,
+						"y": 397,
+						"w": 374,
+						"h": 480
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0057.png",
+					"region": {
+						"x": 2255,
+						"y": 412,
+						"w": 368,
+						"h": 481
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0079.png",
+					"region": {
+						"x": 2623,
+						"y": 418,
+						"w": 369,
+						"h": 484
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0013.png",
+					"region": {
+						"x": 2992,
+						"y": 438,
+						"w": 377,
+						"h": 486
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0052.png",
+					"region": {
+						"x": 3369,
+						"y": 440,
+						"w": 381,
+						"h": 486
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0028.png",
+					"region": {
+						"x": 3750,
+						"y": 440,
+						"w": 387,
+						"h": 493
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0037.png",
+					"region": {
+						"x": 4137,
+						"y": 442,
+						"w": 362,
+						"h": 496
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0014.png",
+					"region": {
+						"x": 4499,
+						"y": 442,
+						"w": 364,
+						"h": 498
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0058.png",
+					"region": {
+						"x": 4863,
+						"y": 445,
+						"w": 360,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0078.png",
+					"region": {
+						"x": 5223,
+						"y": 445,
+						"w": 360,
+						"h": 502
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0015.png",
+					"region": {
+						"x": 5583,
+						"y": 451,
+						"w": 353,
+						"h": 504
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0016.png",
+					"region": {
+						"x": 5936,
+						"y": 456,
+						"w": 345,
+						"h": 509
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0038.png",
+					"region": {
+						"x": 6281,
+						"y": 464,
+						"w": 352,
+						"h": 509
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0017.png",
+					"region": {
+						"x": 6633,
+						"y": 464,
+						"w": 338,
+						"h": 512
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0059.png",
+					"region": {
+						"x": 6971,
+						"y": 465,
+						"w": 353,
+						"h": 513
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0018.png",
+					"region": {
+						"x": 7324,
+						"y": 466,
+						"w": 334,
+						"h": 519
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0040.png",
+					"region": {
+						"x": 7658,
+						"y": 466,
+						"w": 338,
+						"h": 526
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0039.png",
+					"region": {
+						"x": 0,
+						"y": 853,
+						"w": 344,
+						"h": 519
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0051.png",
+					"region": {
+						"x": 344,
+						"y": 855,
+						"w": 368,
+						"h": 520
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0027.png",
+					"region": {
+						"x": 712,
+						"y": 859,
+						"w": 359,
+						"h": 525
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0060.png",
+					"region": {
+						"x": 1071,
+						"y": 870,
+						"w": 345,
+						"h": 525
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0077.png",
+					"region": {
+						"x": 1416,
+						"y": 875,
+						"w": 348,
+						"h": 526
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0019.png",
+					"region": {
+						"x": 1764,
+						"y": 877,
+						"w": 330,
+						"h": 529
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0041.png",
+					"region": {
+						"x": 2094,
+						"y": 893,
+						"w": 333,
+						"h": 532
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0042.png",
+					"region": {
+						"x": 2427,
+						"y": 902,
+						"w": 330,
+						"h": 537
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0050.png",
+					"region": {
+						"x": 2757,
+						"y": 924,
+						"w": 349,
+						"h": 538
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0061.png",
+					"region": {
+						"x": 3106,
+						"y": 926,
+						"w": 338,
+						"h": 538
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0026.png",
+					"region": {
+						"x": 3444,
+						"y": 933,
+						"w": 338,
+						"h": 539
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0020.png",
+					"region": {
+						"x": 3782,
+						"y": 933,
+						"w": 327,
+						"h": 541
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0043.png",
+					"region": {
+						"x": 4109,
+						"y": 938,
+						"w": 327,
+						"h": 543
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0023.png",
+					"region": {
+						"x": 4436,
+						"y": 940,
+						"w": 324,
+						"h": 546
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0022.png",
+					"region": {
+						"x": 4760,
+						"y": 945,
+						"w": 324,
+						"h": 549
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0062.png",
+					"region": {
+						"x": 5084,
+						"y": 947,
+						"w": 332,
+						"h": 549
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0025.png",
+					"region": {
+						"x": 5416,
+						"y": 955,
+						"w": 326,
+						"h": 551
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0044.png",
+					"region": {
+						"x": 5742,
+						"y": 965,
+						"w": 326,
+						"h": 551
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0021.png",
+					"region": {
+						"x": 6068,
+						"y": 973,
+						"w": 325,
+						"h": 552
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0024.png",
+					"region": {
+						"x": 6393,
+						"y": 976,
+						"w": 323,
+						"h": 553
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0076.png",
+					"region": {
+						"x": 6716,
+						"y": 978,
+						"w": 334,
+						"h": 553
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0049.png",
+					"region": {
+						"x": 7050,
+						"y": 985,
+						"w": 334,
+						"h": 554
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0045.png",
+					"region": {
+						"x": 7384,
+						"y": 992,
+						"w": 325,
+						"h": 559
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0063.png",
+					"region": {
+						"x": 0,
+						"y": 1372,
+						"w": 326,
+						"h": 559
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0048.png",
+					"region": {
+						"x": 326,
+						"y": 1375,
+						"w": 326,
+						"h": 562
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0047.png",
+					"region": {
+						"x": 652,
+						"y": 1384,
+						"w": 324,
+						"h": 566
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0064.png",
+					"region": {
+						"x": 976,
+						"y": 1395,
+						"w": 322,
+						"h": 567
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0046.png",
+					"region": {
+						"x": 1298,
+						"y": 1401,
+						"w": 329,
+						"h": 568
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0065.png",
+					"region": {
+						"x": 1627,
+						"y": 1406,
+						"w": 318,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0075.png",
+					"region": {
+						"x": 1945,
+						"y": 1425,
+						"w": 324,
+						"h": 578
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0066.png",
+					"region": {
+						"x": 2269,
+						"y": 1439,
+						"w": 317,
+						"h": 588
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0067.png",
+					"region": {
+						"x": 2586,
+						"y": 1462,
+						"w": 314,
+						"h": 592
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0068.png",
+					"region": {
+						"x": 2900,
+						"y": 1464,
+						"w": 312,
+						"h": 594
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0074.png",
+					"region": {
+						"x": 3212,
+						"y": 1472,
+						"w": 316,
+						"h": 596
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0069.png",
+					"region": {
+						"x": 3528,
+						"y": 1474,
+						"w": 311,
+						"h": 600
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0070.png",
+					"region": {
+						"x": 3839,
+						"y": 1481,
+						"w": 310,
+						"h": 606
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0073.png",
+					"region": {
+						"x": 4149,
+						"y": 1486,
+						"w": 312,
+						"h": 606
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0071.png",
+					"region": {
+						"x": 4461,
+						"y": 1494,
+						"w": 310,
+						"h": 607
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "atascada0072.png",
+					"region": {
+						"x": 4771,
+						"y": 1494,
+						"w": 310,
+						"h": 607
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+	}
+}

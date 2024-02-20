@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")
+@onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 
 var potSprite:Sprite2D
 var middlePosition:Vector2

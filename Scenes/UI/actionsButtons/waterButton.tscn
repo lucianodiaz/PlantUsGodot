@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://baqelymvy78pw"]
+[gd_scene load_steps=5 format=3 uid="uid://baqelymvy78pw"]
 
 [ext_resource type="Texture2D" uid="uid://b7y52ruqbgh13" path="res://Resources/Textures/UI/NewAssets/watercan_button_default.png" id="1_ag6b2"]
 [ext_resource type="Script" path="res://Scenes/UI/actionsButtons/slideButton.gd" id="2_dmm1y"]
 [ext_resource type="Texture2D" uid="uid://bmbqe62snxunu" path="res://Resources/Textures/UI/NewAssets/watercan_menu_default.png" id="2_grstw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bigcn"]
+radius = 67.42
 
 [node name="water" type="Button" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 3
@@ -29,3 +32,20 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_grstw")
 centered = false
 offset = Vector2(-408.75, -55.635)
+
+[node name="area2d" type="Area2D" parent="watercanMenuDefault"]
+position = Vector2(-326, 0)
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="watercanMenuDefault/area2d"]
+shape = SubResource("CircleShape2D_bigcn")
+
+[node name="colorRect" type="ColorRect" parent="watercanMenuDefault"]
+offset_left = -248.0
+offset_top = -52.0
+offset_right = -136.0
+offset_bottom = 58.0
+color = Color(0.556863, 0.556863, 0.556863, 0.372549)
+
+[connection signal="input_event" from="watercanMenuDefault/area2d" to="." method="_on_water_input"]
+[connection signal="mouse_entered" from="watercanMenuDefault/area2d" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="watercanMenuDefault/area2d" to="." method="_on_mouse_exited"]

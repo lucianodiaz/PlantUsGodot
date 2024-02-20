@@ -1,5 +1,5 @@
 extends CanvasLayer
-@onready var global:playerInfoScript = get_node("/root/PlayerInfoScript")
+@onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 @export var animPlayer:AnimationPlayer
 
 func _ready():

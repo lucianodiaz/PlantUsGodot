@@ -14,8 +14,10 @@ func onPotDeselected():
 	visible = false
 	
 func onPotSelected(pot:Flowerpot):
-	
 	var plant:Plant = pot.getPlant()
+	if !plant:
+		visible = false
+		return
 	setName(plant.getName())
 	setLoveLevel(plant.getHappiness())
 	setWaterLevel(plant.getHydrous())

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5dfh6qs62r5q"]
+
+[ext_resource type="PackedScene" uid="uid://deskoebur1d4i" path="res://Scenes/Game/Flowerpot.tscn" id="1_av22y"]
+[ext_resource type="Texture2D" uid="uid://uwvgo021f6vm" path="res://Resources/Textures/maceta 2.png" id="2_aco2i"]
+
+[node name="flowerpot" instance=ExtResource("1_av22y")]
+maxAllowedPlantSize = 3
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_aco2i")
+
+[node name="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(1, 8)

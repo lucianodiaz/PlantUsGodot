@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwgrm58yx5cxy"]
+
+[ext_resource type="Script" path="res://Scripts/enviroments/lights.gd" id="1_uumql"]
+[ext_resource type="Texture2D" uid="uid://ly2b43wlrvyu" path="res://Resources/daynightcycle-gradient-texture.tres" id="2_pburp"]
+
+[node name="lights" type="CanvasModulate"]
+script = ExtResource("1_uumql")
+gradient = ExtResource("2_pburp")
