@@ -27,7 +27,7 @@ func _on_happy_plant():
 func on_change_pot_request():
 	Transitioned.emit(self,"statemachine/"+"stuck")
 
-func _onTransition():
+func _onTransition(plant):
 	Transitioned.emit(self,"statemachine/"+"transition")
 
 

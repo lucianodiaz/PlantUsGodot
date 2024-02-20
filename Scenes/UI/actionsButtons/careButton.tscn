@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_3yf4q"]
 radius = 57.85
 
-[node name="care" type="Button" node_paths=PackedStringArray("barSprite")]
+[node name="care" type="TextureButton" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -16,9 +16,7 @@ offset_top = 100.0
 offset_right = -45.0
 offset_bottom = 230.0
 grow_horizontal = 0
-icon = ExtResource("1_yspwr")
-flat = true
-icon_alignment = 1
+texture_normal = ExtResource("1_yspwr")
 script = ExtResource("2_6jy1n")
 barSprite = NodePath("loveMenuDefault")
 

@@ -38,6 +38,8 @@ var firstTime = true
 var cantSeeds= 1
 # Called when the node enters the scene tree for the first time.
 
+signal update_seed
+
 func addLevelsManually():
 	allLevels.push_back(intro) #0
 	allLevels.push_back(potSelector) #1
@@ -53,6 +55,13 @@ func _changeLevel(index):
 	current_level = allLevels[index].instantiate()
 	add_child(current_level)
 
+func addSeed(ammount):
+	cantSeeds += ammount
+	emit_signal("update_seed")
+	
+func useSeed():
+	cantSeeds -= 1
+	emit_signal("update_seed")
 func _addSeeds(ammount,type_seed:seeds_type.seedType):
 	for _seed in _seeds:
 		if(_seed == type_seed):

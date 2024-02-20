@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 var expanded:bool = false
 var initialSize:Vector2 = Vector2(0.2,0.4)
@@ -6,6 +6,7 @@ var initialSize:Vector2 = Vector2(0.2,0.4)
 @export var actionFather:Actions
 
 func _ready():
+	barSprite.visible = false
 	actionFather = get_parent()
 	connect("pressed",_on_pressed)
 	connect("mouse_entered",_on_mouse_entered)
@@ -18,6 +19,7 @@ func _on_mouse_exited():
 	actionFather._on_exit_mouse()
 
 func expandBar():
+	barSprite.visible = true
 	var tween:Tween = get_tree().create_tween()
 	barSprite.scale.y = 1
 	tween.tween_property(barSprite,"scale",Vector2(1,1),0.2).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
@@ -31,6 +33,7 @@ func hideBar():
 	tween.play()
 	await (tween.finished)
 	expanded = false
+	barSprite.visible = false
 
 func _on_pressed():
 	if expanded:

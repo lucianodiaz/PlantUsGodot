@@ -3,6 +3,6 @@ extends Node
 
 enum Sizes{
 	TINY=1,
-	MEDIUM,
-	BIG
+	MEDIUM=2,
+	BIG=3
 }

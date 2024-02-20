@@ -4,10 +4,12 @@ class_name ShopList
 @export var vBox:VBoxContainer
 @onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 @export var itemScene:PackedScene
+@export var exitButton:TextureButton
 
 signal on_selected_pot
 
 func _ready():
+	exitButton.pressed.connect(_exitMenu)
 	for i in global.items:
 		var item:Items = itemScene.instantiate()
 		item._setScenePath(i["scn"])
@@ -17,7 +19,8 @@ func _ready():
 		item.on_buy_item.connect(_on_select_pot)
 		vBox.add_child(item)
 
-
+func _exitMenu():
+	visible = false
 func _on_select_pot(src):
 	print(src)
 	emit_signal("on_selected_pot",src)

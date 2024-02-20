@@ -51,7 +51,9 @@ func getPlant()-> Plant :
 
 func insertPlant(p:Plant):
 	_plantInstance = p
+	_plantInstance.plant_selected.connect(_on_selected_plant)
 func removePlant():
+	_plantInstance.plant_selected.disconnect(_on_selected_plant)
 	_plantInstance = null
 	
 func cleanPot():
@@ -69,6 +71,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if !_plantInstance && global.cantSeeds > 0:
 			_createPlant()
-			global.cantSeeds -= 1
+			global.useSeed()
 		else:
 			_on_selected_plant()

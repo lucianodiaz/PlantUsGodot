@@ -4,10 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://k5r8m2oyjpcm" path="res://Resources/Textures/maceta 3.png" id="2_m7dg8"]
 
 [node name="flowerpot" instance=ExtResource("1_ld34w")]
+maxAllowedPlantSize = 3
 
 [node name="Sprite2D" parent="Area2D" index="0"]
-scale = Vector2(0.4, 0.4)
+position = Vector2(-1, 3.50001)
+scale = Vector2(0.291846, 0.383529)
 texture = ExtResource("2_m7dg8")
 
 [node name="CollisionShape2D" parent="Area2D" index="1"]
 position = Vector2(0, 6)
+
+[node name="spawnPoint" parent="." index="1"]
+position = Vector2(1, -85)

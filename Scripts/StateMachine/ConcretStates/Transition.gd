@@ -12,3 +12,4 @@ func _exit():
 
 func on_finished_animation():
 	Transitioned.emit(self,"statemachine/"+"growth")
+	plant.is_transitioning = false

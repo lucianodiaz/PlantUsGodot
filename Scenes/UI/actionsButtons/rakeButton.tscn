@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_o0yia"]
 radius = 53.07
 
-[node name="rake" type="Button" node_paths=PackedStringArray("barSprite")]
+[node name="rake" type="TextureButton" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
@@ -19,9 +19,7 @@ offset_right = -45.0
 offset_bottom = 65.0
 grow_horizontal = 0
 grow_vertical = 2
-icon = ExtResource("1_6i35l")
-flat = true
-icon_alignment = 1
+texture_normal = ExtResource("1_6i35l")
 script = ExtResource("2_pw7dg")
 barSprite = NodePath("rakeMenuDefault")
 

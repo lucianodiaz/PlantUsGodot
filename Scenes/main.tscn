@@ -48,7 +48,7 @@ _data = {
 "RESET": SubResource("Animation_rhohl")
 }
 
-[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer", "plantNameEdit", "actions", "info", "camera", "dialogue", "lightControl", "shopListUI")]
+[node name="main" type="Node2D" node_paths=PackedStringArray("animationPlayer", "plantNameEdit", "actions", "info", "camera", "dialogue", "lightControl", "shopListUI", "ui")]
 position = Vector2(0, -3)
 script = ExtResource("1_icywe")
 animationPlayer = NodePath("Camera2D/Info/animationPlayer")
@@ -60,6 +60,7 @@ camera = NodePath("Camera2D")
 dialogue = NodePath("Camera2D/Dialogues")
 lightControl = NodePath("lights")
 shopListUI = NodePath("shopList")
+ui = NodePath("Camera2D/UI")
 
 [node name="lights" parent="." instance=ExtResource("3_yhehn")]
 
@@ -105,7 +106,7 @@ position = Vector2(411, 574)
 scale = Vector2(0.425, 0.425)
 
 [node name="Cicles" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 5.0
 autostart = true
 
 [node name="shopList" parent="." instance=ExtResource("8_omkjw")]

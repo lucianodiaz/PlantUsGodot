@@ -24,6 +24,9 @@ var _DIRTY = 0.0;
 
 var _GROW = 0.0;
 
+var selected = false
+
+var is_transitioning = false
 @export var _MAX_GROW = 8.0;
 
 var multiplier = 1.0;
@@ -48,10 +51,15 @@ var currentPotOwner:Flowerpot = null
 func _ready():
 	pass
 #	_animated_sprite.play("growth")
+func _input(event):
+	if Input.is_action_just_released("tap"):
+		selected = false
+	
 
 func set_pot_owner(pot:Flowerpot)->void:
 	if !pot: return
 	currentPotOwner = pot
+
 func _on_created_plant():
 	emit_signal("plant_created",self)
 	currentState = stateMachine.current_state
@@ -61,7 +69,6 @@ func _on_created_plant():
 
 func _selected():
 	emit_signal("plant_selected")
-	pass
 #	_animated_sprite.play(currentGrowth+"growth")
 
 
@@ -118,7 +125,7 @@ func downgradeGrowth():
 
 func passTime():
 	if Name == "": return
-	if(_GROW < _MAX_GROW and !isDiying):
+	if(_GROW < _MAX_GROW and !isDiying and !is_transitioning):
 		_GROW = clamp(_GROW + (1*multiplier),0,_MAX_GROW)
 		print("GROWTH: ",_GROW)
 	elif(isDiying):
@@ -186,11 +193,14 @@ func checkIsGrowPlant():
 			currentGrowth = growth[statesPlant]
 			_GROW = 0
 			change_visual_plant()
-			emit_signal("on_transition")
+			is_transitioning = true
+			emit_signal("on_transition",self)
 		else:
 			#I need a bigger pot to growth
-			print("I need a bigger pot to growth")
-			emit_signal("change_pot_request")
+			if statesPlant != SizesEnum.Sizes.BIG:
+				is_transitioning = true
+				print("I need a bigger pot to growth")
+				emit_signal("change_pot_request")
 
 func change_visual_plant():
 		_animated_sprite.visible = false
@@ -202,5 +212,5 @@ func change_visual_plant():
 func _on_input_area_input_event(viewport, event, shape_idx):
 	@warning_ignore("unused_parameter")
 	if is_instance_valid(self):
-		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if Input.is_action_just_pressed("tap") && !selected:
 			_selected()

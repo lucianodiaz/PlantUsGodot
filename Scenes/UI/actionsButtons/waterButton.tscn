@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_bigcn"]
 radius = 67.42
 
-[node name="water" type="Button" node_paths=PackedStringArray("barSprite")]
+[node name="water" type="TextureButton" node_paths=PackedStringArray("barSprite")]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -19,9 +19,7 @@ offset_right = -45.0
 offset_bottom = -93.11
 grow_horizontal = 0
 grow_vertical = 0
-icon = ExtResource("1_ag6b2")
-flat = true
-icon_alignment = 1
+texture_normal = ExtResource("1_ag6b2")
 script = ExtResource("2_dmm1y")
 barSprite = NodePath("watercanMenuDefault")
 

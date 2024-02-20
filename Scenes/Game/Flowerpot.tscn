@@ -21,6 +21,7 @@ script = ExtResource("3_xwt4o")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(2, 6)
 shape = SubResource("RectangleShape2D_pmri4")
+debug_color = Color(0, 0.572549, 0.839216, 0.419608)
 
 [node name="spawnPoint" type="Marker2D" parent="."]
 position = Vector2(1, -83)

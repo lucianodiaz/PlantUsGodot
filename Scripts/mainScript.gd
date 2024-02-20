@@ -9,6 +9,8 @@ var currentFlowerpot:Flowerpot
 var selection:bool = false
 var uiSelection:bool = false
 
+@onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
+
 @export var animationPlayer:AnimationPlayer
 @export var nameEditorScene:PackedScene
 @export var plantNameEdit:PlantNameEdit
@@ -18,11 +20,12 @@ var uiSelection:bool = false
 @export var dialogue:DialogueMessage
 @export var lightControl:Lights
 @export var shopListUI:ShopList
+@export var ui:UI
 
 @export var zoomMax = 1.3
 @export var zoomMin = 1.0
 @export var zoomVelocity = 0.4
-
+var endZoom = true
 var srcPot:String = "res://Scenes/Game/Pots/med/pot_green.tscn"
 var canPutPot:bool = true
 var initialCameraPosition
@@ -33,20 +36,26 @@ func _ready():
 	info.visible = false
 	initialCameraPosition = camera.position
 	shopListUI.connect("on_selected_pot",_on_shop_list_on_selected_pot)
+	ui.setText("click to place your pot")
+	ui.setOnText(true)
 	pass
 
 func _process(delta):
+	pass
+	
+func _input(event):
 	if Input.is_action_just_pressed("tap"):
 		if selection && !uiSelection:
 			hideInfoStat()
-
 func setLightEnvironment(isOpen:bool):
 	if isOpen:
 		lightControl._setLight()
 	else:
 		lightControl._setDark()
 	
-
+func _on_plant_ripe(plant:Plant):
+	if plant.statesPlant+1 == SizesEnum.Sizes.BIG:
+		global.addSeed(1)
 func _on_create_flowerpot(flowerpot:Flowerpot):
 	currentIndex+=1
 	print("created a flowerpot: ",flowerpot)
@@ -55,6 +64,10 @@ func _on_create_flowerpot(flowerpot:Flowerpot):
 	currentFlowerpot.selectPot.connect(on_changeFlowerPot)
 	currentFlowerpot.createdPlant.connect(onCreatedPlant)
 	currentFlowerpot.plantDead.connect(hideInfoStat)
+	ui.setOnText(false)
+	if global.cantSeeds > 0:
+		ui.setText("click to plant your seed")
+		ui.setOnText(true)
 
 
 func onCreatedPlant(pot:Flowerpot):
@@ -62,33 +75,37 @@ func onCreatedPlant(pot:Flowerpot):
 	plant.on_end_cicle.connect(updateInfoStat)
 	plantNameEdit.setPlantReference(plant)
 	plant.change_pot_request.connect(message_plant_need_to_grow)
+	plant.on_transition.connect(_on_plant_ripe)
+	ui.setOnText(false)
+	#currentFlowerpot = null
 
 func message_plant_need_to_grow():
 	dialogue._showDialog()
 
 func on_changeFlowerPot(newFlowerPot:Flowerpot):
+	if !endZoom : return 
 	if(!canMovePlant):
 		currentFlowerpot = newFlowerPot
 		if !currentFlowerpot.getPlant(): return
-		animationPlayer.play("IN")
+		info.visible = true
 		info.onPotSelected(currentFlowerpot)
 		actions.visible = true
 		selection = true
 		zoom_object()
+		print("a")
 	else:
 		if newFlowerPot != currentFlowerpot:
 			if newFlowerPot.getPlant() == null:
-				#if currentFlowerpot.getPlant().statesPlant <= newFlowerPot.maxAllowedPlantSize:
-				currentFlowerpot.getPlant().set_pot_owner(newFlowerPot)
-				var spawnPointNode = newFlowerPot.get_node("spawnPoint")
-				currentFlowerpot.getPlant().position = spawnPointNode.position #Vector2(0,plantInstance.position.y-OFFSET_Y)
-				currentFlowerpot.remove_child(currentFlowerpot.getPlant())
-				newFlowerPot.add_child(currentFlowerpot.getPlant(),false,Node.INTERNAL_MODE_FRONT)
-				newFlowerPot.insertPlant(currentFlowerpot.getPlant())
-				currentFlowerpot.removePlant()
-				
-				currentFlowerpot = newFlowerPot
-				canMovePlant = false
+				if currentFlowerpot.getPlant().statesPlant <= newFlowerPot.maxAllowedPlantSize:
+					var spawnPointNode = newFlowerPot.get_node("spawnPoint")
+					currentFlowerpot.getPlant().position = spawnPointNode.position #Vector2(0,plantInstance.position.y-OFFSET_Y)
+					currentFlowerpot.remove_child(currentFlowerpot.getPlant())
+					newFlowerPot.add_child(currentFlowerpot.getPlant(),false,Node.INTERNAL_MODE_FRONT)
+					newFlowerPot.insertPlant(currentFlowerpot.getPlant())
+					currentFlowerpot.getPlant().set_pot_owner(newFlowerPot)
+					currentFlowerpot.removePlant()
+					currentFlowerpot = newFlowerPot
+					canMovePlant = false
 	canMovePlant = false
 
 func waterAction():
@@ -115,6 +132,8 @@ func hideInfoStat():
 	selection = false
 	actions.visible = false
 	zoomOut_object()
+	#currentFlowerpot = null
+	print("b")
 
 
 func _on_timer_timeout():
@@ -128,14 +147,16 @@ func setUISelection(value:bool):
 
 
 func zoomOut_object():
+	endZoom = false
 	var tween2:Tween = get_tree().create_tween()
 	tween2.tween_property(camera, "position", initialCameraPosition , zoomVelocity).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	var tween:Tween = get_tree().create_tween()
 	tween.tween_property(camera, "zoom", Vector2(zoomMin,zoomMin), zoomVelocity).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	await(tween.finished)
-	
+	endZoom = true
 func zoom_object():
 	if !currentFlowerpot.getPlant() : return
+	endZoom = false
 	var target_position = to_global(currentFlowerpot.position)
 	var viewport_center = get_viewport_rect().size / 2
 	var zoom_offset = viewport_center - target_position
@@ -150,6 +171,7 @@ func zoom_object():
 	tween_zoom.tween_property(camera, "zoom", Vector2(zoomMax,zoomMax), zoomVelocity).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	#tween_zoom.start()
 	await(tween_zoom.finished)
+	endZoom = true
 
 
 func _on_ui_on_menu_pressed():
@@ -160,3 +182,5 @@ func _on_shop_list_on_selected_pot(src):
 	shopListUI.visible = false
 	canPutPot = true
 	srcPot = src
+	ui.setText("click to place your pot")
+	ui.setOnText(true)

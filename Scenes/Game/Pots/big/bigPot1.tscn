@@ -7,8 +7,12 @@
 maxAllowedPlantSize = 3
 
 [node name="Sprite2D" parent="Area2D" index="0"]
-scale = Vector2(0.4, 0.4)
+position = Vector2(3.00001, 0)
+scale = Vector2(0.321649, 0.4)
 texture = ExtResource("2_aco2i")
 
 [node name="CollisionShape2D" parent="Area2D" index="1"]
 position = Vector2(1, 8)
+
+[node name="spawnPoint" parent="." index="1"]
+position = Vector2(1, -93)
