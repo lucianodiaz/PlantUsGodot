@@ -1,4 +1,5 @@
 extends Area2D
+class_name SpawnArea
 
 signal on_click
 var mouseInside = false

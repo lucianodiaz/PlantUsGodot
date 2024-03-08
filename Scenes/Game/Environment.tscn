@@ -24,12 +24,12 @@ scale = Vector2(2.049, 1)
 texture = ExtResource("3_rjfeh")
 
 [node name="SpawnArea0" parent="base" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(4.9795, -176.282)
-scale = Vector2(13.0719, 6.636)
+position = Vector2(23.0371, -173.282)
+scale = Vector2(14.1846, 6.636)
 baseSprite = NodePath("..")
 
 [node name="taza" type="Sprite2D" parent="."]
-position = Vector2(1568, 18)
+position = Vector2(1643, 18)
 texture = ExtResource("6_cq05u")
 
 [node name="staticBody2d" type="StaticBody2D" parent="taza"]
@@ -39,25 +39,19 @@ position = Vector2(-33, 63.5)
 shape = SubResource("RectangleShape2D_t8132")
 
 [node name="cajita" type="Sprite2D" parent="."]
-position = Vector2(-166, -15)
+position = Vector2(-210, -15)
 texture = ExtResource("5_7xdox")
+
+[node name="staticBody2d" type="StaticBody2D" parent="cajita"]
+position = Vector2(47, -61)
+scale = Vector2(1.8, 1)
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="cajita/staticBody2d"]
+position = Vector2(-33, 63.5)
+shape = SubResource("RectangleShape2D_t8132")
 
 [node name="repisasCompletas" type="Sprite2D" parent="."]
 position = Vector2(1392, -859)
 texture = ExtResource("8_ueu50")
 
-[node name="SpawnArea1" parent="repisasCompletas" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(7.99997, 108)
-rotation = 3.14159
-scale = Vector2(22.31, 1.02)
-baseSprite = NodePath("..")
-
-[node name="SpawnArea2" parent="repisasCompletas" node_paths=PackedStringArray("baseSprite") instance=ExtResource("3_lvibk")]
-position = Vector2(-3.05176e-05, 626)
-rotation = 3.14159
-scale = Vector2(22.31, 0.739999)
-baseSprite = NodePath("..")
-
 [connection signal="on_click" from="base/SpawnArea0" to="." method="_on_spawn_area_0_on_click"]
-[connection signal="on_click" from="repisasCompletas/SpawnArea1" to="." method="_on_spawn_area_0_on_click"]
-[connection signal="on_click" from="repisasCompletas/SpawnArea2" to="." method="_on_spawn_area_0_on_click"]
