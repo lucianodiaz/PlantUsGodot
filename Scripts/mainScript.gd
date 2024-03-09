@@ -92,7 +92,6 @@ func on_changeFlowerPot(newFlowerPot:Flowerpot):
 		actions.visible = true
 		selection = true
 		zoom_object()
-		print("a")
 	else:
 		if newFlowerPot != currentFlowerpot:
 			if newFlowerPot.getPlant() == null:
@@ -133,7 +132,6 @@ func hideInfoStat():
 	actions.visible = false
 	zoomOut_object()
 	#currentFlowerpot = null
-	print("b")
 
 
 func _on_timer_timeout():

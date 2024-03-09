@@ -5,6 +5,7 @@ extends Node
 const OFFSET_Y = 50
 var plantReference: PackedScene;
 var _plantInstance:Plant
+
 @onready var global:PlayerInfoScript = get_node("/root/PlayerInfoScript")
 @export var maxAllowedPlantSize:SizesEnum.Sizes
 
@@ -12,6 +13,7 @@ signal plantDead
 signal selectPot
 signal createdPlant
 
+var main:Main
 var selected:bool = false
 var defaultPosition
 var lastPosition
@@ -20,6 +22,7 @@ var move = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#_createPlant()
+	main = get_parent()
 	_setPotSelected()
 	defaultPosition = self.position
 	lastPosition = self.position
@@ -31,8 +34,10 @@ func _process(delta):
 	
 func movePot():
 	if selected:
-		self.position = get_viewport().get_mouse_position()
-		newPosition = get_viewport().get_mouse_position()
+		print ("distance  movePot:",(self.position - get_viewport().get_mouse_position()).length())
+		if (self.position - get_viewport().get_mouse_position()).length() > 30.0:
+			self.position = get_viewport().get_mouse_position()
+			newPosition = get_viewport().get_mouse_position()
 
 func _setPotSelected():
 	if global.firstTime:
@@ -92,11 +97,11 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			global.useSeed()
 		else:
 			if !selected:
-				#_on_selected_plant()
+				if main.canMovePlant:
+					_on_selected_plant()
 				selected = true
 	if event is InputEventMouseButton and event.is_released() and event.button_index == MOUSE_BUTTON_LEFT:
 		selected = false
-		if !_plantInstance:return
 		if move:
 			self.position = newPosition
 			lastPosition = newPosition
@@ -106,7 +111,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			newPosition = self.position
 			tween.play()
 			await (tween.finished)
-		if _plantInstance.getName() != "":
+		if _plantInstance and _plantInstance.getName() != "":
 			_on_selected_plant()
 
 
